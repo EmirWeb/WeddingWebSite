@@ -1,0 +1,57 @@
+@CHARSET "UTF-8";
+
+body {
+	background-color: #E46D6D;
+}
+
+a {
+	text-decoration: none;
+	color: #FF3000;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+div {
+	margin: 0px;
+	padding: 0px;
+}
+
+div.Container {
+	padding-bottom: 50px;
+	margin: 0px auto;
+	width: 990px;
+	background-color: #dddddd;
+}
+
+div.Container div.Menu {
+	margin: 0px auto;
+	width: 990px;
+	background-color: #F5BEB3;
+	text-align: center;
+}
+
+div.Container div.BannerWrapper {
+	background-color: #F5BEB3;
+}
+
+div.Container div.stick {
+	position: fixed;
+	top: 0px;
+	z-index: 10000;
+}
+
+div.Container div.Crop {
+	position: relative;
+	height: 327px;
+}
+
+div.Container div.Crop img.BannerFrame {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+}
+
+div.Container div.Crop div.Banner {
+}
