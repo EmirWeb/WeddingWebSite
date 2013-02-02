@@ -19,7 +19,7 @@
 	<body>
 		<div class="Container">
 			<div class="BannerWrapper">
-				<img class="Banner" src="/Files/Images/Banner.png" width="990px"></img>
+				<img class="Banner" src="/wedding/Files/Images/Banner.png" width="990px"></img>
 			</div>
 			<div class="Menu">
 				<a href="#">Us</a>&nbsp;&nbsp;
@@ -31,7 +31,7 @@
 			</div>
 			<?php $BANNER_WIDTH = 990; ?>
 			<div class="Crop">
-				<img class="BannerFrame" id="BannerAnimator0" src="/Files/Images/BannerAnimationFrame0.JPG" width="<?php echo $BANNER_WIDTH; ?>">
+				<img class="BannerFrame" id="BannerAnimator0" src="/wedding/Files/Images/BannerAnimationFrame0.JPG" width="<?php echo $BANNER_WIDTH; ?>">
 				<img class="BannerFrame" id="BannerAnimator1" width="<?php echo $BANNER_WIDTH; ?>px">
 				<img class="BannerFrame" id="BannerAnimator2" width="<?php echo $BANNER_WIDTH; ?>px" >
 				<img class="BannerFrame" id="BannerAnimator3" width="<?php echo $BANNER_WIDTH; ?>px">
