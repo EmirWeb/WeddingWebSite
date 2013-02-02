@@ -31,7 +31,7 @@
 			</div>
 			<?php $BANNER_WIDTH = 990; ?>
 			<div class="Crop">
-				<img class="BannerFrame" id="BannerAnimator0" src="/wedding/Files/Images/BannerAnimationFrame0.JPG" width="<?php echo $BANNER_WIDTH; ?>">
+				<img class="BannerFrame" id="BannerAnimator0" src="/wedding/Files/Images/BannerAnimationFrame0.jpg" width="<?php echo $BANNER_WIDTH; ?>">
 				<img class="BannerFrame" id="BannerAnimator1" width="<?php echo $BANNER_WIDTH; ?>px">
 				<img class="BannerFrame" id="BannerAnimator2" width="<?php echo $BANNER_WIDTH; ?>px" >
 				<img class="BannerFrame" id="BannerAnimator3" width="<?php echo $BANNER_WIDTH; ?>px">
