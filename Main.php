@@ -31,16 +31,29 @@
 			</div>
 			<?php $BANNER_WIDTH = 990; ?>
 			<div class="Crop">
-				<img class="BannerFrame" id="BannerAnimator0" alt="Laura & Emir" src="/Files/Images/BannerAnimationFrame0.JPG" width="<?php echo $BANNER_WIDTH; ?>">
-				<img class="BannerFrame" id="BannerAnimator1" alt="Laura & Emir" width="<?php echo $BANNER_WIDTH; ?>px" >
-				<img class="BannerFrame" id="BannerAnimator2" alt="Laura & Emir" width="<?php echo $BANNER_WIDTH; ?>px" >
-				<img class="BannerFrame" id="BannerAnimator3" alt="Laura & Emir" width="<?php echo $BANNER_WIDTH; ?>px">
-				<img class="BannerFrame" id="BannerAnimator4" alt="Laura & Emir" width="<?php echo $BANNER_WIDTH; ?>px">
-				<img class="BannerFrame" id="BannerAnimator5" alt="Laura & Emir" width="<?php echo $BANNER_WIDTH; ?>px">
-				<img class="BannerFrame" id="BannerAnimator6" alt="Laura & Emir" width="<?php echo $BANNER_WIDTH; ?>px">
-				<div class="Banner">
-					Laura + Emir </br>
-					August 17th 2013
+				<img class="BannerFrame" id="BannerAnimator0" src="/Files/Images/BannerAnimationFrame0.JPG" width="<?php echo $BANNER_WIDTH; ?>">
+				<img class="BannerFrame" id="BannerAnimator1" width="<?php echo $BANNER_WIDTH; ?>px">
+				<img class="BannerFrame" id="BannerAnimator2" width="<?php echo $BANNER_WIDTH; ?>px" >
+				<img class="BannerFrame" id="BannerAnimator3" width="<?php echo $BANNER_WIDTH; ?>px">
+				<img class="BannerFrame" id="BannerAnimator4" width="<?php echo $BANNER_WIDTH; ?>px">
+				<img class="BannerFrame" id="BannerAnimator5" width="<?php echo $BANNER_WIDTH; ?>px">
+				<img class="BannerFrame" id="BannerAnimator6" width="<?php echo $BANNER_WIDTH; ?>px">
+				<div class="TimeLine">
+					-----
+					<a id="TimeLineHighLight0" class="TimeLineHighlight">*</a>
+					-----
+					<a id="TimeLineHighLight1" class="TimeLineHighlight">*</a>
+					-----
+					<a id="TimeLineHighLight2" class="TimeLineHighlight">*</a>
+					-----
+					<a id="TimeLineHighLight3" class="TimeLineHighlight">*</a>
+					-----
+					<a id="TimeLineHighLight4" class="TimeLineHighlight">*</a>
+					-----
+					<a id="TimeLineHighLight5" class="TimeLineHighlight">*</a>
+					-----
+					<a id="TimeLineHighLight6" class="TimeLineHighlight">*</a>
+					-----
 				</div>
 				<div class="Clear"></div>
 			</div>

@@ -13,6 +13,11 @@ a:hover {
 	text-decoration: underline;
 }
 
+div.Container div.Crop div.TimeLine a:hover {
+	text-decoration: none;
+	cursor: pointer;
+}
+
 div {
 	margin: 0px;
 	padding: 0px;
@@ -33,13 +38,27 @@ div.Container div.Menu {
 }
 
 div.Container div.BannerWrapper {
-	background-color: #F5BEB3;
+	/* height: 233px; */
 }
 
 div.Container div.stick {
 	position: fixed;
 	top: 0px;
 	z-index: 10000;
+}
+
+div.Container div.Crop div.TimeLine {
+	position: absolute;
+	top: 40px;
+	left: 40px;
+	text-shadow: navy;
+	font-size: 50px;
+	line-height: 60px;
+	font: bold;
+	font-family: sans-serif;
+	font-style: inherit;
+	font-weight: 700;
+	color: #FF6F60;
 }
 
 div.Container div.Crop {
@@ -51,7 +70,4 @@ div.Container div.Crop img.BannerFrame {
 	position: absolute;
 	top: 0px;
 	left: 0px;
-}
-
-div.Container div.Crop div.Banner {
 }
