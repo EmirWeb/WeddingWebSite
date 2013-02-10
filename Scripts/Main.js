@@ -60,7 +60,7 @@ $(document).ready(function() {
 		bannerFrame.animate({
 			opacity : 0
 		}, 0).removeClass('show');
-		bannerFrame.attr('src', pictureDirectory + 'BannerAnimationFrame' + frameIndex + '.JPG')
+		bannerFrame.attr('src', pictureDirectory + 'BannerAnimationFrame' + frameIndex + '.jpg')
 		frameIndex++;
 	}
 
