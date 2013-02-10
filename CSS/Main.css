@@ -63,12 +63,16 @@ div.Container div.Scroller {
 	display: none;
 }
 
-div.Container div.Left,div.Right {
+
+div.Container div.WeddingPartyCell {
 	height: 247px;
+}
+div.Container div.Left,div.Right {
+	width: 247px;
 }
 
 div.Container div.CenterLeft,div.CenterRight {
-	height: 248px;
+	width: 248px;
 }
 
 div.Container div.Crop div.TimeLine a:hover {

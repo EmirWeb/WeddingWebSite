@@ -137,6 +137,8 @@
 				</div>
 				<div class="Clear"></div>
 			</div>
+
+			<iframe width="425" height="350" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.ca/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=Tralee+Wedding+Facility,+Mountainview+Road,+Caledon,+ON&amp;aq=0&amp;oq=Mountainview+Road,+tralee&amp;sll=43.941541,-79.978752&amp;sspn=0.015636,0.038581&amp;ie=UTF8&amp;hq=Tralee+Wedding+Facility,&amp;hnear=Mountainview+Rd,+Caledon,+Peel+Regional+Municipality,+Ontario&amp;t=m&amp;ll=43.937338,-79.979095&amp;spn=0.090103,0.118347&amp;output=embed"></iframe><br /><small><a href="https://maps.google.ca/maps?f=q&amp;source=embed&amp;hl=en&amp;geocode=&amp;q=Tralee+Wedding+Facility,+Mountainview+Road,+Caledon,+ON&amp;aq=0&amp;oq=Mountainview+Road,+tralee&amp;sll=43.941541,-79.978752&amp;sspn=0.015636,0.038581&amp;ie=UTF8&amp;hq=Tralee+Wedding+Facility,&amp;hnear=Mountainview+Rd,+Caledon,+Peel+Regional+Municipality,+Ontario&amp;t=m&amp;ll=43.937338,-79.979095&amp;spn=0.090103,0.118347" style="color:#0000FF;text-align:left">View Larger Map</a></small>
 			
 			<div class="Clear"></div>
 		</div>
