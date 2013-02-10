@@ -13,6 +13,7 @@
 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 		<title>Emir & Laura</title>
 		<link rel="shortcut icon" href="favicon.ico" />
+		<link href='http://fonts.googleapis.com/css?family=Imprima' rel='stylesheet' type='text/css'>
 		<?php echo DomManager::getCSS(); ?>		
 
 	</head>
