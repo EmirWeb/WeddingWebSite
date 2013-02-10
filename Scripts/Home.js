@@ -1,4 +1,4 @@
-var pictureDirectory = "/Files/Images/";
+var pictureDirectory = "Files/Images/";
 $(document).ready(function() {
 	var frameCount = 7;
 	var loadedFrames = 0;

@@ -13,6 +13,64 @@ a:hover {
 	text-decoration: underline;
 }
 
+div.Container div.WeddingPartyFeature {
+	float: left;
+	width: 496px;
+	height: 494px;
+}
+
+div.Container div.WeddingPartyColumn {
+	float: left;
+	width: 247px;
+	height: 494px;
+}
+
+div.Container div.TimeLineContent {
+	height: 200px;
+	background-color: #F5BEB3;
+}
+
+div.Container div.WeddingPartyColumn div.WeddingPartyCell {
+	position: relative;
+}
+
+div.Container div.WeddingPartyRow div.WeddingPartyCell {
+	position: relative;
+	float: left;
+}
+
+div.Container div.WeddingPartyCell img {
+	top: 0px;
+	left: 0px;
+}
+
+div.Container div.WeddingPartyCell div.CellHover:Hover{
+	background-color: #F5BEB3;
+	
+}
+
+div.Container div.WeddingPartyCell div.CellHover {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	height: 247px;
+	width: 247px;
+	opacity:0.4;
+	filter:alpha(opacity=40);
+}
+
+div.Container div.Scroller {
+	display: none;
+}
+
+div.Container div.Left,div.Right {
+	height: 247px;
+}
+
+div.Container div.CenterLeft,div.CenterRight {
+	height: 248px;
+}
+
 div.Container div.Crop div.TimeLine a:hover {
 	text-decoration: none;
 	cursor: pointer;
@@ -38,7 +96,7 @@ div.Container div.Menu {
 }
 
 div.Container div.BannerWrapper {
-	/* height: 233px; */
+	height: 233px;
 }
 
 div.Container div.stick {
