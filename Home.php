@@ -4,8 +4,6 @@
 	DomManager::addCSS('CSS/Home.css');
 	DomManager::addCSS('CSS/Strips.css');
 	DomManager::addScript('Scripts/Utils/jquery-1.8.3.min.js');
-	DomManager::addScript('Scripts/Utils/Async.js');
-	DomManager::addScript('Scripts/Main.js');
 ?>
 
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Strict//EN" "http://www.w3.org/TR/html4/strict.dtd">
@@ -19,15 +17,7 @@
 
 	</head>
 	<body>
-		<div class="Menu">
-			<a href="#">OUR STORY</a>&nbsp;&nbsp;
-			<a href="#">WEDDING PARTY</a>&nbsp;&nbsp;
-			<a href="#">THE PARTY</a>&nbsp;&nbsp;
-			<a href="#">WHERE TO STAY</a>&nbsp;&nbsp;
-			<a href="#">RSVP</a>&nbsp;&nbsp;
-			<a href="#">SONG REQUESTS</a>&nbsp;&nbsp;
-		</div>
-		<div class="Menu Scroller">
+		<div class="Menu  Center">
 			<a href="#">OUR STORY</a>&nbsp;&nbsp;
 			<a href="#">WEDDING PARTY</a>&nbsp;&nbsp;
 			<a href="#">THE PARTY</a>&nbsp;&nbsp;
@@ -36,21 +26,42 @@
 			<a href="#">SONG REQUESTS</a>&nbsp;&nbsp;
 		</div>
 		<div class="Strip Strip_01">
-			<div class="Monogram">
+			<div class="Monogram Center">
 				<img src="Files/Images/monogram.png" />
 			</div>
 		</div>
-		<div class="Strip Strip_02">
+		<div class="Strip Strip_02 ">
+			<div class="Banner_02  Center">
+				<img src="Files/Images/ourstory.png" />
+			</div>
+			<div class="Tree  Center">
+				<img src="Files/Images/tree.png" />
+			</div>
 		</div>
 		<div class="Strip Strip_03">
+			<div class="Banner_03  Center">
+				<img src="Files/Images/weddingparty.png" />
+			</div>
 		</div>
 		<div class="Strip Strip_04">
+			<div class="Banner_04  Center">
+				<img src="Files/Images/theparty.png" />
+			</div>
 		</div>
 		<div class="Strip Strip_05">
+			<div class="Banner_05  Center">
+				<img src="Files/Images/wheretostay.png" />
+			</div>
 		</div>
 		<div class="Strip Strip_06">
+			<div class="Banner_06  Center">
+				<img src="Files/Images/rsvp.png" />
+			</div>
 		</div>
 		<div class="Strip Strip_07">
+			<div class="Banner_07  Center">
+				<img src="Files/Images/songrequests.png" />
+			</div>
 		</div>
 		
 	</body>

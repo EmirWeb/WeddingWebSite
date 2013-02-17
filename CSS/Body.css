@@ -11,14 +11,6 @@ body {
 	font-size: 20px;
 }
 
-a {
-	text-decoration: none;
-}
-
-a:hover {
-	text-decoration: underline;
-}
-
 div {
 	margin: 0px;
 	padding: 0px;

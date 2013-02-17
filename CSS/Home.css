@@ -1,22 +1,37 @@
 @CHARSET "UTF-8";
 
 div.Menu {
+	min-width: 1200px;
+	height: 70px;
+	line-height: 70px;
 	background-color: #F5C1B7;
-	text-align: center;
-}
-
-div.Menu a {
-	color: #E36D6E;
-}
-
-div.Monogram {
-	padding: 234px;
-	text-align: center;
-}
-
-div.stick {
+	font-size: 17px;
 	width: 100%;
 	position: fixed;
 	top: 0px;
 	z-index: 10000;
+	margin-top: 10px;
+	width: 100%;
 }
+
+div.Menu a {
+	color: #E36D6E;
+	text-decoration: none;
+}
+
+div.Menu a:hover {
+	color: #F66768;
+	font-weight: bold;
+}
+
+div.Monogram {
+	padding-top: 234px;
+}
+div.Banner_02 {
+	padding-top: 10px;
+}
+
+div.Center {
+	text-align: center;
+}
+
