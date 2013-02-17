@@ -11,12 +11,14 @@
 	<head>
 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 		<title>Emir & Laura</title>
+		<link href='http://fonts.googleapis.com/css?family=Miss+Fajardose' rel='stylesheet' type='text/css'>
 		<link rel="shortcut icon" href="favicon.ico" />
-		<link href='http://fonts.googleapis.com/css?family=Imprima' rel='stylesheet' type='text/css'>
+<!-- 		<link href='http://fonts.googleapis.com/css?family=Imprima' rel='stylesheet' type='text/css'> -->
 		<?php echo DomManager::getCSS(); ?>		
 
 	</head>
 	<body>
+		
 		<div class="Menu  Center">
 			<a href="#">OUR STORY</a>&nbsp;&nbsp;
 			<a href="#">WEDDING PARTY</a>&nbsp;&nbsp;
@@ -26,6 +28,7 @@
 			<a href="#">SONG REQUESTS</a>&nbsp;&nbsp;
 		</div>
 		<div class="Strip Strip_01">
+		
 			<div class="Monogram Center">
 				<img src="Files/Images/monogram.png" />
 			</div>
