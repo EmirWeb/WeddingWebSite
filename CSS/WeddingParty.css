@@ -1,0 +1,57 @@
+@CHARSET "UTF-8";
+
+div.WeddingParty {
+	width: 416px;
+	margin: 0px auto;
+}
+
+div.WeddingPartyFeature {
+	float: left;
+	width: 204px;
+	height: 204px;
+	padding: 2px;
+}
+
+div.WeddingPartyColumn {
+	float: left;
+}
+
+div.WeddingPartyColumn div.WeddingPartyCell {
+	position: relative;
+}
+
+div.WeddingPartyRow div.WeddingPartyCell {
+	position: relative;
+	float: left;
+}
+
+div.WeddingPartyCell img {
+	top: 0px;
+	left: 0px;
+}
+
+div.WeddingPartyCell div.CellHover:Hover {
+	background-color: #F5BEB3;
+}
+
+div.WeddingPartyCell div.CellHover {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	height: 100px;
+	width: 100px;
+	opacity: 0.4;
+	filter: alpha(opacity = 40);
+	margin: 2px;
+}
+
+div.WeddingPartyCell {
+	height: 100px;
+	width: 100px;
+	padding: 2px;
+}
+
+div.TimeLine a:hover {
+	text-decoration: none;
+	cursor: pointer;
+}
