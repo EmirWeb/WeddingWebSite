@@ -1,29 +1,22 @@
-div.Content {
-	position: relative;
-	font-size: 12px;
-	padding-top: 30px;
-	width: 960px;
-	margin: 0 auto;
+@CHARSET "UTF-8";
+
+div.Menu {
+	background-color: #F5C1B7;
+	text-align: center;
 }
 
+div.Menu a {
+	color: #E36D6E;
+}
 
-/* height = 638 */
-div.Content div.Crop img.BannerFrame {
-	position: absolute;
+div.Monogram {
+	padding: 234px;
+	text-align: center;
+}
+
+div.stick {
+	width: 100%;
+	position: fixed;
 	top: 0px;
-	left: 0px;
-}
-
-div.Content div.Crop div.Banner {
-	position: absolute;
-	top: 40px;
-	left: 40px;
-	text-shadow: navy;
-	font-size: 50px;
-	line-height: 60px;
-	font:bold;
-	font-family: sans-serif;
-	font-style: inherit;
-	font-weight:700;
-	color: #FF6F60;
+	z-index: 10000;
 }

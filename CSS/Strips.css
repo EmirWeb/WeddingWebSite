@@ -1,0 +1,34 @@
+@CHARSET "UTF-8";
+
+div.Strip {
+	width: 100%;
+	height: 600px;
+}
+
+div.Strip_01 {
+	background-color: #F16263;
+}
+
+div.Strip_02 {
+	background-color: #ED7473;
+}
+
+div.Strip_03 {
+	background-color: #F59192;
+}
+
+div.Strip_04 {
+	background-color: #F2A2A6;
+}
+
+div.Strip_05 {
+	background-color: #EFACB3;
+}
+
+div.Strip_06 {
+	background-color: #EFBDC2;
+}
+
+div.Strip_07 {
+	background-color: #F4D3D8;
+}

@@ -36,13 +36,14 @@ function animateToFrame(bannerFrame) {
 };
 
 function sticky_relocate() {
-	var banner = $('div.Container img.Banner');
+	var banner = $('div.Strip_01');
+	var menu = $('div.Scroller');
 	var windowTop = $(window).scrollTop();
-	var divBottom = banner.offset().top + banner.height();
+	var divBottom = banner.offset().top;
 	if (windowTop >= divBottom)
-		$('div.Container div.Scroller').show().addClass('stick')
+		menu.show().addClass('stick')
 	else
-		$('div.Container div.Scroller').hide().removeClass('stick');
+		menu.hide().removeClass('stick');
 };
 
 function getFrame(index) {
