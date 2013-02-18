@@ -21,12 +21,12 @@
 	<body>
 		
 		<div class="Menu  Center">
-			<a href="#">OUR STORY</a>&nbsp;&nbsp;
-			<a href="#">WEDDING PARTY</a>&nbsp;&nbsp;
-			<a href="#">THE PARTY</a>&nbsp;&nbsp;
-			<a href="#">WHERE TO STAY</a>&nbsp;&nbsp;
-			<a href="#">RSVP</a>&nbsp;&nbsp;
-			<a href="#">SONG REQUESTS</a>&nbsp;&nbsp;
+			<a href="#">OUR STORY</a>
+			<a href="#">WEDDING PARTY</a>
+			<a href="#">THE DAY</a>
+			<a href="#">WHERE TO STAY</a>
+			<a href="#">RSVP</a>
+			<a href="#">SONG REQUESTS</a>
 		</div>
 		<div class="Strip Strip_01">
 			<img src="Files/Images/monogram_png-24.png" />
@@ -113,7 +113,7 @@
 			
 		</div>
 		<div class="Strip Strip_04">
-				<img src="Files/Images/theparty.png" />
+			<img src="Files/Images/banner_blank.png" />
 			<div class="PartyDetails">
 				<div class="Map">
 					<a href="https://maps.google.com/maps?q=Tralee+Wedding+Facility,+Mountainview+Road,+Caledon,+ON,+Canada&hl=en&sll=37.0625,-95.677068&sspn=42.581364,73.300781&oq=tralee+wedding+facility+ca&hq=Tralee+Wedding+Facility,&hnear=Mountainview+Rd,+Caledon,+Peel+Regional+Municipality,+Ontario,+Canada&t=m&z=12" target="_blank">
@@ -128,43 +128,43 @@
 						<a href="#">
 							MORE EVENT INFO
 						</a>
-					</div></br>
+					</div>
+					<div class="Clear"></div>
 					<div class="Button">
 						<a href="https://maps.google.com/maps?q=Tralee+Wedding+Facility,+Mountainview+Road,+Caledon,+ON,+Canada&hl=en&sll=37.0625,-95.677068&sspn=42.581364,73.300781&oq=tralee+wedding+facility+ca&hq=Tralee+Wedding+Facility,&hnear=Mountainview+Rd,+Caledon,+Peel+Regional+Municipality,+Ontario,+Canada&t=m&z=12" target="_blank">
 							DRIVING DIRECTIONS
 						</a>
 					</div>
-					
 				</div>
 			</div>
 		</div>
 		<div class="Strip Strip_05">
-				<img src="Files/Images/wheretostay.png" />
+			<img src="Files/Images/wheretostay.png" />
+		</div>
+		<div class="Strip Strip_06">
+			<img src="Files/Images/rsvp.png" />
 			<h3>
 				HOPE YOU CAN SHARE IN OUR SPECIAL DAY
 			</h3>
 			<h3>
 				<form name="ReplyCode" action="ReplyCode.php" method="post">
 					<input class="Input" type="text" name="replyCode">
+					REPLY CODE
 				</form>
-				REPLY CODE
 			</h3>
-				
 		</div>
-		<div class="Strip Strip_06">
-				<img src="Files/Images/rsvp.png" />
+		<div class="Strip Strip_07">
+			<img src="Files/Images/songrequests.png" />
 			<h3>
-				HELP THE D.J BY SUGGESTING YOUR FAVOURITE TUNES
+				HELP THE US BY SUGGESTING YOUR FAVOURITE TUNES
 			</h3>
 			<h3>
 				<form name="ReplyCode" action="ReplyCode.php" method="post">
 					<input class="Input" type="text" name="replyCode">
+					REPLY CODE
 				</form>
-				REPLY CODE
+				
 			</h3>
-		</div>
-		<div class="Strip Strip_07">
-				<img src="Files/Images/songrequests.png" />
 		</div>
 		
 	</body>

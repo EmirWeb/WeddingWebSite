@@ -1,15 +1,21 @@
 @CHARSET "UTF-8";
 
+body {
+	font-family: 'Open Sans Condensed', sans-serif;
+	text-align: center;
+}
+
 a {
 	text-decoration: none;
 }
 
 div.Menu {
+	font-weight: bold;
 	overflow: hidden;
 	height: 70px;
 	line-height: 70px;
 	background-color: #F5C1B7;
-	font-size: 17px;
+	font-size: 23px;
 	width: 100%;
 	position: fixed;
 	top: 0px;
@@ -17,23 +23,25 @@ div.Menu {
 	margin-top: 10px;
 	width: 100%;
 	height: 70px;
+	overflow: hidden;
 }
 
 div.Menu a {
+	padding: 0px 25px;
 	color: #E36D6E;
 }
 
 div.Menu a:hover {
 	color: #F66768;
-	font-weight: bold;
 }
 
 div.Monogram {
 	padding-top: 234px;
 }
 
-div.Banner_02 {
-	padding-top: 10px;
+div.Banner {
+	margin: 0px auto;
+	background-image: "../Files/Images/banner_blank.png"
 }
 
 div.Center {
@@ -52,57 +60,68 @@ div.PartyDetails div.Map {
 }
 
 h1 {
-	margin: 25px auto;
+	font-weight: bold;
+	margin: 0px auto;
 	max-width: 900px;
 	color: #fefbd7;
-	font-size: 20px;
-	line-height: 25px;
-	font-weight: normal;
+	font-size: 25px;
+	line-height: 33px;
+	text-align: left;
 }
 
 h2 {
-	margin: 25px auto;
+	margin: 0px auto;
 	max-width: 900px;
 	font-family: 'Clicker Script', cursive;
-	color: #f0394c;
-	line-height: 45px;
-	font-size: 40px;
+	color: #F16263;
+	line-height: 55px;
+	font-size: 50px;
 	font-weight: normal;
+	text-align: left;
 }
 
 h3 {
-	margin: 25px auto;
+	margin: 0px auto;
 	max-width: 900px;
-	color: #f0394c;
-	font-size: 20px;
+	color: #F16263;
+	font-size: 25px;
 	line-height: 25px;
-	font-weight: normal;
+	font-weight: bold;
 }
 
 h4 {
 	color: #000;
-	margin: 25px auto;
+	margin: 0px auto;
 	max-width: 900px;
 	font-size: 20px;
 	line-height: 25px;
-	font-weight: normal;
+	font-weight: bold;
 	max-width: 900px;
+	margin: 25px auto
 }
 
 div.PartyDetails div.Details {
-	float: right;
+	margin-left: 30px;
+	height: 48px;
+	line-height: 48px;
+	width: 325px;
+	float: left;
 }
 
 div.PartyDetails div.Details div.Button {
-	text-align: center;
-	line-height: 46px;
+	margin: 20px 0px;
+	padding-left: 10px;
+	text-align: left;
 	height: 46px;
 	background-color: #F16263;
-	line-height: 46px;
+	width: 260px;
 }
 
 div.PartyDetails div.Details div.Button a {
+	font-size: 20px;
+	line-height: 46px;
 	color: #F2A2A6;
+	font-weight: bold;
 }
 
 div.PartyDetails div.Details div.Button:hover {
