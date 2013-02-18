@@ -1,6 +1,7 @@
 @CHARSET "UTF-8";
 
 body {
+	font-family: 'Clicker Script', cursive;
 	position: relative;
 	background-color: #FFFFFF;
 	color: #787878;
@@ -9,6 +10,7 @@ body {
 	font-size: 20px;
 	font-family: Arial, Helvetica, sans-serif;
 	font-size: 20px;
+	text-align: center;
 }
 
 div {

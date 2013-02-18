@@ -12,9 +12,9 @@
 	<head>
 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 		<title>Emir & Laura</title>
-		<link href='http://fonts.googleapis.com/css?family=Miss+Fajardose' rel='stylesheet' type='text/css'>
-		<link rel="shortcut icon" href="favicon.ico" />
-<!-- 		<link href='http://fonts.googleapis.com/css?family=Imprima' rel='stylesheet' type='text/css'> -->
+		<link rel="shortcut icon" href="Files/Images/favicon.ico" />
+		<link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
+		<link href='http://fonts.googleapis.com/css?family=Clicker+Script' rel='stylesheet' type='text/css'>
 		<?php echo DomManager::getCSS(); ?>		
 
 	</head>
@@ -29,40 +29,33 @@
 			<a href="#">SONG REQUESTS</a>&nbsp;&nbsp;
 		</div>
 		<div class="Strip Strip_01">
-		
-			<div class="Monogram Center">
-				<img src="Files/Images/monogram.png" />
-			</div>
+			<img src="Files/Images/monogram_png-24.png" />
 		</div>
 		<div class="Strip Strip_02 ">
-			<div class="Banner_02  Center">
-				<img src="Files/Images/ourstory.png" />
-			</div>
+			<img src="Files/Images/ourstory.png" />
 			<div class="Tree  Center">
 				<img src="Files/Images/tree.png" />
 			</div>
 		</div>
 		<div class="Strip Strip_03">
-			<div class="Banner_03  Center">
 				<img src="Files/Images/weddingparty.png" />
-			</div>
 			
 			<div class="WeddingParty">
 				<div class="WeddingPartyRow">
 					<div class="WeddingPartyCell">
-						<div class="CellHover"></div>
+						<a href="#"><div class="CellHover"></div></a>
 						<img src="http://placekitten.com/100/100">
 					</div>
 					<div class="WeddingPartyCell">
-						<div class="CellHover"></div>
+						<a href="#"><div class="CellHover"></div></a>
 						<img src="http://placekitten.com/100/100">
 					</div>
 					<div class="WeddingPartyCell">
-						<div class="CellHover"></div>
+						<a href="#"><div class="CellHover"></div></a>
 						<img src="http://placekitten.com/100/100">
 					</div>
 					<div class="WeddingPartyCell">
-						<div class="CellHover"></div>
+						<a href="#"><div class="CellHover"></div></a>
 						<img src="http://placekitten.com/100/100">
 					</div>
 					<div class="Clear"></div>
@@ -70,11 +63,11 @@
 				<div class="WeddingPartyCenterRow">
 					<div class="WeddingPartyColumn">
 						<div class="WeddingPartyCell">
-							<div class="CellHover"></div>
+							<a href="#"><div class="CellHover"></div></a>
 							<img src="http://placekitten.com/100/100">
 						</div>
 						<div class="WeddingPartyCell">
-							<div class="CellHover"></div>
+							<a href="#"><div class="CellHover"></div></a>
 							<img src="http://placekitten.com/100/100">
 						</div>
 					</div>
@@ -85,11 +78,11 @@
 					
 					<div class="WeddingPartyColumn">
 						<div class="WeddingPartyCell">
-							<div class="CellHover"></div>
+							<a href="#"><div class="CellHover"></div></a>
 							<img src="http://placekitten.com/100/100">
 						</div>
 						<div class="WeddingPartyCell">
-							<div class="CellHover"></div>
+							<a href="#"><div class="CellHover"></div></a>
 							<img src="http://placekitten.com/100/100">
 						</div>
 					</div>
@@ -99,19 +92,19 @@
 				
 				<div class="WeddingPartyRow">
 					<div class="WeddingPartyCell">
-						<div class="CellHover"></div>
+						<a href="#"><div class="CellHover"></div></a>
 						<img src="http://placekitten.com/100/100">
 					</div>
 					<div class="WeddingPartyCell">
-						<div class="CellHover"></div>
+						<a href="#"><div class="CellHover"></div></a>
 						<img src="http://placekitten.com/100/100">
 					</div>
 					<div class="WeddingPartyCell">
-						<div class="CellHover"></div>
+						<a href="#"><div class="CellHover"></div></a>
 						<img src="http://placekitten.com/100/100">
 					</div>
 					<div class="WeddingPartyCell">
-						<div class="CellHover"></div>
+						<a href="#"><div class="CellHover"></div></a>
 						<img src="http://placekitten.com/100/100">
 					</div>
 					<div class="Clear"></div>
@@ -120,9 +113,7 @@
 			
 		</div>
 		<div class="Strip Strip_04">
-			<div class="Banner_04  Center">
 				<img src="Files/Images/theparty.png" />
-			</div>
 			<div class="PartyDetails">
 				<div class="Map">
 					<a href="https://maps.google.com/maps?q=Tralee+Wedding+Facility,+Mountainview+Road,+Caledon,+ON,+Canada&hl=en&sll=37.0625,-95.677068&sspn=42.581364,73.300781&oq=tralee+wedding+facility+ca&hq=Tralee+Wedding+Facility,&hnear=Mountainview+Rd,+Caledon,+Peel+Regional+Municipality,+Ontario,+Canada&t=m&z=12" target="_blank">
@@ -130,9 +121,9 @@
 					</a>
 				</div>
 				<div class="Details">
-					<span class="Cursive">Tralee Farms</span></br>
-					CEREMONY AT 2:45 PM</br>
-					DINNER & DANCING TO FOLLOW</br>
+					<h2>Tralee Farms</h2>
+					<h1>CEREMONY AT 2:45 PM</h1>
+					<h1>DINNER & DANCING TO FOLLOW</h1>
 					<div class="Button">
 						<a href="#">
 							MORE EVENT INFO
@@ -148,29 +139,32 @@
 			</div>
 		</div>
 		<div class="Strip Strip_05">
-			<div class="Banner_05  Center">
 				<img src="Files/Images/wheretostay.png" />
-			</div>
-			<span class="Title">
+			<h3>
 				HOPE YOU CAN SHARE IN OUR SPECIAL DAY
-			</span>
-			<div class="InputBox">
-				<div class="Input">
-				</div>
-				<span class="Text">
-					REPLY CODE
-				</span>
-			</div>
+			</h3>
+			<h3>
+				<form name="ReplyCode" action="ReplyCode.php" method="post">
+					<input class="Input" type="text" name="replyCode">
+				</form>
+				REPLY CODE
+			</h3>
+				
 		</div>
 		<div class="Strip Strip_06">
-			<div class="Banner_06  Center">
 				<img src="Files/Images/rsvp.png" />
-			</div>
+			<h3>
+				HELP THE D.J BY SUGGESTING YOUR FAVOURITE TUNES
+			</h3>
+			<h3>
+				<form name="ReplyCode" action="ReplyCode.php" method="post">
+					<input class="Input" type="text" name="replyCode">
+				</form>
+				REPLY CODE
+			</h3>
 		</div>
 		<div class="Strip Strip_07">
-			<div class="Banner_07  Center">
 				<img src="Files/Images/songrequests.png" />
-			</div>
 		</div>
 		
 	</body>

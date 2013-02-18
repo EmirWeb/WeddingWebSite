@@ -51,15 +51,46 @@ div.PartyDetails div.Map {
 	float: left;
 }
 
-div.PartyDetails div.Details {
-	float: right;
+h1 {
+	margin: 25px auto;
+	max-width: 900px;
 	color: #fefbd7;
 	font-size: 20px;
+	line-height: 25px;
+	font-weight: normal;
 }
 
-div.PartyDetails span.Cursive {
+h2 {
+	margin: 25px auto;
+	max-width: 900px;
+	font-family: 'Clicker Script', cursive;
 	color: #f0394c;
+	line-height: 45px;
 	font-size: 40px;
+	font-weight: normal;
+}
+
+h3 {
+	margin: 25px auto;
+	max-width: 900px;
+	color: #f0394c;
+	font-size: 20px;
+	line-height: 25px;
+	font-weight: normal;
+}
+
+h4 {
+	color: #000;
+	margin: 25px auto;
+	max-width: 900px;
+	font-size: 20px;
+	line-height: 25px;
+	font-weight: normal;
+	max-width: 900px;
+}
+
+div.PartyDetails div.Details {
+	float: right;
 }
 
 div.PartyDetails div.Details div.Button {
@@ -76,4 +107,11 @@ div.PartyDetails div.Details div.Button a {
 
 div.PartyDetails div.Details div.Button:hover {
 	cursor: pointer;
+}
+
+input.Input {
+	border: 1px solid #f0394c;
+	background: #f0394c;
+	color: #ffffff;
+	font-size: 1.1em;
 }
