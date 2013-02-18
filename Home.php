@@ -113,7 +113,8 @@
 			
 		</div>
 		<div class="Strip Strip_04">
-			<img src="Files/Images/banner_blank.png" />
+				<div class="Banner">The Day</div>
+				
 			<div class="PartyDetails">
 				<div class="Map">
 					<a href="https://maps.google.com/maps?q=Tralee+Wedding+Facility,+Mountainview+Road,+Caledon,+ON,+Canada&hl=en&sll=37.0625,-95.677068&sspn=42.581364,73.300781&oq=tralee+wedding+facility+ca&hq=Tralee+Wedding+Facility,&hnear=Mountainview+Rd,+Caledon,+Peel+Regional+Municipality,+Ontario,+Canada&t=m&z=12" target="_blank">

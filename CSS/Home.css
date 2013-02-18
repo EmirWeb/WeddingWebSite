@@ -40,8 +40,13 @@ div.Monogram {
 }
 
 div.Banner {
+	color: #fefbd7;
 	margin: 0px auto;
-	background-image: "../Files/Images/banner_blank.png"
+	width: 302px;
+	height: 84px;
+	font-size: 40px;
+	font-family: 'Clicker Script', cursive;
+	background-image: url('../Files/Images/banner_blank.png');
 }
 
 div.Center {
