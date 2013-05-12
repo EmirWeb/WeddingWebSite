@@ -6,7 +6,12 @@
 	DomManager::addCSS('CSS/WeddingParty.css');
 	DomManager::addCSS('CSS/WeddingPartyOval.css');
 	DomManager::addScript('Scripts/Utils/jquery-1.8.3.min.js');
+	DomManager::addScript('http://malsup.github.com/jquery.form.jsjq');
+	
 	DomManager::addScript('Scripts/Home.js');
+	
+	if (isset($_COOKIE["user"]))
+		$user = $_COOKIE["user"];
 ?>
 
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Strict//EN" "http://www.w3.org/TR/html4/strict.dtd">
@@ -18,10 +23,8 @@
 		<link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
 		<link href='http://fonts.googleapis.com/css?family=Clicker+Script' rel='stylesheet' type='text/css'>
 		<?php echo DomManager::getCSS(); ?>		
-
 	</head>
 	<body>
-		
 		<div class="Menu  Center">
 			<a href="#">OUR STORY</a>
 			<a href="#">WEDDING PARTY</a>
@@ -193,7 +196,8 @@ Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
 				HELP THE US BY SUGGESTING YOUR FAVOURITE TUNES
 			</h3>
 			<h3>
-				<form name="ReplyCode" action="ReplyCode.php" method="post">
+			
+				<form name="ReplyCode" action="login.php" method="post">
 					<input class="Input" type="text" name="replyCode">
 					REPLY CODE
 				</form>
