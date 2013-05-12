@@ -4,7 +4,9 @@
 	DomManager::addCSS('CSS/Home.css');
 	DomManager::addCSS('CSS/Strips.css');
 	DomManager::addCSS('CSS/WeddingParty.css');
+	DomManager::addCSS('CSS/WeddingPartyOval.css');
 	DomManager::addScript('Scripts/Utils/jquery-1.8.3.min.js');
+	DomManager::addScript('Scripts/Home.js');
 ?>
 
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Strict//EN" "http://www.w3.org/TR/html4/strict.dtd">
@@ -29,91 +31,122 @@
 			<a href="#">SONG REQUESTS</a>
 		</div>
 		<div class="Strip Strip_01">
-			<img src="Files/Images/monogram_png-24.png" />
+			<img class="BannerImage" src="Files/Images/monogram_png-24.png" />
 		</div>
 		<div class="Strip Strip_02 ">
-			<img src="Files/Images/ourstory.png" />
-			<div class="Tree  Center">
-				<img src="Files/Images/tree.png" />
+			<img class="BannerImage" src="Files/Images/ourstory.png" />
+			<div class="Slider">
+				<a href="javascript:void(0)" class="Chevron" id="Previous">&lt;</a>
+				<div class="Center Content">
+					<div class="Slide" id="Slide0">
+						<span>
+							<img class="Picture" src="http://placekitten.com/150/150">					
+Laura and Emir met in May of 2007 while working together at Alice Fazooli's.  Although they were just friends, Laura remembers the first time she saw Emir, weaving through the booths with his head cocked to the side and arms full of dishes. He was a hard worker with a lot of integrity.  Emir remembers noticing Laura’s red lips and long hair. They worked side by side, on and off, for years without realizing they were meant to be together.						
+						</span>
+					</div>
+					<div class="Slide Hidden" id="Slide1">
+						<span>
+							<img class="Picture" src="http://placekitten.com/201/200">					
+It was years later that they reconnected, thanks to the wonderful world of facebook!						
+						</span>
+					</div>
+					<div class="Slide Hidden" id="Slide2">
+						<span>
+							<img class="Picture" src="http://placekitten.com/201/200">					
+They kept in touch this way for over a year until finally reconnecting in person over lunch at Hot House!
+						</span>
+					</div>
+					
+					<div class="Slide Hidden" id="Slide3">
+						<span>
+							<img class="Picture" src="http://placekitten.com/201/200">					
+Laura remembered that Emir loves heavy metal. Excited about spreading the good word about the amazing Mercy Now, she invited him to a show... as friends.  Emir didn’t realize that until he arrived and noticed she also invited her siblings and a few other friends.  						
+						</span>
+					</div>
+					<div class="Slide Hidden" id="Slide4">
+						<span>
+							<img class="Picture" src="http://placekitten.com/201/200">					
+A week later Emir thought for sure it was a date when she invited him to see Hot Wax at the Dakota Tavern, until he saw Katie and Adam and more than a few friends were there again...  Even though Laura was oblivious to any of Emir’s true intentions, this did not stop him from telling her “I think you are beautiful”.  
+						</span>
+					</div>
+					<div class="Slide Hidden" id="Slide5">
+						<span>
+							<img class="Picture" src="http://placekitten.com/201/200">					
+But it wasn’t until one night in particular...  Emir took Laura to the Tim Burton Exhibit at TIFF followed by dinner at Hey Lucy.  Everything fell into place and they have been inseparable since.						
+						</span>
+					</div>
+					<div class="Slide Hidden" id="Slide6">
+						<span>
+							<img class="Picture" src="http://placekitten.com/201/200">					
+Emir had one last ‘test’ to pass.  After taking her Personality Assessment, she was at first surprised about what she read!  They were more similar than they thought, both high in Extraversion and Dominance and low in Conformity and Patience!  But over the following months, as they got to know each other better, they saw each other’s true colours and fell madly in love.
+						</span>
+					</div>
+					
+				</div>
+				<a href="javascript:void(0)" class="Chevron" id="Next">&gt;</a>
 			</div>
+		
 		</div>
 		<div class="Strip Strip_03">
-				<img src="Files/Images/weddingparty.png" />
+				<img class="BannerImage" src="Files/Images/weddingparty.png" />
 			
 			<div class="WeddingParty">
-				<div class="WeddingPartyRow">
-					<div class="WeddingPartyCell">
-						<a href="#"><div class="CellHover"></div></a>
-						<img src="http://placekitten.com/100/100">
-					</div>
-					<div class="WeddingPartyCell">
-						<a href="#"><div class="CellHover"></div></a>
-						<img src="http://placekitten.com/100/100">
-					</div>
-					<div class="WeddingPartyCell">
-						<a href="#"><div class="CellHover"></div></a>
-						<img src="http://placekitten.com/100/100">
-					</div>
-					<div class="WeddingPartyCell">
-						<a href="#"><div class="CellHover"></div></a>
-						<img src="http://placekitten.com/100/100">
-					</div>
-					<div class="Clear"></div>
+				<div class="MainWeddingPartyCell WeddingPartyCell" id="WeddingPartyCell0">
+					<img src="http://placekitten.com/250/250">
+					<div class="CellHover"></div>
 				</div>
-				<div class="WeddingPartyCenterRow">
-					<div class="WeddingPartyColumn">
-						<div class="WeddingPartyCell">
-							<a href="#"><div class="CellHover"></div></a>
-							<img src="http://placekitten.com/100/100">
-						</div>
-						<div class="WeddingPartyCell">
-							<a href="#"><div class="CellHover"></div></a>
-							<img src="http://placekitten.com/100/100">
-						</div>
-					</div>
-					
-					<div class="WeddingPartyFeature">
-						<img src="http://placekitten.com/204/204">
-					</div>
-					
-					<div class="WeddingPartyColumn">
-						<div class="WeddingPartyCell">
-							<a href="#"><div class="CellHover"></div></a>
-							<img src="http://placekitten.com/100/100">
-						</div>
-						<div class="WeddingPartyCell">
-							<a href="#"><div class="CellHover"></div></a>
-							<img src="http://placekitten.com/100/100">
-						</div>
-					</div>
-					<div class="Clear"></div>
+				<div class="WeddingPartyCell" id="WeddingPartyCell1">
+					<img src="http://placekitten.com/150/150">
+					<div class="CellHover"></div>
 				</div>
-				
-				
-				<div class="WeddingPartyRow">
-					<div class="WeddingPartyCell">
-						<a href="#"><div class="CellHover"></div></a>
-						<img src="http://placekitten.com/100/100">
-					</div>
-					<div class="WeddingPartyCell">
-						<a href="#"><div class="CellHover"></div></a>
-						<img src="http://placekitten.com/100/100">
-					</div>
-					<div class="WeddingPartyCell">
-						<a href="#"><div class="CellHover"></div></a>
-						<img src="http://placekitten.com/100/100">
-					</div>
-					<div class="WeddingPartyCell">
-						<a href="#"><div class="CellHover"></div></a>
-						<img src="http://placekitten.com/100/100">
-					</div>
-					<div class="Clear"></div>
+				<div class="WeddingPartyCell" id="WeddingPartyCell2">
+					<img src="http://placekitten.com/150/150">
+					<div class="CellHover"></div>
+				</div>
+				<div class="WeddingPartyCell" id="WeddingPartyCell3">
+					<img src="http://placekitten.com/150/150">
+					<div class="CellHover"></div>
+				</div>
+				<div class="WeddingPartyCell" id="WeddingPartyCell4">
+					<img src="http://placekitten.com/150/150">
+					<div class="CellHover"></div>
+				</div>
+				<div class="WeddingPartyCell" id="WeddingPartyCell5">
+					<img src="http://placekitten.com/150/150">
+					<div class="CellHover"></div>
+				</div>
+				<div class="MainWeddingPartyCell WeddingPartyCell" id="WeddingPartyCell6">
+					<img src="http://placekitten.com/250/250">
+					<div class="CellHover"></div>
+				</div>
+				<div class="WeddingPartyCell" id="WeddingPartyCell7">
+					<img src="http://placekitten.com/150/150">
+					<div class="CellHover"></div>
+				</div>
+				<div class="WeddingPartyCell" id="WeddingPartyCell8">
+					<img src="http://placekitten.com/150/150">
+					<div class="CellHover"></div>
+				</div>
+				<div class="WeddingPartyCell" id="WeddingPartyCell9">
+					<img src="http://placekitten.com/150/150">
+					<div class="CellHover"></div>
+				</div>
+				<div class="WeddingPartyCell" id="WeddingPartyCell10">
+					<img src="http://placekitten.com/150/150">
+					<div class="CellHover"></div>
+				</div>
+				<div class="WeddingPartyCell" id="WeddingPartyCell11">
+					<img src="http://placekitten.com/150/150">
+					<div class="CellHover"></div>
+				</div>
+				<div class="WeddingPartyContent" id="WeddingPartyContent">
+Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
 				</div>
 			</div>
 			
 		</div>
 		<div class="Strip Strip_04">
-				<div class="Banner">The Day</div>
+			<img class="BannerImage" src="Files/Images/theday.png" />
 				
 			<div class="PartyDetails">
 				<div class="Map">
@@ -140,10 +173,10 @@
 			</div>
 		</div>
 		<div class="Strip Strip_05">
-			<img src="Files/Images/wheretostay.png" />
+			<img class="BannerImage" src="Files/Images/wheretostay.png" />
 		</div>
 		<div class="Strip Strip_06">
-			<img src="Files/Images/rsvp.png" />
+			<img class="BannerImage" src="Files/Images/rsvp.png" />
 			<h3>
 				HOPE YOU CAN SHARE IN OUR SPECIAL DAY
 			</h3>
@@ -155,7 +188,7 @@
 			</h3>
 		</div>
 		<div class="Strip Strip_07">
-			<img src="Files/Images/songrequests.png" />
+			<img class="BannerImage" src="Files/Images/songrequests.png" />
 			<h3>
 				HELP THE US BY SUGGESTING YOUR FAVOURITE TUNES
 			</h3>

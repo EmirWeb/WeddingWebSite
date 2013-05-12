@@ -1,57 +1,63 @@
 @CHARSET "UTF-8";
 
 div.WeddingParty {
-	width: 416px;
+	position: relative;
+	width: 1000px;
 	margin: 0px auto;
 }
 
-div.WeddingPartyFeature {
-	float: left;
-	width: 204px;
-	height: 204px;
-	padding: 2px;
-}
-
-div.WeddingPartyColumn {
-	float: left;
-}
-
-div.WeddingPartyColumn div.WeddingPartyCell {
-	position: relative;
-}
-
-div.WeddingPartyRow div.WeddingPartyCell {
-	position: relative;
-	float: left;
-}
-
 div.WeddingPartyCell img {
+	position: absolute;
 	top: 0px;
 	left: 0px;
-}
-
-div.WeddingPartyCell div.CellHover:Hover {
-	background-color: #F5BEB3;
+	-webkit-border-radius: 75px;
+	-moz-border-radius: 75px;
 }
 
 div.WeddingPartyCell div.CellHover {
 	position: absolute;
 	top: 0px;
 	left: 0px;
-	height: 100px;
-	width: 100px;
+	height: 150px;
+	width: 150px;
 	opacity: 0.4;
-	filter: alpha(opacity = 40);
-	margin: 2px;
+	filter: alpha(opacity =  40);
+	-webkit-border-radius: 75px;
+	-moz-border-radius: 75px;
+}
+
+div.WeddingPartyCell div.CellHover:Hover {
+	background-color: #F5BEB3;
+	cursor: pointer;
 }
 
 div.WeddingPartyCell {
-	height: 100px;
-	width: 100px;
+	position: absolute;
+	height: 150px;
+	width: 150px;
 	padding: 2px;
 }
 
-div.TimeLine a:hover {
-	text-decoration: none;
-	cursor: pointer;
+div.WeddingPartyContent {
+	position: absolute;
+	top: 250px;
+	left: 200px;
+	width: 600px;
+}
+
+div.MainWeddingPartyCell {
+	height: 250px;
+	width: 250px;
+}
+
+div.MainWeddingPartyCell img {
+	-webkit-border-radius: 125px;
+	-moz-border-radius: 125px;
+}
+
+div.MainWeddingPartyCell div.CellHover {
+	height: 250px;
+	width: 250px;
+	-webkit-border-radius: 125px;
+	-moz-border-radius: 125px;
 }

@@ -1,56 +1,63 @@
-var pictureDirectory = "Files/Images/";
+var PICTURE_DIRECTORY = "Files/Images/";
+var HIDDEN_CLASS = 'Hidden';
+
+/**
+ * nextBannerFrame.addClass('Hidden').animate({opacity : 1.0}, animationTimeOut);
+ * currentBannerFrame.animate({opacity : 0}, animationTimeOut).removeClass('Hidden');
+ */
+
+var currentSlideId = 0;
+var slideCount = 7;
+
+var getSlideId = function(id){
+	return "#Slide" + id;
+};
+
+var getSlide = function(id){
+	return $(getSlideId(id));
+};
+
+var showSlide = function(id){
+	showElement(getSlide(currentSlideId));
+};
+
+var hideSlide = function(id){
+	hideElement(getSlide(currentSlideId));
+};
+
+var showElement = function(element){
+	element.removeClass(HIDDEN_CLASS);
+};
+
+var hideElement = function(element){
+	element.addClass(HIDDEN_CLASS);
+};
+
+
+
+var next = function() {
+	hideSlide(currentSlideId);
+	
+	currentSlideId++;
+	if (currentSlideId >= slideCount)
+		currentSlideId = 0;
+	
+	showSlide(currentSlideId);
+};
+
+var previous = function() {
+	hideSlide(currentSlideId);
+	
+	currentSlideId--;
+	if (currentSlideId < 0)
+		currentSlideId = slideCount -1;
+	
+	showSlide(currentSlideId);
+};
+
 $(document).ready(function() {
-	var frameCount = 7;
-	var loadedFrames = 0;
-	var changeTimeOut = 4000;
-	var currentFrameIndex = 0;
-	var animationTimeOut = 2000;
-	var bannerAnimator = new Array();
+	
+	$('#Next').click(next);
+	$('#Previous').click(previous);
 
-	var animate = function() {
-		if (currentFrameIndex >= frameCount - 1){
-			currentFrameIndex = 0;
-			while (currentFrameIndex < frameCount - 1){
-				bannerAnimator[currentFrameIndex].remove();
-				currentFrameIndex++;
-			}
-			bannerAnimator = null;
-		}else {
-			
-			var currentBannerFrame = bannerAnimator[currentFrameIndex];
-			var nextFrameIndex = currentFrameIndex + 1;
-			var nextBannerFrame = bannerAnimator[nextFrameIndex];
-			
-			if (currentFrameIndex == frameCount)
-				animationTimeOut = animationTimeOut * 4;
-			
-			nextBannerFrame.addClass('show').animate({opacity : 1.0}, animationTimeOut);
-			currentBannerFrame.animate({opacity : 0}, animationTimeOut).removeClass('show');
-			currentFrameIndex = nextFrameIndex;
-			if (currentFrameIndex < frameCount)
-				setTimeout(animate, changeTimeOut);
-		}
-	};
-
-	var firstBannerFrame = $('#BannerAnimator0');
-	firstBannerFrame.load(function(){
-		while (currentFrameIndex < frameCount) {
-			var bannerFrame = $('#BannerAnimator' + currentFrameIndex);
-
-			bannerAnimator.push(bannerFrame);
-			if (currentFrameIndex > 0){
-				bannerFrame.animate({opacity : 0}, 0).removeClass('show');
-				bannerFrame.attr('src',pictureDirectory + 'BannerAnimationFrame'+currentFrameIndex+'.JPG')
-				bannerFrame.load(function() {
-					loadedFrames++;
-					if (loadedFrames == frameCount) 
-						setTimeout(animate, changeTimeOut);
-				});
-			} else 
-				loadedFrames++;
-			currentFrameIndex++;
-		}
-
-		currentFrameIndex = 0;
-	});
 });
