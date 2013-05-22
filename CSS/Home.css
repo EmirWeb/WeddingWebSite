@@ -49,38 +49,6 @@ div.Banner {
 	background-image: url('../Files/Images/banner_blank.png');
 }
 
-div.Slider {
-	width: 700px;
-	margin: 0px auto;
-}
-
-div.Slider img.Picture {
-	float: left;
-	margin-right: 10px;
-}
-
-div.Slider div.Slide {
-	margin: 10px;
-}
-
-div.Slider div.Hidden {
-	display: none;
-}
-
-div.Slider a.Chevron {
-	font-size: 40px;
-	font-weight: bold;
-	text-align: center;
-	width: 50px;
-	float: left;
-	text-align: center;
-}
-
-div.Slider div.Content {
-	width: 600px;
-	float: left;
-}
-
 div.Center {
 	text-align: center;
 }
@@ -177,12 +145,6 @@ div.Tree {
 }
 
 div.Tree div.Background {
-	position: absolute;
-	left: 0px;
-	top: 0px;
-}
-
-div.Tree div.Slider {
 	position: absolute;
 	left: 0px;
 	top: 0px;

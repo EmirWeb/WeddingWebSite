@@ -1,63 +1,39 @@
-var PICTURE_DIRECTORY = "Files/Images/";
-var HIDDEN_CLASS = 'Hidden';
+var replyCodeUrl = "NetworkCalls/ReplyCode.php";
 
-/**
- * nextBannerFrame.addClass('Hidden').animate({opacity : 1.0}, animationTimeOut);
- * currentBannerFrame.animate({opacity : 0}, animationTimeOut).removeClass('Hidden');
- */
-
-var currentSlideId = 0;
-var slideCount = 7;
-
-var getSlideId = function(id){
-	return "#Slide" + id;
+var success = function (response, textStatus){
+	$('h3.ReplyCodeForm').remove();
+	$('div.Strip_06').append(response.namesView);
+	$('div.Strip_07').append(response.songsView);
 };
 
-var getSlide = function(id){
-	return $(getSlideId(id));
-};
-
-var showSlide = function(id){
-	showElement(getSlide(currentSlideId));
-};
-
-var hideSlide = function(id){
-	hideElement(getSlide(currentSlideId));
-};
-
-var showElement = function(element){
-	element.removeClass(HIDDEN_CLASS);
-};
-
-var hideElement = function(element){
-	element.addClass(HIDDEN_CLASS);
-};
-
-
-
-var next = function() {
-	hideSlide(currentSlideId);
-	
-	currentSlideId++;
-	if (currentSlideId >= slideCount)
-		currentSlideId = 0;
-	
-	showSlide(currentSlideId);
-};
-
-var previous = function() {
-	hideSlide(currentSlideId);
-	
-	currentSlideId--;
-	if (currentSlideId < 0)
-		currentSlideId = slideCount -1;
-	
-	showSlide(currentSlideId);
+var failure =  function (jqXHR, textStatus, errorThrown){
+	var error = $.parseJSON(jqXHR.responseText);
+	console.log(error);
+	alert(error.error.message);
 };
 
 $(document).ready(function() {
+	var slider = new Slider('#Next', '#Previous', '#Slide');
+	$('#ReplyCodeRSVP').submit(function (){
+		$.ajax({
+			type: "POST",
+			data:{ replyCode : $('#ReplyCodeRSVP input').val()},
+			url: replyCodeUrl,
+	        success : success,
+			error : failure
+	    });	
+	    return false;
+	});
 	
-	$('#Next').click(next);
-	$('#Previous').click(previous);
-
+	$('#ReplyCodeSongs').submit(function (){
+		$.ajax({
+			type: "POST",
+			data:{ replyCode: $('#ReplyCodeSongs input').val()},
+			url: replyCodeUrl,
+			success : success,
+			error : failure
+	    });	
+	    return false;
+	});
+	
 });

@@ -1,4 +1,5 @@
 <?php
+
 class DomManager {
 
 	private static $cssKey = 'CSS';
@@ -57,11 +58,14 @@ class DomManager {
 		return $css;
 	}
 
+	function getScript($value){
+		return  '<script type="text/javascript" src="' . $value . '"></script> ' . "\n";
+	}
 
 	function getScripts(){
 		$script = "";
 		foreach (self::getValuesFromDom(self::$scriptKey) as $value){
-			$script .= '<script type="text/javascript" src="' . $value . '"></script> ' . "\n";
+			$script .= self::getScript($value);
 		}
 
 		return $script;
