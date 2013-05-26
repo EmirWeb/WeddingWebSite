@@ -4,37 +4,51 @@ class Rsvp {
 	public static $RSVP_TABLE_CODE_COLUMN_NAME = "code";
 	public static $RSVP_TABLE_SUBMITTED_COLUMN_NAME = "submitted";
 	public static $RSVP_TABLE_MESSAGE_COLUMN_NAME = "message";
-	
-	public static $RSVP_TABLE_SUBMITTED_JSON_KEY = "submitted";
-	public static $RSVP_TABLE_MESSAGE_JSON_KEY = "message";
+
+	public static $RSVP_RSVPS_JSON_KEY = "rsvps";
+	public static $RSVP_SUBMITTED_JSON_KEY = "submitted";
+	public static $RSVP_MESSAGE_JSON_KEY = "message";
 
 	public static function getQuery($replyCode) {
 		return "SELECT * FROM " . self::$RSVP_TABLE_NAME . " where " . self::$RSVP_TABLE_CODE_COLUMN_NAME . "='$replyCode';";
 	}
-	
+
+	public static function getInsertQuery($replyCode, $submitted, $message){
+		if (!isset($message) || empty($message))
+			$messageInput = "NULL";
+		else
+			$messageInput = "'$message'";
+		return 
+			" INSERT INTO " . self::$RSVP_TABLE_NAME . " (" . self::$RSVP_TABLE_CODE_COLUMN_NAME . ", " . self::$RSVP_TABLE_SUBMITTED_COLUMN_NAME . ", " . self::$RSVP_TABLE_MESSAGE_COLUMN_NAME . ") VALUES ( '$replyCode', '$submitted', $messageInput)" .
+			" ON DUPLICATE KEY UPDATE " . self::$RSVP_TABLE_SUBMITTED_COLUMN_NAME . "='$submitted', " . self::$RSVP_TABLE_MESSAGE_COLUMN_NAME . "=$messageInput;" 
+			;
+	}
+
 	public static function getRsvpData($queryResult){
 		if (empty($queryResult)){
 			if (!SessionManager::isLoggedIn())
 				return null;
-			$queryResult = MySql::rawQuery(self::getQuery(SessionManager::getReplyCode()));
+			$replyCode = SessionManager::getReplyCode();
+			$query = self::getQuery($replyCode);
+			$queryResult = MySql::rawQuery($query);
 			if (empty($queryResult))
 				return null;
 		}
-	
+		
 		if($rsvpData = $queryResult->fetch_assoc()){
 			$rsvp = array();
-			$rsvp[self::$RSVP_TABLE_SUBMITTED_JSON_KEY] = $rsvpData[self::$RSVP_TABLE_SUBMITTED_COLUMN_NAME] == 0;
-			$rsvp[self::$RSVP_TABLE_MESSAGE_JSON_KEY]= $rsvpData[self::$RSVP_TABLE_MESSAGE_COLUMN_NAME];
+			$rsvp[self::$RSVP_SUBMITTED_JSON_KEY] = $rsvpData[self::$RSVP_TABLE_SUBMITTED_COLUMN_NAME] == 1;
+			$rsvp[self::$RSVP_MESSAGE_JSON_KEY]= $rsvpData[self::$RSVP_TABLE_MESSAGE_COLUMN_NAME];
 			return $rsvp;
 		}
-		
+
 		return null;
 	}
-	
+
 	public static function hasSubmitted($rsvp){
 		if (!isset($rsvp))
 			$rsvp = self::getRsvpData(null);
-		return isset($rsvp) && isset($rsvp[self::$RSVP_TABLE_SUBMITTED_JSON_KEY]) && $rsvp[self::$RSVP_TABLE_SUBMITTED_JSON_KEY];
+		return isset($rsvp) && isset($rsvp[self::$RSVP_SUBMITTED_JSON_KEY]) && $rsvp[self::$RSVP_SUBMITTED_JSON_KEY];
 	}
 }
 ?>

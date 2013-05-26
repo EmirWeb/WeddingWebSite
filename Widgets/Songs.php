@@ -23,7 +23,7 @@ class Songs {
 	}
 
 	public static function getInsertQuery($id, $replyCode, $artist, $song){
-		return "INSERT INTO request (" . self::$REQUEST_TABLE_ID_COLUMN_NAME . ", " . self::$REQUEST_TABLE_CODE_COLUMN_NAME . ", " . self::$REQUEST_TABLE_SONG_COLUMN_NAME . ", " . self::$REQUEST_TABLE_ARTIST_COLUMN_NAME . ") VALUES ($id, '$replyCode', '$song', '$artist');";
+		return "INSERT INTO " . self::$REQUEST_TABLE_NAME . " (" . self::$REQUEST_TABLE_ID_COLUMN_NAME . ", " . self::$REQUEST_TABLE_CODE_COLUMN_NAME . ", " . self::$REQUEST_TABLE_SONG_COLUMN_NAME . ", " . self::$REQUEST_TABLE_ARTIST_COLUMN_NAME . ") VALUES ($id, '$replyCode', '$song', '$artist');";
 	}
 
 	public static function getSongsData($queryResult) {
@@ -79,9 +79,10 @@ class Songs {
 		foreach ($songs as $song)
 			$html .= self::getSong($song[self::$RESPONSE_ID_JSON_KEY], $song[self::$RESPONSE_ARTIST_JSON_KEY], $song[self::$RESPONSE_SONG_JSON_KEY], $song[self::$RESPONSE_ID_JSON_KEY] != $firstId);
 		$html .= "</div>\n";
-		$javascript = DomManager::getScript('Scripts/Widgets/Songs.js');
-		if ($includeJavascript)
+		if ($includeJavascript){
+			$javascript = DomManager::getScript('Scripts/Widgets/Songs.js');
 			$html .= $javascript;
+		}
 		return $html;
 	}
 

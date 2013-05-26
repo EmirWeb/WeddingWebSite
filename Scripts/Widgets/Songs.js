@@ -9,13 +9,13 @@ var getSelectedId = function() {
 	return $("#UserSelector").val();
 };
 
-var addSongFailure =  function (jqXHR, textStatus, errorThrown){
+var addSongFailure = function(jqXHR, textStatus, errorThrown) {
 	var error = $.parseJSON(jqXHR.responseText);
 	console.log(error);
 	alert(error.error.message);
 };
 
-var addSongSuccess = function (response, textStatus){
+var addSongSuccess = function(response, textStatus) {
 	$('div.Songs').append(response.songHtml);
 };
 

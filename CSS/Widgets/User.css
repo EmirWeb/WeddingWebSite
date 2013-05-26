@@ -39,3 +39,6 @@ div.Header div {
 	float: left;
 }
 
+div.UserForm {
+	min-height: 100px;
+}

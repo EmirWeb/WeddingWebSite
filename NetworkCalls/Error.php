@@ -11,7 +11,8 @@ class Error {
 		1 => "Could not find a matching registration code. Please try again. If you need further assistance, please contact Laura or Emir.",
 		2 => "Duplicate code, please contact Emir or Laura.",
 		3 => "Could not reach Database, please contact Emir or Laura.",
-		4 => "User is not logged in."
+		4 => "User is not logged in.",
+		5 => "Please fill in all fields for guests."
 	);
 
 	public function getJsonError($errorCode){

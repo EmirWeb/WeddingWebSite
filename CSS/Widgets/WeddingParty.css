@@ -38,11 +38,13 @@ div.WeddingPartyCell {
 	padding: 2px;
 }
 
-div.WeddingPartyContent {
+div.WeddingPartyContent span{
 	position: absolute;
-	top: 250px;
+	top: 225px;
 	left: 200px;
 	width: 600px;
+	height: 200px;
+	overflow: auto;
 }
 
 div.MainWeddingPartyCell {

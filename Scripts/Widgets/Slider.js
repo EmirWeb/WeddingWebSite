@@ -1,7 +1,7 @@
 function Slider(nextButtonCssIdentifier, previousButtonCssIdentifier, slideCssIdentifier) {
 	var HIDDEN_CLASS = 'Hidden';
 	var currentSlideId = 0;
-	var slideCount = 7;
+	var slideCount = 26;
 	var nextButton = $(nextButtonCssIdentifier);
 	var previousButton = $(previousButtonCssIdentifier);
 	var slideCssIdentifier = slideCssIdentifier;
@@ -14,7 +14,7 @@ function Slider(nextButtonCssIdentifier, previousButtonCssIdentifier, slideCssId
 	var getSlide = function(id) {
 		return $(getSlideId(id));
 	};
-
+	
 	var showSlide = function(id) {
 		showElement(getSlide(currentSlideId));
 	};
@@ -50,7 +50,7 @@ function Slider(nextButtonCssIdentifier, previousButtonCssIdentifier, slideCssId
 
 		showSlide(currentSlideId);
 	};
-	
+
 	(function() {
 		nextButton.click(next);
 		previousButton.click(previous);

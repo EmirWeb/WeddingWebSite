@@ -45,6 +45,29 @@ class MySQL {
 			
 	}
 	
+	public function insertQueries($rawQueries){
+		$database = self::getDatabase();
+		if ($database == "")
+			return null;
+	
+		$ids = array();
+		$results = array();
+		foreach ($rawQueries as $rawQuery){
+			$results[] = $database->query($rawQuery);
+			$id = $database->insert_id;
+			$ids[] = $id;
+		}
+		
+		
+		self::$database->close();
+		self::$database = "";
+		if (empty($results))
+			return null;
+	
+		return $ids;
+			
+	}
+	
 	public function rawQueries($rawQueries){
 		$database = self::getDatabase();
 		if ($database == "")

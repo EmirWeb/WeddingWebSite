@@ -13,9 +13,10 @@
 	DomManager::addCSS('CSS/Widgets/WeddingPartyOval.css');
 	DomManager::addScript('//ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js');
 	DomManager::addScript('Scripts/Widgets/Slider.js');
+	DomManager::addScript('Scripts/Widgets/WeddingParty.js');
 	DomManager::addScript('Scripts/Home.js');
 	
-// 	SessionManager::clearSession();
+	SessionManager::clearSession();
 ?>
 
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Strict//EN" "http://www.w3.org/TR/html4/strict.dtd">

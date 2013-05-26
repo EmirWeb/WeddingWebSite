@@ -22,22 +22,51 @@ class User {
 		return "SELECT * FROM " . self::$USER_TABLE_NAME . " where " . self::$USER_TABLE_CODE_COLUMN_NAME . "='$replyCode';";
 	}
 	
-	public static function getUserData($queryResult){
-		if (empty($queryResult)){
+	public static function getInsertQuery($id, $isComing, $foodRestrictions){
+		
+		if ($isComing == 'true')
+			$isComingBoolean = "1";
+		else if ($isComing == 'false' ) 
+			$isComingBoolean = "0";
+		else 
+			$isComingBoolean = "NULL";
+		
+		if (empty($foodRestrictions))
+			$foodRestrictionValue = "NULL";
+		else
+			$foodRestrictionValue = "'$foodRestrictions'";
+		
+		return "UPDATE " . self::$USER_TABLE_NAME . " SET " . self::$USER_TABLE_IS_COMING_COLUMN_NAME . "=$isComingBoolean, " 
+				. self::$USER_FOOD_RESTRICTIONS_JSON_KEY . "=$foodRestrictionValue WHERE " . self::$USER_TABLE_ID_COLUMN_NAME . "=$id;";
+				
+	}
+	
+	public static function getUserData($userResult, $rsvpResult = null){
+		if (empty($userResult) || empty($rsvpResult)){
 			if (!SessionManager::isLoggedIn())
 				return null;
 			$replyCode = SessionManager::getReplyCode();
+			
 			$queries = array ();
-			$queries[] = self::getQuery($replyCode);
-			$queries[] = Rsvp::getQuery($replyCode);
+			if (empty($userResult))
+				$queries[] = self::getQuery($replyCode);
+			if (empty($rsvpResult))
+				$queries[] = Rsvp::getQuery($replyCode);
 			
 			$queryResults = MySql::rawQueries($queries);
-			var_dump($replyCode);
-			if (empty($queryResults) || empty($queryResults[0]))
+			if (empty($queryResults))
 				return null;
+			
+			if (empty($userResult))
+				$userResult = $queryResults[0];
+			
+			if (empty($rsvpResult))
+				$rsvpResult = $queryResults[1];
+			
 		}
+		
 		$users = array();
-		while ($userData = $queryResults[0]->fetch_assoc()){
+		while ($userData = $userResult->fetch_assoc()){
 			$user = array();
 			$user[self::$USER_NAME_JSON_KEY] = $userData[self::$USER_TABLE_NAME_COLUMN_NAME];
 			$user[self::$USER_IS_COMING_JSON_KEY] = $userData[self::$USER_TABLE_IS_COMING_COLUMN_NAME] == 1;
@@ -45,32 +74,36 @@ class User {
 			$users[$userData[self::$USER_TABLE_ID_COLUMN_NAME]] = $user;
 		}
 		
-		$rsvp = Rsvp::getRsvpData($queryResults[1]);
+		$rsvp = Rsvp::getRsvpData($rsvpResult);
 		$response[self::$USER_RSVP_JSON_KEY] = $rsvp;
 		$response[self::$USER_USERS_JSON_KEY] = $users;
 		
 		return $response;
 	}
 	
-	public static function getUsers($userData) {
+	public static function getUsers($userData, $includeJavascript = true) {
 		if (empty($userData)){
-			$userData = self::getUserData(null);
+			$userData = self::getUserData(null, null);
 			if (empty($userData))
 				return null;
 		}
 		$users = $userData[self::$USER_USERS_JSON_KEY];
-		
 		$rsvp = $userData[self::$USER_RSVP_JSON_KEY];
 		$hasSubmitted = Rsvp::hasSubmitted($rsvp);
 	
 		$html  = "<div class='Users'>";
 		if ($hasSubmitted)
-			$html .= self::getRsvpDetailsHtml($users);
+			$html .= self::getRsvpDetailsHtml($userData);
 		else
 			$html .= self::getNoRsvpHtml();
-		$html .= self::getRsvpFormHtml($users, $hasSubmitted);
+		$html .= self::getRsvpFormHtml($userData, $hasSubmitted);
 		$html .= "</div>";
-		
+
+		if ($includeJavascript){
+			$javascript = DomManager::getScript('Scripts/Widgets/User.js');
+			$html .= $javascript;
+		}
+			
 		return $html;
 	}
 	
@@ -80,7 +113,9 @@ class User {
 			";
 	}
 	
-	public static function getRsvpDetailsHtml($users){
+	public static function getRsvpDetailsHtml($userData){
+		$users = $userData[self::$USER_USERS_JSON_KEY];
+		$rsvp = $userData[self::$USER_RSVP_JSON_KEY];
 		$html = "
 			<div class='RsvpDetails'>
 			";
@@ -94,17 +129,18 @@ class User {
 				$html .= "
 					<span class='IsComing'>is coming</span>
 					<span class='FoodRestrictions'>Food Restrictions: {$user[self::$USER_FOOD_RESTRICTIONS_JSON_KEY]}</span>
-						";
+				</div>
+					";
 			else
 				$html .= "
 					<span class='IsNotComing' >is not coming</span>
 				</div>
 			";
 		}
-		if (isset($user[self::$USER_FOOD_RESTRICTIONS_JSON_KEY]))
+		if (isset($rsvp[Rsvp::$RSVP_MESSAGE_JSON_KEY]))
 			$html .= "
 				<br><span class='MessageLabel'>Your message to the bride and groom:</span><br>
-				<br><span class='Message'>{$user[self::$USER_FOOD_RESTRICTIONS_JSON_KEY]}</span>";
+				<br><span class='Message'>{$rsvp[Rsvp::$RSVP_MESSAGE_JSON_KEY]}</span>";
 		$html .= "
 				<div class='Edit RsvpButton Button Center'>Click here to change RSVP details</div>
 			</div>
@@ -113,7 +149,9 @@ class User {
 		}
 	
 	
-	public static function getRsvpFormHtml($users, $hasSubmutted){
+	public static function getRsvpFormHtml($userData, $hasSubmutted){
+		$users = $userData[self::$USER_USERS_JSON_KEY];
+		$rsvp = $userData[self::$USER_RSVP_JSON_KEY];
 		$html = "
 			<form class='RsvpForm Hidden'>
 			";
@@ -122,6 +160,7 @@ class User {
 			$isNotComingChecked = "";
 			$isComingHidden = "Hidden";
 			$isNotComingHidden = "Hidden";
+			
 			if ($hasSubmutted){
 				if ($user[self::$USER_IS_COMING_JSON_KEY]){
 					$isComingChecked = "checked";
@@ -131,6 +170,8 @@ class User {
 					$isNotComingHidden = "";
 				}
 			}
+			
+			
 					
 			$html .= "
 				<div class='UserForm' id='$id'>
@@ -139,7 +180,7 @@ class User {
 					<input class='IsNotComingInput' type='radio' value='false' name='group$id' $isNotComingChecked>No, I will not attend
 					<div class='IsComingDetails $isComingHidden'>
 						<span 'IsComingLabel'>Yay! Let us know about any food restrictions you have.</span><br>
-						<textarea class='FoodRestrictionsInput' name='FoodRestrictions' rows='2' cols='30'></textarea>
+						<textarea class='FoodRestrictionsInput' name='FoodRestrictions' rows='2' cols='30'>{$user[self::$USER_FOOD_RESTRICTIONS_JSON_KEY]}</textarea>
 					</div>
 					<div class='IsNotComingDetails $isNotComingHidden'>
 						<span class='IsNotComingLabel Label'>We will miss you!</span>
@@ -149,7 +190,7 @@ class User {
 		}
 		$html .= "
 				<span class='foodRestictions'>A message to the bride and groom!</span><br>
-				<textarea class='MessageInput' rows='5' cols='50'></textarea><br>
+				<textarea class='MessageInput' rows='5' cols='50'>{$rsvp[Rsvp::$RSVP_MESSAGE_JSON_KEY]}</textarea><br>
 				<input class='Button Center' type='submit'>
 			</form>
 			";

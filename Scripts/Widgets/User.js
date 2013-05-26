@@ -1,9 +1,8 @@
 var rsvpUrl = "NetworkCalls/Rsvp.php";
 
 var rsvpSuccess = function(response, textStatus) {
-	$('h3.ReplyCodeForm').remove();
-	$('div.Strip_06').append(response.namesView);
-	$('div.Strip_07').append(response.songsView);
+	var userElement = $('div.Users');
+	userElement.replaceWith(response.rsvpHtml);
 };
 
 var rsvpFailure = function(jqXHR, textStatus, errorThrown) {
@@ -15,6 +14,9 @@ var rsvpFailure = function(jqXHR, textStatus, errorThrown) {
 $(document).ready(function() {
 	$('div.RsvpButton').click(function() {
 		$('form.RsvpForm').removeClass('Hidden');
+		var detailsElement = $('div.RsvpDetails');
+		if (detailsElement != 'undefined')
+			detailsElement.remove();
 		this.remove();
 	});
 
@@ -38,25 +40,22 @@ $(document).ready(function() {
 	});
 
 	$('form.RsvpForm').submit(function() {
-		var rsvps = new Array();
-		console.log("hi");
+		var rsvps = {};
 		$.each($('div.UserForm'), function(id) {
 			var id = $(this).attr("id");
-			console.log(id);
-			var isComing = $("#" + id + " input:radio:checked").val("0");
+			var isComing = $("#" + id + " input:radio:checked").val();
 			if (isComing == null) {
 				alert("Please rsvp for " + $("#" + id + " span.UsernameLabel").val());
 				return false;
 			}
 			var foodRestictions = $("#" + id + " textarea.FoodRestrictionsInput").val();
 			var rsvp = {
-				'isComing' : isComing == 'true',
-				'foodRestictions' : foodRestictions
+				'isComing' : isComing,
+				'foodRestrictions' : foodRestictions
 			};
-			rsvps["" + id] = rsvp;
+			rsvps[id] = rsvp;
 		});
 
-		console.log("there");
 		var request = {
 			'rsvps' : rsvps,
 			'message' : $("form.RsvpForm textarea.MessageInput").val()
@@ -66,7 +65,7 @@ $(document).ready(function() {
 			type : "POST",
 			data : request,
 			url : rsvpUrl,
-			success : success,
+			success : rsvpSuccess,
 			error : failure
 		});
 		return false;

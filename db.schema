@@ -1,14 +1,15 @@
 DROP TABLE IF EXISTS rsvp;
 CREATE TABLE rsvp (
-	code TEXT NOT NULL,
+	code VARCHAR(100) NOT NULL,
 	submitted TINYINT(1), 
-	message TEXT
+	message TEXT,
+	PRIMARY KEY (code)
 );
 
 DROP TABLE IF EXISTS user;
 CREATE TABLE user (
 	id INTEGER NOT NULL AUTO_INCREMENT,
-	code TEXT NOT NULL, 
+	code VARCHAR(100) NOT NULL, 
 	name TEXT,
 	isComing TINYINT(1),
 	foodRestrictions TEXT,
@@ -18,7 +19,7 @@ CREATE TABLE user (
 DROP TABLE IF EXISTS request;
 CREATE TABLE request (
 	id INTEGER NOT NULL,
-	code TEXT NOT NULL,
+	code VARCHAR(100) NOT NULL,
 	song TEXT,
 	artist TEXT
 	
