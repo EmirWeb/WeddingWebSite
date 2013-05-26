@@ -52,8 +52,6 @@ class MySQL {
 		$results = array();
 		foreach ($rawQueries as $rawQuery)
 			$results[] = $database->query($rawQuery);
-		
-		
 		self::$database->close();
 		self::$database = "";
 		return $results;

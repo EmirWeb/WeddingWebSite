@@ -9,15 +9,13 @@
 					<h1>CEREMONY AT 2:45 PM</h1>
 					<h1>DINNER & DANCING TO FOLLOW</h1>
 					<div class="Button">
-						<a href="#">
-							MORE EVENT INFO
-						</a>
+						MORE EVENT INFO
 					</div>
 					<div class="Clear"></div>
-					<div class="Button">
-						<a href="https://maps.google.com/maps?q=Tralee+Wedding+Facility,+Mountainview+Road,+Caledon,+ON,+Canada&hl=en&sll=37.0625,-95.677068&sspn=42.581364,73.300781&oq=tralee+wedding+facility+ca&hq=Tralee+Wedding+Facility,&hnear=Mountainview+Rd,+Caledon,+Peel+Regional+Municipality,+Ontario,+Canada&t=m&z=12" target="_blank">
+					<a href="https://maps.google.com/maps?q=Tralee+Wedding+Facility,+Mountainview+Road,+Caledon,+ON,+Canada&hl=en&sll=37.0625,-95.677068&sspn=42.581364,73.300781&oq=tralee+wedding+facility+ca&hq=Tralee+Wedding+Facility,&hnear=Mountainview+Rd,+Caledon,+Peel+Regional+Municipality,+Ontario,+Canada&t=m&z=12" target="_blank">
+						<div class="Button">
 							DRIVING DIRECTIONS
-						</a>
-					</div>
+						</div>
+					</a>
 				</div>
 			</div>

@@ -1,7 +1,8 @@
-DROP TABLE IF EXISTS address;
-CREATE TABLE address (
-	code TEXT NOT NULL, 
-	address TEXT
+DROP TABLE IF EXISTS rsvp;
+CREATE TABLE rsvp (
+	code TEXT NOT NULL,
+	submitted TINYINT(1), 
+	message TEXT
 );
 
 DROP TABLE IF EXISTS user;
@@ -9,6 +10,8 @@ CREATE TABLE user (
 	id INTEGER NOT NULL AUTO_INCREMENT,
 	code TEXT NOT NULL, 
 	name TEXT,
+	isComing TINYINT(1),
+	foodRestrictions TEXT,
 	PRIMARY KEY (id)
 );
 
@@ -17,8 +20,8 @@ CREATE TABLE request (
 	id INTEGER NOT NULL,
 	code TEXT NOT NULL,
 	song TEXT,
-	artist TEXT,
-	FOREIGN KEY (id) REFERENCES user(id)
+	artist TEXT
+	
 );
 
 INSERT INTO address (code, address) VALUES ("12345", "352 Indian Grove");

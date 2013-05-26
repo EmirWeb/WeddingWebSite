@@ -55,6 +55,7 @@ div.Center {
 
 div.PartyDetails {
 	width: 800px;
+	height: 300px;
 	margin: 0px auto;
 	overflow: hidden;
 	margin: 0px auto;
@@ -113,32 +114,49 @@ div.PartyDetails div.Details {
 	float: left;
 }
 
-div.PartyDetails div.Details div.Button {
-	margin: 20px 0px;
-	padding-left: 10px;
-	text-align: left;
-	height: 46px;
-	background-color: #F16263;
-	width: 260px;
+input, textarea {
+	border: 1px solid #f0394c;
+	background: #f0394c;
+	color: #ffffff;
+	font-size: 1.1em;
 }
 
-div.PartyDetails div.Details div.Button a {
+*.Hidden {
+	display: none;
+}
+
+*.Button {
+	border: 0px;
+	margin: 20px 0px;
+	padding-left: 10px;
+	text-align: center;
+	height: 46px;
+	background: #F16263;
+	background-color: #F16263;
+	width: 260px;
 	font-size: 20px;
 	line-height: 46px;
 	color: #F2A2A6;
 	font-weight: bold;
 }
 
-div.PartyDetails div.Details div.Button:hover {
+*.Center {
+	margin-left: auto;
+	margin-right: auto;
+}
+
+*.Button:hover {
+	background-color: #E25354;
 	cursor: pointer;
 }
 
-input.Input {
-	border: 1px solid #f0394c;
-	background: #f0394c;
-	color: #ffffff;
-	font-size: 1.1em;
+*.Button:ACTIVE {
+	position: relative; top : 1px;
+	background-color: #E25354;
+	cursor: pointer;
+	top: 1px;
 }
+
 
 div.Tree {
 	position: relative;
@@ -152,4 +170,9 @@ div.Tree div.Background {
 
 div.Strip img.BannerImage {
 	margin: 20px;
+}
+
+div.ReplyCodeButton {
+	margin: 0px auto;
+	display: inline-block;
 }

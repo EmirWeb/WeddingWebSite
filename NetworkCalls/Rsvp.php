@@ -4,13 +4,16 @@ include_once ('../Utils/SessionManager.php');
 include_once ('../Widgets/Songs.php');
 include_once ('Error.php');
 
-$ARTIST_JSON_KEY = "artist";
-$SONG_JSON_KEY = "song";
-$ID_JSON_KEY = "id";
+$RSVPS_JSON_KEY = "rsvps";
+$MESSAGE_JSON_KEY = "message";
+$IS_COMING_JSON_KEY = "isComing";
+$FOOD_RESTRICTIONS_JSON_KEY = "foodRestrictions";
 
 $RESPONSE_SONG_HTML_KEY = "songHtml";
 
 header('Content-type: application/json');
+
+var_dump($_POST);
 
 if (!SessionManager::isLoggedIn()) {
 	http_response_code(412);

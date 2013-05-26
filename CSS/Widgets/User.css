@@ -1,0 +1,41 @@
+@CHARSET "UTF-8";
+
+div.User input{
+	float: left;
+}
+div.User form{
+	float: left;
+}
+
+div.Songs div.Artist {
+	width: 300px;
+}
+
+#AddSong span {
+	width: 50px;
+	float: left;
+}
+
+#AddSong input {
+	width: 500px;
+	float: left;
+}
+
+div.Hidden {
+	display: none;
+}
+
+div.Songs div.Title {
+	width: 300px;
+}
+
+div.Song div {
+	float: left;
+	text-align: left;
+}
+
+div.Header div {
+	text-align: center;
+	float: left;
+}
+

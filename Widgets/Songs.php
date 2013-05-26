@@ -61,18 +61,18 @@ class Songs {
 		}
 
 		$dropDown = "<select id='UserSelector'>";
-		foreach ($users as $id => $user) {
+		foreach ($users[User::$USER_USERS_JSON_KEY] as $id => $user) {
 			if (!isset($firstId)) {
 				$firstId = $id;
-				$selectedHtml = " selected='selected'";
+				$selectedHtml = "selected='selected'";
 			} else 
 				$selectedHtml = "";
-  			$dropDown .= "<option value='$id'$selectedHtml>$user</option>";
+  			$dropDown .= "<option value='$id' $selectedHtml>{$user[User::$USER_NAME_JSON_KEY]}</option>";
 		}
 		
 		$dropDown .= "</select>";
 		
-		$form = $dropDown. "<form id='AddSong'><span>Artist:</span><input id='Artist' type='text'><span>Title:</span><input id='Song' type='text'><input type='submit'></form>";
+		$form = $dropDown. "<form id='AddSong'><span>Artist:</span><input id='Artist' type='text'><span>Title:</span><input id='Song' type='text'><input class='Button Center' type='submit'></form>";
 
 		$html  =  "<div class='Songs'>" . $form;
 		$html .= "<div class='Header'><div class='Artist'>Artist</div><div class='Title'>Title</div></div><div class='Clear'></div>";

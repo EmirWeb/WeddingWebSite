@@ -1,7 +1,7 @@
 <?php
 	include_once ('../Widgets/Songs.php');
 	include_once ('../Widgets/User.php');
-	include_once ('../Widgets/Address.php');
+	include_once ('../Widgets/Rsvp.php');
 	include_once ('../Utils/MySql.php');
 	include_once ('../Utils/SessionManager.php');
 	include_once ('Error.php');
@@ -27,7 +27,6 @@
 	$loginResult = array();
 	$loginRequests = array(
 		User::getQuery($replyCode),
-		Address::getQuery($replyCode),
 		Songs::getQueryForReplyCode($replyCode)
 	);
 	
@@ -51,13 +50,8 @@
 	
 	$loginResult[$LOGIN_RESPONSE_NAMES_KEY] = $names;
 	$loginResult[$LOGIN_RESPONSE_NAMES_VIEW_KEY] = User::getUsers($names);
-
-	$addressResult = $loginQueryResults[1];
-	$address = Address::getAddressData($addressResult);
-	if (!empty($addres))
-		$loginResult[$LOGIN_RESPONSE_ADDRESS_KEY] = $address;
 	
-	$requestResult = $loginQueryResults[2];
+	$requestResult = $loginQueryResults[1];
 	$songs = Songs::getSongsData($requestResult);
 	if (!empty($songs)) {
 		$loginResult[$LOGIN_RESPONSE_SONGS_KEY] = $songs;

@@ -2,13 +2,13 @@
 	include_once('Utils/DomManager.php');
 	include_once('Utils/SessionManager.php');
 	include_once('Widgets/User.php');
-	include_once('Widgets/Address.php');
 	include_once('Widgets/Songs.php');
 	DomManager::addCSS('CSS/Body.css');
 	DomManager::addCSS('CSS/Home.css');
 	DomManager::addCSS('CSS/Strips.css');
 	DomManager::addCSS('CSS/Widgets/Slider.css');
 	DomManager::addCSS('CSS/Widgets/Songs.css');
+	DomManager::addCSS('CSS/Widgets/User.css');
 	DomManager::addCSS('CSS/Widgets/WeddingParty.css');
 	DomManager::addCSS('CSS/Widgets/WeddingPartyOval.css');
 	DomManager::addScript('//ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js');
@@ -30,34 +30,33 @@
 	</head>
 	<body>
 		<div class="Menu  Center">
-			<a href="#">OUR STORY</a>
-			<a href="#">WEDDING PARTY</a>
-			<a href="#">THE DAY</a>
-			<a href="#">WHERE TO STAY</a>
-			<a href="#">RSVP</a>
-			<a href="#">SONG REQUESTS</a>
+			<a href="#Strip_02">OUR STORY</a>
+			<a href="#Strip_03">WEDDING PARTY</a>
+			<a href="#Strip_04">THE DAY</a>
+			<a href="#Strip_05">WHERE TO STAY</a>
+			<a href="#Strip_06">RSVP</a>
+			<a href="#Strip_07">SONG REQUESTS</a>
 		</div>
-		<div class="Strip Strip_01">
+		<div id="Strip_01" class="Strip Strip_01">
 			<img class="BannerImage" src="Files/Images/monogram_png-24.png" />
 		</div>
-		<div class="Strip Strip_02 ">
+		<div id="Strip_02" class="Strip Strip_02 ">
 			<img class="BannerImage" src="Files/Images/ourstory.png" />
 			<?php include('Widgets/Slider.php'); ?>
 		</div>
-		<div class="Strip Strip_03">
+		<div id="Strip_03" class="Strip Strip_03">
 			<img class="BannerImage" src="Files/Images/weddingparty.png" />
 			<?php include('Widgets/WeddingParty.php'); ?>
 			
 		</div>
-		<div class="Strip Strip_04">
+		<div id="Strip_04" class="Strip Strip_04">
 			<img class="BannerImage" src="Files/Images/theday.png" />
 			<?php include('Widgets/PartyDetails.php'); ?>
-			
 		</div>
-		<div class="Strip Strip_05">
+		<div id="Strip_05" class="Strip Strip_05">
 			<img class="BannerImage" src="Files/Images/wheretostay.png" />
 		</div>
-		<div class="Strip Strip_06">
+		<div id="Strip_06" class="Strip Strip_06">
 			<img class="BannerImage" src="Files/Images/rsvp.png" />
 			<h3>
 				HOPE YOU CAN SHARE IN OUR SPECIAL DAY
@@ -65,15 +64,18 @@
 			<?php if (!SessionManager::isLoggedIn()) :	?>
 			<h3 class="ReplyCodeForm">
 				<form id="ReplyCodeRSVP" >
-					<input class="Input" type="text">
-					REPLY CODE
+					REPLY CODE <input class="Input" type="text">
+					<input class="Button ReplyCodeButton" type="submit">
 				</form>
 			</h3>
 			<?php else : ?>
-				<?php echo User::getUsers(null); ?>
+				<?php 
+					echo User::getUsers(null);
+					DomManager::addScript('Scripts/Widgets/User.js');
+				?>
 			<?php endif;?>
 		</div>
-		<div class="Strip Strip_07">
+		<div id="Strip_07" class="Strip Strip_07">
 			<img class="BannerImage" src="Files/Images/songrequests.png" />
 			<h3>
 				HELP THE US BY SUGGESTING YOUR FAVOURITE TUNES
@@ -81,8 +83,8 @@
 			<?php if (!SessionManager::isLoggedIn()) :	?>
 			<h3 class="ReplyCodeForm">
 				<form id="ReplyCodeSongs" >
-					Reply Code<input class="Input" type="text">
-					<input type="submit">
+					REPLY CODE <input class="Input" type="text">
+					<input class="Button ReplyCodeButton" type="submit">
 				</form>
 			</h3>
 			<?php else : ?>
