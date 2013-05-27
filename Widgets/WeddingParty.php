@@ -4,7 +4,7 @@
 					<div class="CellHover"></div>
 				</div>
 				<div class="WeddingPartyCell" id="WeddingPartyCell1">
-					<img src="Files/Images/Widgets/WeddingParty/WeddingPartyCell1.jpg">
+					<img class="Chosen" src="Files/Images/Widgets/WeddingParty/WeddingPartyCell1.jpg">
 					<div class="CellHover"></div>
 				</div>
 				<div class="WeddingPartyCell" id="WeddingPartyCell2">

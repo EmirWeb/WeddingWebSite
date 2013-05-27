@@ -1,33 +1,93 @@
 @CHARSET "UTF-8";
 
 div.Slider {
-	width: 700px;
+	display: table;
+	width: 1200px;
+	height: 500px;
 	margin: 0px auto;
+	overflow: hidden;
 }
 
-div.Slider img.Picture {
+div.SliderContent {
 	float: left;
-	margin-right: 10px;
+	width: 1000px;
+}
+
+div.Slide div.Picture {
+	height: 500px;
+	display: table-cell;
+	vertical-align: middle;
+}
+
+div.Slide div.Picture img, iframe {
+	margin-right: 40px;
+}
+
+div.Slide div.Story {
+	height: 500px;
+	display: table-cell;
+	vertical-align: middle;
+}
+
+div.Slider div.Chevron img:hover {
+	cursor: pointer;
+}
+
+div.Slider div.Chevron {
+	display: table-cell;
+	vertical-align: middle;
+	width: 100px;
+	height: 500px;
 }
 
 div.Slider div.Slide {
-	margin: 10px;
+	overflow: hidden;
+	width: 1000px;
+	height: 500px;
+	padding: 10px;
+	font-family: "Varela Round", "helvetica neue", arial, helvetica,
+		freesans, "liberation sans", "numbus sans l", sans-serif !important;
+	text-align: left;
+	color: #fefbd7;
+	text-shadow: 2px 2px #F16263;
 }
 
-div.Slider div.Hidden {
-	display: none;
+div.SliderContent a {
+	text-shadow: 0px 0px black;
 }
 
-div.Slider a.Chevron {
-	font-size: 40px;
-	font-weight: bold;
-	text-align: center;
-	width: 50px;
-	float: left;
-	text-align: center;
+div.SliderContent a:link {
+	color: #F16263;
 }
 
-div.Slider div.Content {
-	width: 600px;
-	float: left;
+div.SliderContent a:visited {
+	color: #F16263;
+}
+
+div.SliderContent a:hover {
+	color: #F16263;
+}
+
+div.SliderContent a:active {
+	color: #F16263;
+}
+
+div.Slide span.Date {
+	font-size: 15px;
+	line-height: 20px;
+}
+
+div.Slide span.Title {
+	font-size: 30px;
+	line-height: 40px;
+}
+
+div.Slide span.Content {
+	font-size: 15px;
+	line-height: 20px;
+}
+
+div.Slide div.Story span {
+	display: inline-block;
+	margin-bottom: 5px;
 }

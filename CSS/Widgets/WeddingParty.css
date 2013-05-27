@@ -6,15 +6,23 @@ div.WeddingParty {
 	margin: 0px auto;
 }
 
+
 div.WeddingPartyCell img {
+	border: 4px solid rgba(0,0,0,1);	
 	position: absolute;
 	top: 0px;
 	left: 0px;
-	-webkit-border-radius: 75px;
-	-moz-border-radius: 75px;
+	border-radius: 50%;
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+}
+
+div.WeddingPartyCell img.Chosen {
+	border: 4px solid rgba(0,0,0,1);
 }
 
 div.WeddingPartyCell div.CellHover {
+	border: 4px solid rgba(0,0,0,1);
 	position: absolute;
 	top: 0px;
 	left: 0px;
@@ -22,8 +30,10 @@ div.WeddingPartyCell div.CellHover {
 	width: 150px;
 	opacity: 0.4;
 	filter: alpha(opacity =  40);
-	-webkit-border-radius: 75px;
-	-moz-border-radius: 75px;
+	border-radius: 50%;
+	-moz-border-radius: 50%;
+	-webkit-border-radius: 50%;
+	
 }
 
 div.WeddingPartyCell div.CellHover:Hover {
@@ -52,14 +62,8 @@ div.MainWeddingPartyCell {
 	width: 250px;
 }
 
-div.MainWeddingPartyCell img {
-	-webkit-border-radius: 125px;
-	-moz-border-radius: 125px;
-}
 
 div.MainWeddingPartyCell div.CellHover {
 	height: 250px;
 	width: 250px;
-	-webkit-border-radius: 125px;
-	-moz-border-radius: 125px;
 }
