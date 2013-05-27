@@ -5,7 +5,7 @@ div.Slider {
 	width: 1200px;
 	height: 500px;
 	margin: 0px auto;
-	overflow: hidden;
+	overflow: visible;
 }
 
 div.SliderContent {
@@ -21,6 +21,9 @@ div.Slide div.Picture {
 
 div.Slide div.Picture img, iframe {
 	margin-right: 40px;
+	box-shadow: 0 0 100px black;
+	-moz-box-shadow: 0 0 100px black;
+	-webkit-box-shadow: 0 0 100px black;
 }
 
 div.Slide div.Story {
@@ -41,7 +44,6 @@ div.Slider div.Chevron {
 }
 
 div.Slider div.Slide {
-	overflow: hidden;
 	width: 1000px;
 	height: 500px;
 	padding: 10px;
