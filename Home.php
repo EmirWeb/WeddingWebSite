@@ -13,6 +13,7 @@
 	DomManager::addCSS('CSS/Widgets/WhereToStay.css');
 	DomManager::addCSS('CSS/Widgets/PartyDetails.css');
 	DomManager::addCSS('CSS/Widgets/WeddingPartyOval.css');
+	DomManager::addCSS('CSS/Fonts/LavanderiaRegular.css');
 	DomManager::addScript('//ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js');
 	DomManager::addScript('Scripts/Widgets/Slider.js');
 	DomManager::addScript('Scripts/Widgets/WeddingParty.js');
@@ -28,7 +29,6 @@
 		<title>Emir & Laura</title>
 		<link rel="shortcut icon" href="Files/Images/favicon.ico" />
 		<link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
-		<link href='http://fonts.googleapis.com/css?family=Clicker+Script' rel='stylesheet' type='text/css'>
 		<?php echo DomManager::getCSS(); ?>		
 	</head>
 	<body>
@@ -44,31 +44,36 @@
 			<img class="BannerImage" src="Files/Images/monogram_png-24.png" />
 		</div>
 		<div id="Strip_02" class="Strip Strip_02 ">
-			<img class="BannerImage" src="Files/Images/ourstory.png" />
+<!-- 			<img class="BannerImage" src="Files/Images/ourstory.png" /> -->
+			<div class="Banner">Our Story</div>
 			<?php include('Widgets/Slider.php'); ?>
 		</div>
 		<div id="Strip_03" class="Strip Strip_03">
-			<img class="BannerImage" src="Files/Images/weddingparty.png" />
+<!-- 			<img class="BannerImage" src="Files/Images/weddingparty.png" /> -->
+			<div class="Banner">Wedding Party</div>
 			<?php include('Widgets/WeddingParty.php'); ?>
 			
 		</div>
 		<div id="Strip_04" class="Strip Strip_04">
-			<img class="BannerImage" src="Files/Images/theday.png" />
+<!-- 			<img class="BannerImage" src="Files/Images/theday.png" /> -->
+			<div class="Banner">The Day</div>
 			<?php include('Widgets/PartyDetails.php'); ?>
 		</div>
 		<div id="Strip_05" class="Strip Strip_05">
-			<img class="BannerImage" src="Files/Images/wheretostay.png" />
+<!--  			<img class="BannerImage" src="Files/Images/wheretostay.png" />  -->
+			<div class="Banner">Where to Stay</div>
 			<?php include('Widgets/WhereToStay.php'); ?>
 		</div>
 		<div id="Strip_06" class="Strip Strip_06">
-			<img class="BannerImage" src="Files/Images/rsvp.png" />
+<!-- 			<img class="BannerImage" src="Files/Images/rsvp.png" /> -->
+			<div class="Banner">Rsvp</div>
 			<h3>
 				HOPE YOU CAN SHARE IN OUR SPECIAL DAY
 			</h3>
 			<?php if (!SessionManager::isLoggedIn()) :	?>
 			<h3 class="ReplyCodeForm">
 				<form id="ReplyCodeRSVP" >
-					REPLY CODE <input class="Input" type="text">
+					TO RSVP PLEASE ENTER YOUR REPLY CODE  <input class="Input" type="text">
 					<input class="Button ReplyCodeButton" type="submit">
 				</form>
 			</h3>
@@ -80,14 +85,15 @@
 			<?php endif;?>
 		</div>
 		<div id="Strip_07" class="Strip Strip_07">
-			<img class="BannerImage" src="Files/Images/songrequests.png" />
+<!-- 			<img class="BannerImage" src="Files/Images/songrequests.png" /> -->
+			<div class="Banner">Song Requests</div>
 			<h3>
 				HELP THE US BY SUGGESTING YOUR FAVOURITE TUNES
 			</h3>
 			<?php if (!SessionManager::isLoggedIn()) :	?>
 			<h3 class="ReplyCodeForm">
 				<form id="ReplyCodeSongs" >
-					REPLY CODE <input class="Input" type="text">
+					TO RSVP PLEASE ENTER YOUR REPLY CODE <input class="Input" type="text">
 					<input class="Button ReplyCodeButton" type="submit">
 				</form>
 			</h3>

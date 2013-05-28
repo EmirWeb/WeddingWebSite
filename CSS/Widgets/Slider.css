@@ -6,8 +6,6 @@ div.Slider {
 	height: 500px;
 	margin: 0px auto;
 	overflow: visible;
-		color: #fefbd7;
-	text-shadow: 1px 1px #FF3333;
 }
 
 div.SliderContent {
@@ -53,7 +51,7 @@ div.Slider div.Slide {
 }
 
 div.Slide span.Date {
-	font-size: 15px;
+	font-size: 16px;
 	line-height: 20px;
 }
 
@@ -63,7 +61,7 @@ div.Slide span.Title {
 }
 
 div.Slide span.Content {
-	font-size: 15px;
+	font-size: 16px;
 	line-height: 20px;
 }
 
