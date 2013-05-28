@@ -6,6 +6,8 @@ div.Slider {
 	height: 500px;
 	margin: 0px auto;
 	overflow: visible;
+		color: #fefbd7;
+	text-shadow: 1px 1px #FF3333;
 }
 
 div.SliderContent {
@@ -21,9 +23,9 @@ div.Slide div.Picture {
 
 div.Slide div.Picture img, iframe {
 	margin-right: 40px;
-	box-shadow: 0 0 100px black;
-	-moz-box-shadow: 0 0 100px black;
-	-webkit-box-shadow: 0 0 100px black;
+	box-shadow: 0 0 100px #FF3333;
+	-moz-box-shadow: 0 0 100px #FF3333;
+	-webkit-box-shadow: 0 0 100px #FF3333;
 }
 
 div.Slide div.Story {
@@ -47,31 +49,7 @@ div.Slider div.Slide {
 	width: 1000px;
 	height: 500px;
 	padding: 10px;
-	font-family: "Varela Round", "helvetica neue", arial, helvetica,
-		freesans, "liberation sans", "numbus sans l", sans-serif !important;
 	text-align: left;
-	color: #fefbd7;
-	text-shadow: 2px 2px #F16263;
-}
-
-div.SliderContent a {
-	text-shadow: 0px 0px black;
-}
-
-div.SliderContent a:link {
-	color: #F16263;
-}
-
-div.SliderContent a:visited {
-	color: #F16263;
-}
-
-div.SliderContent a:hover {
-	color: #F16263;
-}
-
-div.SliderContent a:active {
-	color: #F16263;
 }
 
 div.Slide span.Date {

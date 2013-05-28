@@ -1,15 +1,43 @@
 @CHARSET "UTF-8";
 
 body {
-	font-family: 'Open Sans Condensed', sans-serif;
+	font-family: "Varela Round", "helvetica neue", arial, helvetica,
+		freesans, "liberation sans", "numbus sans l", sans-serif !important;
+	color: #1f1f1f;
 	text-align: center;
+	font-size: 15px;
+	line-height: 20px;
 }
 
 a {
+	text-shadow: 0px 0px black;
+	text-decoration: none;
+}
+
+a:link {
+	color: #FF3333;
+}
+
+a:visited {
+	color: #FF3333;
+}
+
+a:hover {
+	color: #FF3333;
+	text-decoration: underline;
+}
+
+a:active {
+	color: #FF3333;
+}
+
+div.Menu a:hover {
 	text-decoration: none;
 }
 
 div.Menu {
+	font-family: 'Open Sans Condensed', sans-serif;
+	text-shadow: 0px 0px #F16263;
 	font-weight: bold;
 	overflow: hidden;
 	height: 70px;
@@ -53,19 +81,8 @@ div.Center {
 	text-align: center;
 }
 
-div.PartyDetails {
-	width: 800px;
-	height: 300px;
-	margin: 0px auto;
-	overflow: hidden;
-	margin: 0px auto;
-}
-
-div.PartyDetails div.Map {
-	float: left;
-}
-
 h1 {
+	text-shadow: 0px 0px black;
 	font-weight: bold;
 	margin: 0px auto;
 	max-width: 900px;
@@ -76,6 +93,7 @@ h1 {
 }
 
 h2 {
+	text-shadow: 0px 0px black;
 	margin: 0px auto;
 	max-width: 900px;
 	font-family: 'Clicker Script', cursive;
@@ -87,6 +105,7 @@ h2 {
 }
 
 h3 {
+	text-shadow: 0px 0px black;
 	margin: 0px auto;
 	max-width: 900px;
 	color: #F16263;
@@ -96,6 +115,7 @@ h3 {
 }
 
 h4 {
+	text-shadow: 0px 0px black;
 	color: #000;
 	margin: 0px auto;
 	max-width: 900px;
@@ -106,19 +126,17 @@ h4 {
 	margin: 25px auto
 }
 
-div.PartyDetails div.Details {
-	margin-left: 30px;
-	height: 48px;
-	line-height: 48px;
-	width: 325px;
-	float: left;
+input,textarea {
+	border: 1px solid #8c8c8c;
+	background: #FFFFFF;
+	color: #1f1f1f;
+	font-size: 1.1em;
+	padding: 0px 5px;
 }
 
-input, textarea {
-	border: 1px solid #f0394c;
-	background: #f0394c;
-	color: #ffffff;
-	font-size: 1.1em;
+input:focus ,textarea:focus {
+	border: 1px solid #F16263;
+	outline: 0;
 }
 
 *.Hidden {
@@ -151,12 +169,12 @@ input, textarea {
 }
 
 *.Button:ACTIVE {
-	position: relative; top : 1px;
+	position: relative;
+	top: 1px;
 	background-color: #E25354;
 	cursor: pointer;
 	top: 1px;
 }
-
 
 div.Tree {
 	position: relative;

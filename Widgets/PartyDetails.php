@@ -1,21 +1,28 @@
-			<div class="PartyDetails">
-				<div class="Map">
-					<a href="https://maps.google.com/maps?q=Tralee+Wedding+Facility,+Mountainview+Road,+Caledon,+ON,+Canada&hl=en&sll=37.0625,-95.677068&sspn=42.581364,73.300781&oq=tralee+wedding+facility+ca&hq=Tralee+Wedding+Facility,&hnear=Mountainview+Rd,+Caledon,+Peel+Regional+Municipality,+Ontario,+Canada&t=m&z=12" target="_blank">
-						<img src="Files/Images/map.png" />
-					</a>
-				</div>
-				<div class="Details">
-					<h2>Tralee Farms</h2>
-					<h1>CEREMONY AT 2:45 PM</h1>
-					<h1>DINNER & DANCING TO FOLLOW</h1>
-					<div class="Button">
-						MORE EVENT INFO
-					</div>
-					<div class="Clear"></div>
-					<a href="https://maps.google.com/maps?q=Tralee+Wedding+Facility,+Mountainview+Road,+Caledon,+ON,+Canada&hl=en&sll=37.0625,-95.677068&sspn=42.581364,73.300781&oq=tralee+wedding+facility+ca&hq=Tralee+Wedding+Facility,&hnear=Mountainview+Rd,+Caledon,+Peel+Regional+Municipality,+Ontario,+Canada&t=m&z=12" target="_blank">
-						<div class="Button">
-							DRIVING DIRECTIONS
-						</div>
-					</a>
-				</div>
-			</div>
+
+<div class="PartyDetails">
+	<div class="Table">
+		<div class="Map">
+			<a
+				href="https://maps.google.com/maps?q=Tralee+Wedding+Facility,+Mountainview+Road,+Caledon,+ON,+Canada&hl=en&sll=37.0625,-95.677068&sspn=42.581364,73.300781&oq=tralee+wedding+facility+ca&hq=Tralee+Wedding+Facility,&hnear=Mountainview+Rd,+Caledon,+Peel+Regional+Municipality,+Ontario,+Canada&t=m&z=12"
+				target="_blank"> <img src="Files/Images/map.png" />
+			</a>
+		</div>
+		<div class="MapDetails">
+			<h2>Tralee</h2>
+			<h1>CALEDON, ONTARIO</h1>
+		</div>
+	</div>
+
+	<div class="PartyDetailsEvents">
+		<div class="Title">Ceremony 2:45 - 4:00</div>
+		<div class="Details">The wedding of Laura and Emir is taking place outdoors and on natural ground, weather permitting. A short lawn party and toast will take place immediately after.</div>
+		<div class="Title">Cocktails 4:00 - 6:00</div>
+		<div class="Details">Enjoy an afternoon patio party with live music, drinks and delicious snacks</div>
+		<div class="Title">Dinner 6:00 - 9:00</div>
+		<div class="Details">And then we feast! Dinner is being catered by five star restaurant One99. One99’s buying practices include supporting coastal fishermen, regional and local farmers and suppliers who practice responsible stewardship of the land, rivers and oceans. One99 uses a combination of
+			fresh, local, seasonal and organic ingredients that help promote the abundant fare available in Dufferin County and beyond. Throughout dinner, guests will hear from friends and family member closest to Laura and Emir.</div>
+		<div class="Title">Dancing 9:00 - 2:00</div>
+		<div class="Details">Dinner will be followed by a night of dancing, drinking, snacks and live music!</div>
+	</div>
+
+</div>

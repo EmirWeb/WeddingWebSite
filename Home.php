@@ -10,6 +10,8 @@
 	DomManager::addCSS('CSS/Widgets/Songs.css');
 	DomManager::addCSS('CSS/Widgets/User.css');
 	DomManager::addCSS('CSS/Widgets/WeddingParty.css');
+	DomManager::addCSS('CSS/Widgets/WhereToStay.css');
+	DomManager::addCSS('CSS/Widgets/PartyDetails.css');
 	DomManager::addCSS('CSS/Widgets/WeddingPartyOval.css');
 	DomManager::addScript('//ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js');
 	DomManager::addScript('Scripts/Widgets/Slider.js');
@@ -56,6 +58,7 @@
 		</div>
 		<div id="Strip_05" class="Strip Strip_05">
 			<img class="BannerImage" src="Files/Images/wheretostay.png" />
+			<?php include('Widgets/WhereToStay.php'); ?>
 		</div>
 		<div id="Strip_06" class="Strip Strip_06">
 			<img class="BannerImage" src="Files/Images/rsvp.png" />

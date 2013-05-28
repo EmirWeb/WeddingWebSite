@@ -1,0 +1,45 @@
+@CHARSET "UTF-8";
+
+div.PartyDetails {
+	text-align: left;
+	width: 700px;
+	margin: 0px auto;
+	margin-top: 25px;
+}
+
+div.PartyDetails div.Table {
+	display: table;
+	height: 237px;
+	padding-bottom: 20px;
+}
+
+div.PartyDetails div.Map {
+	height: 237px;
+	box-shadow: 0 0 100px #FF3333;
+	-moz-box-shadow: 0 0 100px #FF3333;
+	-webkit-box-shadow: 0 0 100px #FF3333;
+}
+
+div.PartyDetails div.Table div.MapDetails {
+	padding-left: 35px;
+	display: table-cell;
+	vertical-align: middle;
+	margin-left: 30px;
+	height: 237px;
+	line-height: 48px;
+	display: table-cell;
+}
+
+div.PartyDetailsEvents div {
+	padding-bottom: 15px;
+	margin: 0px auto;
+	width: 600px;
+}
+
+div.PartyDetails div.Title {
+	font-weight: bold;
+}
+
+div.PartyDetails div.Details {
+	
+}

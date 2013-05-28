@@ -92,7 +92,7 @@
 				<img class="Picture" width="450px" src="Files/Images/Widgets/Slider/slide9.jpg">
 			</div>
 			<div class="Story">
-				<span class="Date">May, 2007</span><br> <span class="Title">Laura and Emir meet</span><br> <span class="Content">Laura’s Mom discovers out what she sees in her darling Emir on a lovely May weekend of Cherry Blossoms in High Park, fabulous dinners and long chats.</span> <
+				<span class="Date">May, 2007</span><br> <span class="Title">Laura and Emir meet</span><br> <span class="Content">Laura’s Mom discovers out what she sees in her darling Emir on a lovely May weekend of Cherry Blossoms in High Park, fabulous dinners and long chats.</span> 
 			</div>
 		</div>
 		<div class="Slide Hidden" id="Slide10">

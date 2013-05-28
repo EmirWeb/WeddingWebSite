@@ -1,0 +1,44 @@
+@CHARSET "UTF-8";
+
+div.WhereToStay {
+	width: 904px;
+	margin: 0px auto;
+	text-align: left;
+}
+
+div.WhereToStay div.Image {
+	height: 320px;
+	border-top: 1px solid #a3a3a3;
+}
+
+div.WhereToStay div.Details {
+	height: 100px;
+	padding: 20px;
+}
+
+div.WhereToStay div.Hotel {
+	border: 1px solid #8c8c8c;
+	width: 400px;
+	margin: 25px;
+	float: left;
+	width: 400px;
+}
+
+div.WhereToStay div.Hotel:hover {
+	border: 1px solid #FF3333;
+}
+
+div.WhereToStay div.MapHeader{
+	margin: 15px;
+}
+
+div.WhereToStay div.Details div.Title {
+	font-size: 20px;
+	line-height: 25px;
+}
+
+div.WhereToStay div.Notes {
+	margin: 0px auto;
+	width: 600px;
+	text-align: center;
+}
