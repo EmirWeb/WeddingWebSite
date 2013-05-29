@@ -13,12 +13,13 @@
 	DomManager::addCSS('CSS/Widgets/WhereToStay.css');
 	DomManager::addCSS('CSS/Widgets/PartyDetails.css');
 	DomManager::addCSS('CSS/Widgets/WeddingPartyOval.css');
+	DomManager::addCSS('CSS/Widgets/CustomScrollbar.css');
 	DomManager::addCSS('CSS/Fonts/LavanderiaRegular.css');
 	DomManager::addScript('//ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js');
 	DomManager::addScript('Scripts/Widgets/Slider.js');
 	DomManager::addScript('Scripts/Widgets/WeddingParty.js');
+	DomManager::addScript('Scripts/Widgets/CustomScrollbar.js');
 	DomManager::addScript('Scripts/Home.js');
-	
 	SessionManager::clearSession();
 ?>
 

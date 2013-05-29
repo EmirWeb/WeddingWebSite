@@ -1,12 +1,13 @@
 @CHARSET "UTF-8";
 
 div.WeddingParty {
+	font-size: 13px;
+	line-height: 18px;
 	position: relative;
 	width: 1000px;
 	margin: 0px auto;
-	text-align: left;
+	text-align: center;
 }
-
 
 div.WeddingPartyCell img {
 	border: 5px solid rgba(0,0,0,0.000000000001);	
@@ -49,13 +50,15 @@ div.WeddingPartyCell {
 	padding: 2px;
 }
 
-div.WeddingPartyContent span{
+div.Biography  {
+}
+
+div.WeddingPartyContent {
 	position: absolute;
-	top: 225px;
-	left: 200px;
-	width: 600px;
-	height: 200px;
-	overflow: auto;
+	top: 200px;
+	left: 225px;
+	width: 550px;
+	height: 275px;
 }
 
 div.MainWeddingPartyCell {
