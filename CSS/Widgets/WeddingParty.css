@@ -71,3 +71,13 @@ div.MainWeddingPartyCell div.CellHover {
 	height: 250px;
 	width: 250px;
 }
+
+div.WeddingPartyContent div.Biography span.Name {
+	text-shadow: 0px 0px black;
+	font-family: 'lavanderia_regularregular', Sans-Serif;
+	color: #F16263;
+	line-height: 30px;
+	font-size: 25px;
+	font-weight: normal;
+	text-align: left;
+}

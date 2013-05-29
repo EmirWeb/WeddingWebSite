@@ -2,7 +2,7 @@
 
 div.PartyDetails {
 	text-align: left;
-	width: 700px;
+	width: 750px;
 	margin: 0px auto;
 	height: 400px;
 }
@@ -27,4 +27,16 @@ div.PartyDetailsEvents div {
 
 div.PartyDetails div.Title {
 	font-weight: bold;
+}
+
+
+#EventInfoModal {
+	text-align: left;
+	margin-top: 20px;
+}
+
+
+#DirectionsModal {
+	text-align: left;
+	margin: 0px 40px;
 }
