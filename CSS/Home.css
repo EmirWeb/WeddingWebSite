@@ -4,13 +4,16 @@
 	background-repeat:repeat;
 */
 body {
-	
 	font-family: "Varela Round", "helvetica neue", arial, helvetica,
 		freesans, "liberation sans", "numbus sans l", sans-serif !important;
 	color: #292929;
 	text-align: center;
 	font-size: 15px;
 	line-height: 20px;
+}
+
+a.ClearStyle:hover {
+	text-decoration: none;
 }
 
 a {
@@ -133,6 +136,17 @@ h4 {
 	max-width: 900px;
 	margin: 25px auto
 }
+/* The day contents */
+h5 {  
+	text-shadow: 0px 0px black;
+	font-weight: bold;
+	margin: 0px auto;
+	max-width: 900px;
+	color: #fefbd7;
+	font-size: 20px;
+	line-height: 25px;
+	text-align: left;
+}
 
 input,textarea {
 	border: 1px solid #8c8c8c;
@@ -182,6 +196,21 @@ input:focus ,textarea:focus {
 	background-color: #E25354;
 	cursor: pointer;
 	top: 1px;
+}
+
+*.VerticalCenterParent {
+	display: table;
+	padding-bottom: 20px;
+	#position: relative;
+}
+* .VerticalCenter {
+	display: table-cell;
+	vertical-align: middle;
+	#position: absolute; #top: 50%
+}
+
+* .VerticalCenterContents {
+	 #position: relative; #top: -50%"
 }
 
 div.Tree {

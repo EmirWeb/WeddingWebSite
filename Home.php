@@ -45,29 +45,29 @@
 			<img class="BannerImage" src="Files/Images/monogram_png-24.png" />
 		</div>
 		<div id="Strip_02" class="Strip Strip_02 ">
-<!-- 			<img class="BannerImage" src="Files/Images/ourstory.png" /> -->
-			<div class="Banner">Our Story</div>
+ 			<img class="BannerImage" src="Files/Images/ourstory.png" /> 
+<!-- 			<div class="Banner">Our Story</div> -->
 			<?php include('Widgets/Slider.php'); ?>
 		</div>
 		<div id="Strip_03" class="Strip Strip_03">
-<!-- 			<img class="BannerImage" src="Files/Images/weddingparty.png" /> -->
-			<div class="Banner">Wedding Party</div>
+ 			<img class="BannerImage" src="Files/Images/weddingparty.png" /> 
+<!-- 			<div class="Banner">Wedding Party</div> -->
 			<?php include('Widgets/WeddingParty.php'); ?>
 			
 		</div>
 		<div id="Strip_04" class="Strip Strip_04">
-<!-- 			<img class="BannerImage" src="Files/Images/theday.png" /> -->
-			<div class="Banner">The Day</div>
+ 			<img class="BannerImage" src="Files/Images/theday.png" /> 
+<!-- 			<div class="Banner">The Day</div> -->
 			<?php include('Widgets/PartyDetails.php'); ?>
 		</div>
 		<div id="Strip_05" class="Strip Strip_05">
-<!--  			<img class="BannerImage" src="Files/Images/wheretostay.png" />  -->
-			<div class="Banner">Where to Stay</div>
+  			<img class="BannerImage" src="Files/Images/wheretostay.png" />  
+<!-- 			<div class="Banner">Where to Stay</div> -->
 			<?php include('Widgets/WhereToStay.php'); ?>
 		</div>
 		<div id="Strip_06" class="Strip Strip_06">
-<!-- 			<img class="BannerImage" src="Files/Images/rsvp.png" /> -->
-			<div class="Banner">Rsvp</div>
+ 			<img class="BannerImage" src="Files/Images/rsvp.png" /> 
+<!-- 			<div class="Banner">Rsvp</div> -->
 			<h3>
 				HOPE YOU CAN SHARE IN OUR SPECIAL DAY
 			</h3>
@@ -86,8 +86,8 @@
 			<?php endif;?>
 		</div>
 		<div id="Strip_07" class="Strip Strip_07">
-<!-- 			<img class="BannerImage" src="Files/Images/songrequests.png" /> -->
-			<div class="Banner">Song Requests</div>
+ 			<img class="BannerImage" src="Files/Images/songrequests.png" /> 
+<!-- 			<div class="Banner">Song Requests</div> -->
 			<h3>
 				HELP THE US BY SUGGESTING YOUR FAVOURITE TUNES
 			</h3>
