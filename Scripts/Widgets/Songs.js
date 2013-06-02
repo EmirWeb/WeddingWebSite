@@ -2,7 +2,7 @@ var addSongUrl = "NetworkCalls/AddSong.php";
 
 var setUserSongs = function(id) {
 	$("div.Song").addClass("Hidden");
-	$("div.Id" + id).removeClass("Hidden");
+	$("div.UserId" + id).removeClass("Hidden");
 };
 
 var getSelectedId = function() {
@@ -24,7 +24,7 @@ $(document).ready(function() {
 		$.ajax({
 			type : "POST",
 			data : {
-				id : getSelectedId(),
+				userId : getSelectedId(),
 				artist : $('#Artist').val(),
 				song : $('#Song').val()
 			},

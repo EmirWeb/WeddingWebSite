@@ -22,7 +22,7 @@ if (!SessionManager::isLoggedIn()) {
 
 if (isset($_POST[$RSVPS_JSON_KEY]) && isset($_POST[$MESSAGE_JSON_KEY])) {	
 	$rsvps =  $_POST[$RSVPS_JSON_KEY];	
-	$message =  $_POST[$MESSAGE_JSON_KEY];
+	$message =   MySql::escapeString($_POST[$MESSAGE_JSON_KEY]);
 	$replyCode = SessionManager::getReplyCode();
 } else {
 	http_response_code(412);
@@ -37,8 +37,8 @@ if (count($userData[User::$USER_USERS_JSON_KEY]) != count($rsvps)){
 
 $queires = array();
 foreach ($rsvps as $id => $rsvp){
-	$isComing = $rsvp[$IS_COMING_JSON_KEY];
-	$foodRestrictions = $rsvp[$FOOD_RESTRICTIONS_JSON_KEY];
+	$isComing =  MySql::escapeString($rsvp[$IS_COMING_JSON_KEY]);
+	$foodRestrictions =  MySql::escapeString($rsvp[$FOOD_RESTRICTIONS_JSON_KEY]);
 	$userQuery = User::getInsertQuery($id, $isComing, $foodRestrictions);
 	$queries[] = $userQuery;
 }

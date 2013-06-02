@@ -79,6 +79,18 @@ class MySQL {
 		self::$database = "";
 		return $results;
 	}
+	
+	public function escapeString($string){
+		$database = self::getDatabase();
+		if ($database == "")
+			return null;
+		$result = $database->escape_string($string);
+		self::$database->close();
+		self::$database = "";
+		return $result;
+		
+	}	
+	
 }
 
 ?>

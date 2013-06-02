@@ -7,20 +7,22 @@
 	DomManager::addCSS('CSS/Home.css');
 	DomManager::addCSS('CSS/Strips.css');
 	DomManager::addCSS('CSS/Widgets/Slider.css');
-	DomManager::addCSS('CSS/Widgets/Songs.css');
 	DomManager::addCSS('CSS/Widgets/User.css');
+	DomManager::addCSS('CSS/Widgets/Songs.css');
 	DomManager::addCSS('CSS/Widgets/WeddingParty.css');
 	DomManager::addCSS('CSS/Widgets/WhereToStay.css');
 	DomManager::addCSS('CSS/Widgets/PartyDetails.css');
 	DomManager::addCSS('CSS/Widgets/WeddingPartyOval.css');
 	DomManager::addCSS('CSS/Fonts/LavanderiaRegular.css');
+	DomManager::addCSS('CSS/Fonts/KabelBook.css');
+	DomManager::addCSS('CSS/Fonts/KabelMedium.css');
 	DomManager::addScript('//ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js');
 	DomManager::addScript('Scripts/jquery.simplemodal.js');
 	DomManager::addScript('Scripts/Widgets/Slider.js');
 	DomManager::addScript('Scripts/Widgets/WeddingParty.js');
 	DomManager::addScript('Scripts/Widgets/PartyDetails.js');
 	DomManager::addScript('Scripts/Home.js');
-	SessionManager::clearSession();
+// 	SessionManager::clearSession();
 ?>
 
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Strict//EN" "http://www.w3.org/TR/html4/strict.dtd">
@@ -68,9 +70,9 @@
 		<div id="Strip_06" class="Strip Strip_06">
  			<img class="BannerImage" src="Files/Images/rsvp.png" /> 
 <!-- 			<div class="Banner">Rsvp</div> -->
-			<h3>
-				HOPE YOU CAN SHARE IN OUR SPECIAL DAY
-			</h3>
+			<div class="Header3">
+				WE HOPE YOU CAN SHARE IN OUR SPECIAL DAY
+			</div>
 			<?php if (!SessionManager::isLoggedIn()) :	?>
 			<h3 class="ReplyCodeForm">
 				<form id="ReplyCodeRSVP" >
@@ -88,16 +90,16 @@
 		<div id="Strip_07" class="Strip Strip_07">
  			<img class="BannerImage" src="Files/Images/songrequests.png" /> 
 <!-- 			<div class="Banner">Song Requests</div> -->
-			<h3>
+			<div class="Header3">
 				HELP THE US BY SUGGESTING YOUR FAVOURITE TUNES
-			</h3>
+			</div>
 			<?php if (!SessionManager::isLoggedIn()) :	?>
-			<h3 class="ReplyCodeForm">
+			<div class="Header3">
 				<form id="ReplyCodeSongs" >
 					TO RSVP PLEASE ENTER YOUR REPLY CODE <input class="Input" type="text">
 					<input class="Button ReplyCodeButton" type="submit">
 				</form>
-			</h3>
+			</div>
 			<?php else : ?>
 				<?php 
 					echo Songs::getSongs(null, null, false);

@@ -7,7 +7,7 @@ div.PartyDetails {
 	height: 400px;
 }
 
-div.PartyDetails div.Map img{
+div.PartyDetails div.Map img {
 	box-shadow: 0 0 100px #FF3333;
 	-moz-box-shadow: 0 0 100px #FF3333;
 	-webkit-box-shadow: 0 0 100px #FF3333;
@@ -29,14 +29,31 @@ div.PartyDetails div.Title {
 	font-weight: bold;
 }
 
-
 #EventInfoModal {
 	text-align: left;
 	margin-top: 20px;
 }
 
-
 #DirectionsModal {
 	text-align: left;
 	margin: 0px 40px;
+}
+
+div.PartyDetails span.Location {
+	font-family: 'lavanderia_regularregular', Sans-Serif;
+	color: #F16263;
+	line-height: 46px;
+	font-size: 40px;
+	text-align: left;
+}
+
+div.PartyDetails span.LocationDetails {
+	color: #fefbd7;
+	font-size: 20px;
+	line-height: 26px;
+	text-align: left;
+}
+
+div.PartyDetails span.LocationDetails p {
+	margin: 0px;
 }

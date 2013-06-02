@@ -6,7 +6,7 @@ include_once ('Error.php');
 
 $ARTIST_JSON_KEY = "artist";
 $SONG_JSON_KEY = "song";
-$ID_JSON_KEY = "id";
+$USER_ID_JSON_KEY = "userId";
 
 $RESPONSE_SONG_HTML_KEY = "songHtml";
 
@@ -17,10 +17,10 @@ if (!SessionManager::isLoggedIn()) {
 	die(Error::getJsonError(4));
 }
 
-if (isset($_POST[$ARTIST_JSON_KEY]) && isset($_POST[$SONG_JSON_KEY]) && isset($_POST[$ID_JSON_KEY])) {
-	$artist =  mysql_real_escape_string($_POST[$ARTIST_JSON_KEY]);
-	$song =  mysql_real_escape_string($_POST[$SONG_JSON_KEY]);
-	$id =  mysql_real_escape_string($_POST[$ID_JSON_KEY]);
+if (isset($_POST[$ARTIST_JSON_KEY]) && isset($_POST[$SONG_JSON_KEY]) && isset($_POST[$USER_ID_JSON_KEY])) {
+	$artist =  MySql::escapeString($_POST[$ARTIST_JSON_KEY]);
+	$song =  MySql::escapeString($_POST[$SONG_JSON_KEY]);
+	$userId = MySql::escapeString($_POST[$USER_ID_JSON_KEY]);
 	$replyCode = SessionManager::getReplyCode();
 } else {
 	http_response_code(412);
@@ -28,11 +28,11 @@ if (isset($_POST[$ARTIST_JSON_KEY]) && isset($_POST[$SONG_JSON_KEY]) && isset($_
 }
 
 
-$query = Songs::getInsertQuery($id, $replyCode, $artist, $song);
+$query = Songs::getInsertQuery($userId, $replyCode, $artist, $song);
 $id = MySql::insert($query);
 
 $result = array();
-$result[$RESPONSE_SONG_HTML_KEY] = Songs::getSong($id, $artist, $song, false);
+$result[$RESPONSE_SONG_HTML_KEY] = Songs::getSong($id, $userId, $artist, $song, false, false);
 
 http_response_code(200);
 echo(json_encode($result));

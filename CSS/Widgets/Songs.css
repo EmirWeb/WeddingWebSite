@@ -1,21 +1,27 @@
 @CHARSET "UTF-8";
 
+select {
+	margin: 10px;
+}
+
 div.Songs {
-	width: 600px;
+	width: 720px;
 	margin: 0px auto;
 }
 
-div.Songs div.Artist {
-	width: 300px;
-}
-
-#AddSong span {
-	width: 50px;
+div.Songs div.SongList {
 	float: left;
+	margin: 10px;
 }
 
-#AddSong input {
-	width: 500px;
+#AddSong input.Item {
+	width: 270px;
+	float: left;
+	text-align: left;
+}
+
+#AddSong span.Item {
+	width: 50px;
 	float: left;
 }
 
@@ -23,16 +29,53 @@ div.Hidden {
 	display: none;
 }
 
-div.Songs div.Title {
-	width: 300px;
-}
-
-div.Song div {
-	float: left;
-	text-align: left;
-}
-
-div.Header div {
+div.Songs div.Artist {
+	width: 150px;
+	word-wrap: break-word;
 	text-align: center;
 	float: left;
+}
+
+div.Songs div.Title {
+	width: 150px;
+	word-wrap: break-word;
+	text-align: center;
+	float: left;
+}
+
+div.Song div.Item {
+	min-height: 20px;
+	float: left;
+	text-align: left;
+	margin-bottom: 10px;
+}
+
+div.Songs form {
+	float: left;
+	padding: 15px;
+	border: 1px solid black;
+	width: 300px;
+	margin: 10px;
+}
+
+div.Highlight {
+	background-color: #fefbd7;
+}
+
+div.Song div.ClearButton:hover {
+	cursor: pointer;	
+}
+
+div.Song div.ClearButton {
+	height: 20px;
+	width: 20px;
+	margin-right: 10px;
+	font-size: 20px;
+	text-align: center;
+	background-color: #F16263;
+	color: #fefbd7;
+	font-weight: bold;
+	border-radius: 50%;
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
 }

@@ -18,7 +18,7 @@ $LOGIN_RESPONSE_NAMES_VIEW_KEY = "namesView";
 header('Content-type: application/json');
 
 if (isset($_POST[$REPLY_CODE_JSON_KEY]))
-	$replyCode =  $_POST[$REPLY_CODE_JSON_KEY];
+	$replyCode =   MySql::escapeString($_POST[$REPLY_CODE_JSON_KEY]);
 else {
 	http_response_code(412);
 	die(Error::getJsonError(0));

@@ -4,23 +4,25 @@
 	background-repeat:repeat;
 */
 body {
-	font-family: "Varela Round", "helvetica neue", arial, helvetica,
-		freesans, "liberation sans", "numbus sans l", sans-serif !important;
-	color: #292929;
+	font-family: 'kabelmedium'; color : #292929;
 	text-align: center;
 	font-size: 15px;
 	line-height: 20px;
+	color: #292929; text-align : center; font-size : 15px; line-height :
+	20px; } a .ClearStyle :hover { text-decoration : none; } a {
+	text-decoration: none;
 }
 
 a.ClearStyle:hover {
 	text-decoration: none;
 }
 
-a {
-	text-shadow: 0px 0px black;
-	text-decoration: none;
+a
+{
+text-decoration
+:
+none;
 }
-
 a:link {
 	color: #FF3333;
 }
@@ -43,9 +45,6 @@ div.Menu a:hover {
 }
 
 div.Menu {
-	font-family: 'Open Sans Condensed', sans-serif;
-	text-shadow: 0px 0px #F16263;
-	font-weight: bold;
 	overflow: hidden;
 	height: 70px;
 	line-height: 70px;
@@ -93,8 +92,6 @@ div.Center {
 }
 
 h1 {
-	text-shadow: 0px 0px black;
-	font-weight: bold;
 	margin: 0px auto;
 	max-width: 900px;
 	color: #fefbd7;
@@ -104,7 +101,6 @@ h1 {
 }
 
 h2 {
-	text-shadow: 0px 0px black;
 	margin: 0px auto;
 	max-width: 900px;
 	font-family: 'lavanderia_regularregular', Sans-Serif;
@@ -115,18 +111,15 @@ h2 {
 	text-align: left;
 }
 
-h3 {
-	text-shadow: 0px 0px black;
+div.Header3 {
 	margin: 0px auto;
 	max-width: 900px;
 	color: #F16263;
 	font-size: 25px;
 	line-height: 25px;
-	font-weight: bold;
 }
 
 h4 {
-	text-shadow: 0px 0px black;
 	color: #000;
 	margin: 0px auto;
 	max-width: 900px;
@@ -138,7 +131,6 @@ h4 {
 }
 /* The day contents */
 h5 {
-	text-shadow: 0px 0px black;
 	font-weight: bold;
 	margin: 0px auto;
 	max-width: 900px;
@@ -149,10 +141,9 @@ h5 {
 }
 
 input,textarea {
-	font-family: "Varela Round", "helvetica neue", arial, helvetica,
-		freesans, "liberation sans", "numbus sans l", sans-serif !important;
+	font-family: 'kabelmedium';
 	border: 1px solid #8c8c8c;
-	background: #FFFFFF;
+	background: #fefbd7;
 	color: #1f1f1f;
 	font-size: 1.1em;
 	padding: 5px;
@@ -179,7 +170,6 @@ input:focus,textarea:focus {
 	font-size: 20px;
 	line-height: 46px;
 	color: #F2A2A6;
-	font-weight: bold;
 }
 
 *.Center {
@@ -236,7 +226,6 @@ div.ReplyCodeButton {
 	margin: 0px auto;
 	display: inline-block;
 }
-
 
 /* Overlay */
 #simplemodal-overlay {

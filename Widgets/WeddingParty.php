@@ -88,7 +88,7 @@
 		</div>
 		<!-- Katie -->
 		<div id="Biography6" class="Biography VerticalCenter Hidden">
-			<span class="Name">Katelyn Plant</span><br> <span class="Role">Maid of honour</span><br> <span class="Story">Years ago, and infant so, my mother held me down below. To a youngster she did show, a canvas blank, a Plant to grow. Off to the school, to show and tell, where little ones, learn to spell. The youngster held me, till the bell, and
+			<span class="Name">Katelyn Plant</span><br> <span class="Role">Maid of Honour</span><br> <span class="Story">Years ago, and infant so, my mother held me down below. To a youngster she did show, a canvas blank, a Plant to grow. Off to the school, to show and tell, where little ones, learn to spell. The youngster held me, till the bell, and
 				proudly wished her sister well. As years went on, the youngster grew, her tiny Plant began to bloom. She taught me much, and all she knew, and mothered me as sisters do. She dressed me up, and spun me ‘round, like figure skaters, but carpet bound. And if I toppled to the ground, two loving hands
 				would soon surround. Next a lunch, thank you and please, her favourite thing to hate: grilled cheese. Or Hamburger Helper! Or Ricearonie! These were Laura's specialities. But as I grew, she grew beyond, and explored the world outside our lawn. At dusk the city, and home by dawn, she often left,
 				but never gone. A while more, her condo years, with morning teas and evening beers. Strings and songs and paintbrush smears, we’d fall asleep as morning nears. Hard at work, but loves to play, thanks for editing all my resumes! And making sure that I’m okay, and always knowing what to say. A
