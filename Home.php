@@ -7,7 +7,6 @@
 	DomManager::addCSS('CSS/Home.css');
 	DomManager::addCSS('CSS/Strips.css');
 	DomManager::addCSS('CSS/Widgets/Slider.css');
-	DomManager::addCSS('CSS/Widgets/User.css');
 	DomManager::addCSS('CSS/Widgets/Songs.css');
 	DomManager::addCSS('CSS/Widgets/WeddingParty.css');
 	DomManager::addCSS('CSS/Widgets/WhereToStay.css');
@@ -22,7 +21,7 @@
 	DomManager::addScript('Scripts/Widgets/WeddingParty.js');
 	DomManager::addScript('Scripts/Widgets/PartyDetails.js');
 	DomManager::addScript('Scripts/Home.js');
-// 	SessionManager::clearSession();
+	SessionManager::clearSession();
 ?>
 
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Strict//EN" "http://www.w3.org/TR/html4/strict.dtd">
@@ -74,12 +73,12 @@
 				WE HOPE YOU CAN SHARE IN OUR SPECIAL DAY
 			</div>
 			<?php if (!SessionManager::isLoggedIn()) :	?>
-			<h3 class="ReplyCodeForm">
+			<div class="Header3" class="ReplyCodeForm">
 				<form id="ReplyCodeRSVP" >
 					TO RSVP PLEASE ENTER YOUR REPLY CODE  <input class="Input" type="text">
 					<input class="Button ReplyCodeButton" type="submit">
 				</form>
-			</h3>
+			</div>
 			<?php else : ?>
 				<?php 
 					echo User::getUsers(null);
