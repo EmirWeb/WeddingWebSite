@@ -57,3 +57,7 @@ div.PartyDetails span.LocationDetails {
 div.PartyDetails span.LocationDetails p {
 	margin: 0px;
 }
+
+div.PartyDetails span.LocationDetails p.ExtraBottomMargin{
+	margin-bottom: 10px;
+}

@@ -17,8 +17,6 @@ var addSongFailure = function(jqXHR, textStatus, errorThrown) {
 
 var addSongSuccess = function(response, textStatus) {
 	$('div.SongList').append(response.songHtml);
-	console.log($('div.SongList'));
-	console.log(response.songHtml);
 };
 
 $(document).ready(function() {
@@ -41,5 +39,4 @@ $(document).ready(function() {
 		var id = getSelectedId();
 		setUserSongs(id);
 	});
-
 });

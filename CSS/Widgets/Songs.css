@@ -33,6 +33,7 @@ div.Hidden {
 	display: none;
 }
 
+
 div.Songs div.Artist {
 	width: 150px;
 	word-wrap: break-word;
@@ -51,7 +52,6 @@ div.Song div.Item {
 	min-height: 20px;
 	float: left;
 	text-align: left;
-	margin-bottom: 10px;
 }
 
 div.Songs form {
@@ -64,6 +64,10 @@ div.Songs form {
 
 div.Highlight {
 	background-color: #fefbd7;
+}
+
+div.Song{
+	padding: 5px;
 }
 
 div.Song div.ClearButton:hover {

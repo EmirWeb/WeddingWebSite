@@ -14,7 +14,6 @@
 	DomManager::addCSS('CSS/Widgets/WeddingPartyOval.css');
 	DomManager::addCSS('CSS/Fonts/LavanderiaRegular.css');
 	DomManager::addCSS('CSS/Fonts/KabelBook.css');
-	DomManager::addCSS('CSS/Fonts/KabelMedium.css');
 	DomManager::addScript('//ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js');
 	DomManager::addScript('Scripts/jquery.simplemodal.js');
 	DomManager::addScript('Scripts/Widgets/Slider.js');
@@ -76,7 +75,7 @@
 			<div class="Header3 ReplyCodeForm" class="ReplyCodeForm">
 				<form id="ReplyCodeRSVP" >
 					TO RSVP PLEASE ENTER YOUR REPLY CODE  <input class="Input" type="text">
-					<input class="Button ReplyCodeButton" type="submit">
+					<input class="Button ReplyCodeButton" type="submit" value='SUBMIT'>
 				</form>
 			</div>
 			<?php else : ?>
@@ -90,13 +89,13 @@
  			<img class="BannerImage" src="Files/Images/songrequests.png" /> 
 <!-- 			<div class="Banner">Song Requests</div> -->
 			<div class="Header3">
-				HELP THE US BY SUGGESTING YOUR FAVOURITE TUNES
+				HELP US BY SUGGESTING YOUR FAVOURITE TUNES
 			</div>
 			<?php if (!SessionManager::isLoggedIn()) :	?>
 			<div class="Header3 ReplyCodeForm">
 				<form id="ReplyCodeSongs" >
 					TO RSVP PLEASE ENTER YOUR REPLY CODE <input class="Input" type="text">
-					<input class="Button ReplyCodeButton" type="submit">
+					<input class="Button ReplyCodeButton" type="submit" value='SUBMIT'>
 				</form>
 			</div>
 			<?php else : ?>

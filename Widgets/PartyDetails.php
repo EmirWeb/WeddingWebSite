@@ -9,7 +9,7 @@
 	<div class="MapDetails VerticalCenter">
 		<span class="Location">Tralee Wedding Facility </span>
 		<span class="LocationDetails"><p>19933 MOUNTAINVIEW RD</p> 
-		<p>CALEDON, ONTARIO</p> 
+		<p class="ExtraBottomMargin">CALEDON, ONTARIO</p> 
 		<p>CEREMONY AT 2:45 PM</p>
 		<p>DINNER AND DANCING TO FOLLOW</p>
 		</span>

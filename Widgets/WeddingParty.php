@@ -65,7 +65,7 @@
 		</div>
 		<!-- Heather-->
 		<div id="Biography2" class="Biography VerticalCenter Hidden">
-			<span class="Name">Heather Payne</span><br> <span class="Role">Bridsemaid</span><br> <span class="Story">Laura and I met when I was 15 at Wal-Mart McDonald's in Brampton. I'd just gotten a job there, and Laura was a manager. I quickly (almost effortlessly) became one of her favourites, but it wasn't until I was promoted to management that the
+			<span class="Name">Heather Payne</span><br> <span class="Role">Bridesmaid</span><br> <span class="Story">Laura and I met when I was 15 at Wal-Mart McDonald's in Brampton. I'd just gotten a job there, and Laura was a manager. I quickly (almost effortlessly) became one of her favourites, but it wasn't until I was promoted to management that the
 				fun really began. From making scripted announcements about "Manager's Specials" over Wal-Mart's PA system, tag-teaming busy Saturdays and taking on special projects to make our store better, we were always on the same wavelength when it came to work. Outside of work, we became friends, with
 				Laura introducing me to a lot of "firsts" throughout my formative teenage years. I went away to school, and then moved to China, but a chance encounter with Laura on Bloor Street upon my return set the rest of my life in motion. We hadn't seen each other in years, but her company was hiring, and
 				I needed a job. We started working together for the second time, and our friendship outside of work flourished. Laura and I work together again, this time as partners. Our relationship has many layers, and is made up of a wonderful and unique blend of professional and personal. There's always so
@@ -97,7 +97,7 @@
 
 		<!-- Deana -->
 		<div id="Biography7" class="Biography VerticalCenter Hidden">
-			<span class="Name">Deanna</span><br> <span class="Role">Bridsemaid</span><br> <span class="Story">A wonderful mutual friend, April, and I had grade 10 history class together. We both loved Jewel - that was pretty much all you needed to find a bosom friend in those days, or in the very least, be invited to her cool Hallowe'en party. Riding in
+			<span class="Name">Deanna</span><br> <span class="Role">Bridesmaid</span><br> <span class="Story">A wonderful mutual friend, April, and I had grade 10 history class together. We both loved Jewel - that was pretty much all you needed to find a bosom friend in those days, or in the very least, be invited to her cool Hallowe'en party. Riding in
 				the back of my father's pick-up truck, I nervously approached my first high school party. I was a country girl, and this was a city party - the kind of thing I needed my grade-school best pal, Mel Hanisch to walk beside me through, just in case everyone there was too cool to even consider
 				talking to me. The most dreaded moment by far was walking through the door, where potentially everyone in the room was going to look up from what they were doing to see who the latest arrival to the party was...and of course I was beyond fashionably late. Thankfully we entered almost completely
 				unnoticed, except of course by our gracious host. But what was that chaos happening in the corner?! Some poor, awkward, girl curled up in a ball with legs and arms flailing as she is being attacked by a crowd of silly-string projectiles; I remember it like it were yesterday. What a sight! She
@@ -111,7 +111,7 @@
 		</div>
 		<!-- Gurpreet -->
 		<div id="Biography9" class="Biography VerticalCenter Hidden">
-			<span class="Name">Gurpreet</span><br> <span class="Role">Bridsemaid</span><br> <span class="Story">I met Laura in 1995 on the playground at our middle school. We were enrolled in different classrooms, yet somehow, perhaps through our common love of Leonardo DiCaprio in Baz Luhrmann’s production of Romeo and Juliet or our unconventional style
+			<span class="Name">Gurpreet</span><br> <span class="Role">Bridesmaid</span><br> <span class="Story">I met Laura in 1995 on the playground at our middle school. We were enrolled in different classrooms, yet somehow, perhaps through our common love of Leonardo DiCaprio in Baz Luhrmann’s production of Romeo and Juliet or our unconventional style
 				of wearing overalls, plaid shirts and platform Converse-esque shoes we became fast friends. Fortunately our styles have since matured and I am so blessed to have remained great friends with Laura over the years. She is a true gem of a friend! I am honored to be part of your special day with
 				Emir!</span>
 		</div>

@@ -75,7 +75,7 @@ class Songs {
 
 		$dropDown .= "</select><div class='Clear'></div>";
 
-		$form = $dropDown. "<form id='AddSong'><span class='Item'>Artist:<input class='Item' id='Artist' type='text'><br>Title:<input class='Item' id='Song' type='text'><input class='Button Center' type='submit'></span><div class='Clear'></div></form>";
+		$form = $dropDown. "<form id='AddSong'><span class='Item'>Artist:<input class='Item' id='Artist' type='text'><br>Title:<input class='Item' id='Song' type='text'><input class='Button Center' type='submit' value='SUBMIT'></span><div class='Clear'></div></form>";
 
 		$html  =  "<div class='Songs'>" . $form;
 		$html .= "<div class='SongList'><div class='Header'><div class='Item Artist'>Artist</div><div class='Item Title'>Title</div><div class='Clear'></div></div><div class='Clear'></div>";
@@ -102,6 +102,8 @@ class Songs {
 	}
 
 	public static function getSong($id, $userId, $artist, $song, $isHidden, $hasHighlight){
+		$artist = MySql::unescapeString($artist);
+		$song = MySql::unescapeString($song);
 		$hiddenHtml = "";
 		if ($isHidden)
 			$hiddenHtml = " Hidden";
@@ -109,7 +111,7 @@ class Songs {
 		$highlightHtml = "";
 		if ($hasHighlight)
 			$highlightHtml = " Highlight";
-		return "<div class='Song UserId$userId$hiddenHtml'><div class='Item ClearButton' id='ClearButton$id'>-</div><div class='Item Artist$highlightHtml'>$artist</div><div class='Item Title$highlightHtml'>$song</div><div class='Clear'></div></div>";
+		return "<div class='Song UserId$userId$hiddenHtml$highlightHtml'><div class='Item ClearButton' id='ClearButton$id'>-</div><div class='Item Artist'>$artist</div><div class='Item Title'>$song</div><div class='Clear'></div></div>";
 	}
 }
 ?>

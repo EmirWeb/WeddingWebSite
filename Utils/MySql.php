@@ -89,7 +89,15 @@ class MySQL {
 		self::$database = "";
 		return $result;
 		
-	}	
+	}
+
+	public function unescapeString($string){
+		$string = stripslashes($string);
+		$string = str_replace("<", "&lt;",$string);
+		$string = str_replace(">", "&gt;",$string);
+		$string = str_replace("\"", "\\\"",$string);
+		return $string;
+	}
 	
 }
 

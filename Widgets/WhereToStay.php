@@ -4,7 +4,7 @@
 			<div class="Title">
 				<a href="http://www.vintage-hotels.com/millcroft/accommodations.htm">The Millcroft Inn and Spa</a>
 			</div>
-			<div class="Description">A Relaxing Stay at a Historic Property, The Millcroft Inn & Spa has been elaborately renovated to preserve its architectural beauty, and to ensure its guests enjoy an authentic Ontario Inn getaway.This accommodation is a 20 minute drive or taxi ride from the wedding
+			<div class="Description"> A relaxing stay at a historic property, The Millcroft Inn & Spa has been elaborately renovated to preserve its architectural beauty, and to ensure its guests enjoy an authentic Ontario Inn getaway.This accommodation is a 20 minute drive or taxi ride from the wedding
 				venue.</div>
 		</div>
 		<div class="MapHeader">

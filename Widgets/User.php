@@ -172,15 +172,18 @@ class User {
 			}
 			
 			
+			$name = MySql::unescapeString($user[self::$USER_NAME_JSON_KEY]);
+			$foodRestrictions = MySql::unescapeString($user[self::$USER_FOOD_RESTRICTIONS_JSON_KEY]);
+			$message =MySql::unescapeString($rsvp[Rsvp::$RSVP_MESSAGE_JSON_KEY]);
 					
 			$html .= "
 				<div class='UserForm' id='$id'>
-					<span class='UsernameLabel' >{$user[self::$USER_NAME_JSON_KEY]}</span>
+					<span class='UsernameLabel'>$name</span>
 					<input class='IsComingInput' type='radio' value='true' name='group$id' $isComingChecked>Yes, I will attend 
 					<input class='IsNotComingInput' type='radio' value='false' name='group$id' $isNotComingChecked>No, I will not attend
 					<div class='IsComingDetails $isComingHidden'>
 						<span 'IsComingLabel'>Yay! Let us know about any food restrictions you have.</span><br>
-						<textarea class='FoodRestrictionsInput' name='FoodRestrictions' rows='2' cols='30'>{$user[self::$USER_FOOD_RESTRICTIONS_JSON_KEY]}</textarea>
+						<textarea class='FoodRestrictionsInput' name='FoodRestrictions' rows='2' cols='30'>$foodRestrictions</textarea>
 					</div>
 					<div class='IsNotComingDetails $isNotComingHidden'>
 						<span class='IsNotComingLabel Label'>We will miss you!</span>
@@ -190,8 +193,8 @@ class User {
 		}
 		$html .= "
 				<span class='foodRestictions'>A message to the bride and groom!</span><br>
-				<textarea class='MessageInput' rows='5' cols='50'>{$rsvp[Rsvp::$RSVP_MESSAGE_JSON_KEY]}</textarea><br>
-				<input class='Button Center' type='submit'>
+				<textarea class='MessageInput' rows='5' cols='50'>$message</textarea><br>
+				<input class='Button Center' type='submit' value='SUBMIT'>
 			</form>
 			";
 		return $html;
