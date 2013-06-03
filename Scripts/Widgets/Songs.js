@@ -16,7 +16,9 @@ var addSongFailure = function(jqXHR, textStatus, errorThrown) {
 };
 
 var addSongSuccess = function(response, textStatus) {
-	$('div.Songs').append(response.songHtml);
+	$('div.SongList').append(response.songHtml);
+	console.log($('div.SongList'));
+	console.log(response.songHtml);
 };
 
 $(document).ready(function() {

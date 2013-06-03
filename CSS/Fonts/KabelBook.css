@@ -1,10 +1,10 @@
 @font-face {
-    font-family: 'kabelbook';
-    src: url('../../Files/Fonts/kabel.eot');
-    src: url('../../Files/Fonts/kabel.eot?#iefix') format('embedded-opentype'),
-         url('../../Files/Fonts/kabel.woff') format('woff'),
-         url('../../Files/Fonts/kabel.ttf') format('truetype'),
-         url('../../Files/Fonts/kabel.svg#kabelbook') format('svg');
+    font-family: 'kabelmedium';
+    src: url('../../Files/Fonts/kabel_book_bt.eot');
+    src: url('../../Files/Fonts/kabel_book_bt.eot?#iefix') format('embedded-opentype'),
+         url('../../Files/Fonts/kabel_book_bt.woff') format('woff'),
+         url('../../Files/Fonts/kabel_book_bt.ttf') format('truetype'),
+         url('../../Files/Fonts/kabel_book_bt.svg#kabelbook') format('svg');
     font-weight: normal;
     font-style: normal;
 
