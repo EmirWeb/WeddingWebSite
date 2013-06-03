@@ -4,6 +4,10 @@ select {
 	margin: 10px;
 }
 
+div.UserForm {
+	min-height: 150px;
+}
+
 div.Songs {
 	width: 720px;
 	margin: 0px auto;
@@ -63,7 +67,7 @@ div.Highlight {
 }
 
 div.Song div.ClearButton:hover {
-	cursor: pointer;	
+	cursor: pointer;
 }
 
 div.Song div.ClearButton {

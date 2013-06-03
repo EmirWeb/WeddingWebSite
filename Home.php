@@ -73,7 +73,7 @@
 				WE HOPE YOU CAN SHARE IN OUR SPECIAL DAY
 			</div>
 			<?php if (!SessionManager::isLoggedIn()) :	?>
-			<div class="Header3" class="ReplyCodeForm">
+			<div class="Header3 ReplyCodeForm" class="ReplyCodeForm">
 				<form id="ReplyCodeRSVP" >
 					TO RSVP PLEASE ENTER YOUR REPLY CODE  <input class="Input" type="text">
 					<input class="Button ReplyCodeButton" type="submit">
@@ -93,7 +93,7 @@
 				HELP THE US BY SUGGESTING YOUR FAVOURITE TUNES
 			</div>
 			<?php if (!SessionManager::isLoggedIn()) :	?>
-			<div class="Header3">
+			<div class="Header3 ReplyCodeForm">
 				<form id="ReplyCodeSongs" >
 					TO RSVP PLEASE ENTER YOUR REPLY CODE <input class="Input" type="text">
 					<input class="Button ReplyCodeButton" type="submit">

@@ -1,7 +1,7 @@
 var replyCodeUrl = "NetworkCalls/ReplyCode.php";
 
 var success = function(response, textStatus) {
-	$('h3.ReplyCodeForm').remove();
+	$('div.ReplyCodeForm').remove();
 	$('div.Strip_06').append(response.namesView);
 	$('div.Strip_07').append(response.songsView);
 };
