@@ -1,6 +1,6 @@
 <?php
-include_once ( $_SERVER['DOCUMENT_ROOT'] . '/WeddingWebSite/Utils/DomManager.php');
-include_once ( $_SERVER['DOCUMENT_ROOT'] . '/WeddingWebSite/Widgets/User.php');
+include_once ( $_SERVER['DOCUMENT_ROOT'] . '/Utils/DomManager.php');
+include_once ( $_SERVER['DOCUMENT_ROOT'] . '/Widgets/User.php');
 
 class Songs {
 
