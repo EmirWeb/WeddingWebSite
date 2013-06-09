@@ -3,7 +3,11 @@
 div.Strip {
 	min-width: 1200px;	
 	min-height: 600px;
-	padding-bottom: 40px;
+	
+}
+
+div.Strip_08 {
+	background-color: #F16263;
 }
 
 div.Strip_01 {
@@ -34,4 +38,16 @@ div.Strip_06 {
 
 div.Strip_07 {
 	background-color: #F4D3D8;
+}
+
+div.StripFooter{
+	height: 80px;
+}
+
+#Strip_02, #Strip_07 {
+	margin-top: 120px;
+}
+
+#Strip_04 {
+	margin-top: 640px;
 }

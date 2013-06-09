@@ -9,6 +9,7 @@
 	DomManager::addCSS('CSS/Widgets/Slider.css');
 	DomManager::addCSS('CSS/Widgets/Songs.css');
 	DomManager::addCSS('CSS/Widgets/WeddingParty.css');
+	DomManager::addCSS('CSS/Widgets/User.css');
 	DomManager::addCSS('CSS/Widgets/WhereToStay.css');
 	DomManager::addCSS('CSS/Widgets/PartyDetails.css');
 	DomManager::addCSS('CSS/Widgets/WeddingPartyOval.css');
@@ -20,7 +21,7 @@
 	DomManager::addScript('Scripts/Widgets/WeddingParty.js');
 	DomManager::addScript('Scripts/Widgets/PartyDetails.js');
 	DomManager::addScript('Scripts/Home.js');
-	SessionManager::clearSession();
+// 	SessionManager::clearSession();
 ?>
 
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Strict//EN" "http://www.w3.org/TR/html4/strict.dtd">
@@ -41,35 +42,40 @@
 			<a href="#Strip_06">RSVP</a>
 			<a href="#Strip_07">SONG REQUESTS</a>
 		</div>
-		<div id="Strip_01" class="Strip Strip_01">
+		<div  class="Strip Strip_01">
 			<img class="BannerImage" src="Files/Images/monogram_png-24.png" />
+			<div id="Strip_02" class="Clear StripFooter"></div>
 		</div>
-		<div id="Strip_02" class="Strip Strip_02 ">
+		<div  class="Strip Strip_02 ">
  			<img class="BannerImage" src="Files/Images/ourstory.png" /> 
 <!-- 			<div class="Banner">Our Story</div> -->
 			<?php include('Widgets/Slider.php'); ?>
+			<div id="Strip_03" class="Clear StripFooter"></div>
 		</div>
-		<div id="Strip_03" class="Strip Strip_03">
+		<div  class="Strip Strip_03">
  			<img class="BannerImage" src="Files/Images/weddingparty.png" /> 
 <!-- 			<div class="Banner">Wedding Party</div> -->
 			<?php include('Widgets/WeddingParty.php'); ?>
+			<div id="Strip_04" class="Clear StripFooter"></div>
 			
 		</div>
-		<div id="Strip_04" class="Strip Strip_04">
+		<div class="Strip Strip_04">
  			<img class="BannerImage" src="Files/Images/theday.png" /> 
 <!-- 			<div class="Banner">The Day</div> -->
 			<?php include('Widgets/PartyDetails.php'); ?>
+			<div id="Strip_05" class="Clear StripFooter"></div>
 		</div>
-		<div id="Strip_05" class="Strip Strip_05">
+		<div class="Strip Strip_05">
   			<img class="BannerImage" src="Files/Images/wheretostay.png" />  
 <!-- 			<div class="Banner">Where to Stay</div> -->
 			<?php include('Widgets/WhereToStay.php'); ?>
+			<div id="Strip_06" class="Clear StripFooter"></div>
 		</div>
-		<div id="Strip_06" class="Strip Strip_06">
+		<div class="Strip Strip_06">
  			<img class="BannerImage" src="Files/Images/rsvp.png" /> 
 <!-- 			<div class="Banner">Rsvp</div> -->
 			<div class="Header3">
-				WE HOPE YOU CAN SHARE IN OUR SPECIAL DAY
+				Please reply by July 5th, 2013, with your reply code that can be found on your mailed invitation. WE HOPE YOU CAN SHARE IN OUR SPECIAL DAY
 			</div>
 			<?php if (!SessionManager::isLoggedIn()) :	?>
 			<div class="Header3 ReplyCodeForm" class="ReplyCodeForm">
@@ -84,8 +90,10 @@
 					DomManager::addScript('Scripts/Widgets/User.js');
 				?>
 			<?php endif;?>
+			<div class="RsvpContent"></div>
+			<div id="Strip_07" class="Clear StripFooter"></div>
 		</div>
-		<div id="Strip_07" class="Strip Strip_07">
+		<div class="Strip Strip_07">
  			<img class="BannerImage" src="Files/Images/songrequests.png" /> 
 <!-- 			<div class="Banner">Song Requests</div> -->
 			<div class="Header3">
@@ -98,12 +106,18 @@
 					<input class="Button ReplyCodeButton" type="submit" value='SUBMIT'>
 				</form>
 			</div>
+			<div class="SongContent"></div>
+			<div class="Clear StripFooter"></div>
 			<?php else : ?>
 				<?php 
 					echo Songs::getSongs(null, null, false);
 					DomManager::addScript('Scripts/Widgets/Songs.js');
 				?>
 			<?php endif;?>
+			<div  class="Clear StripFooter"></div>
+		</div>
+		<div class="Strip_08">
+			<img class="BannerImage" src="Files/Images/footer.png" />
 		</div>
 	</body>
 	<?php echo DomManager::getScripts(); ?>

@@ -19,6 +19,11 @@ class Songs {
 	public static function getQueryForUserId($userId) {
 		return "SELECT * FROM  " . self::$REQUEST_TABLE_NAME . " NATURAL JOIN  " . User::$USER_TABLE_NAME . " where " . self::$REQUEST_TABLE_USER_ID_COLUMN_NAME . "='$userId';";
 	}
+	
+	
+	public static function getDeleteQuery($id) {
+		return "DELETE FROM " . self::$REQUEST_TABLE_NAME . " where " . self::$REQUEST_TABLE_ID_COLUMN_NAME . "='$id';";
+	}
 
 	public static function getQueryForReplyCode($replyCode) {
 		return "SELECT * FROM " . self::$REQUEST_TABLE_NAME . " where " . self::$REQUEST_TABLE_CODE_COLUMN_NAME . "='$replyCode';";
@@ -53,8 +58,6 @@ class Songs {
 	public static function getSongs($users, $songs, $includeJavascript = true) {
 		if (empty($songs)){
 			$songs = self::getSongsData(null);
-			if (empty($songs))
-				return null;
 		}
 
 		if (empty($users)){
@@ -111,7 +114,7 @@ class Songs {
 		$highlightHtml = "";
 		if ($hasHighlight)
 			$highlightHtml = " Highlight";
-		return "<div class='Song UserId$userId$hiddenHtml$highlightHtml'><div class='Item ClearButton' id='ClearButton$id'>-</div><div class='Item Artist'>$artist</div><div class='Item Title'>$song</div><div class='Clear'></div></div>";
+		return "<div id='SongId$id' class='Song UserId$userId$hiddenHtml$highlightHtml'><div onclick='deleteSong($id)' class='Item ClearButton' id='ClearButton$id'>-</div><div class='Item Artist'>$artist</div><div class='Item Title'>$song</div><div class='Clear'></div></div>";
 	}
 }
 ?>

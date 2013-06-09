@@ -1,0 +1,62 @@
+@CHARSET "UTF-8";
+
+div.UserForm span.UsernameLabel {
+	font-size: 20px;
+	line-height: 25px;
+	font-weight: bold;
+}
+
+div.Users {
+	margin-top: 40px;
+}
+
+div.IsComingDetails {
+	margin-top: 20px;
+}
+
+div.IsNotComingDetails {
+	margin-top: 40px;
+}
+
+div.RsvpDetails div.User {
+	padding: 15px;
+	margin: 5px auto;
+	max-width: 800px;
+	font-size: 20px;
+	line-height: 25px;
+	border: 1px solid black;
+	min-height: 130px;
+}
+
+div.RsvpSectionButton{
+	margin-top: 140px;
+}
+
+div.FoodRestrictions {
+	font-weight: bold;
+}
+
+span.MessageLabel {
+	font-size: 20px;
+	line-height: 25px;
+	font-weight: bold;
+}
+
+span.Message {
+	font-size: 20px;
+	line-height: 25px;
+}
+
+div.RsvpDetails div.User span.Username {
+	font-weight: bold;
+}
+
+div.MessageDetails {
+	padding: 15px;
+	margin: 5px auto;
+	max-width: 800px;
+	font-size: 20px;
+	line-height: 25px;
+	border: 1px solid black;
+	min-height: 130px;
+}

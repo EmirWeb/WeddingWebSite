@@ -2,8 +2,8 @@ var replyCodeUrl = "NetworkCalls/ReplyCode.php";
 
 var success = function(response, textStatus) {
 	$('div.ReplyCodeForm').remove();
-	$('div.Strip_06').append(response.namesView);
-	$('div.Strip_07').append(response.songsView);
+	$('div.RsvpContent').append(response.namesView);
+	$('div.SongContent').append(response.songsView);
 };
 
 var failure = function(jqXHR, textStatus, errorThrown) {

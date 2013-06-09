@@ -18,9 +18,15 @@ class Rsvp {
 			$messageInput = "NULL";
 		else
 			$messageInput = "'$message'";
+		
+		if ($submitted)
+			$sumittedValue = 1;
+		else
+			$sumittedValue = 0;
+		
 		return 
 			" INSERT INTO " . self::$RSVP_TABLE_NAME . " (" . self::$RSVP_TABLE_CODE_COLUMN_NAME . ", " . self::$RSVP_TABLE_SUBMITTED_COLUMN_NAME . ", " . self::$RSVP_TABLE_MESSAGE_COLUMN_NAME . ") VALUES ( '$replyCode', '$submitted', $messageInput)" .
-			" ON DUPLICATE KEY UPDATE " . self::$RSVP_TABLE_SUBMITTED_COLUMN_NAME . "='$submitted', " . self::$RSVP_TABLE_MESSAGE_COLUMN_NAME . "=$messageInput;" 
+			" ON DUPLICATE KEY UPDATE " . self::$RSVP_TABLE_SUBMITTED_COLUMN_NAME . "='$sumittedValue', " . self::$RSVP_TABLE_MESSAGE_COLUMN_NAME . "=$messageInput;" 
 			;
 	}
 

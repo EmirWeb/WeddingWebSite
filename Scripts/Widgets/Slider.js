@@ -1,7 +1,7 @@
 function Slider(nextButtonCssIdentifier, previousButtonCssIdentifier, slideCssIdentifier) {
 	var HIDDEN_CLASS = 'Hidden';
 	var currentSlideId = 0;
-	var slideCount = 26;
+	var slideCount = 29;
 	var nextButton = $(nextButtonCssIdentifier);
 	var previousButton = $(previousButtonCssIdentifier);
 	var slideCssIdentifier = slideCssIdentifier;

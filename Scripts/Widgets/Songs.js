@@ -1,4 +1,5 @@
 var addSongUrl = "NetworkCalls/AddSong.php";
+var deleteSongUrl = "NetworkCalls/DeleteSong.php";
 
 var setUserSongs = function(id) {
 	$("div.Song").addClass("Hidden");
@@ -19,6 +20,17 @@ var addSongSuccess = function(response, textStatus) {
 	$('div.SongList').append(response.songHtml);
 };
 
+var deleteSong = function (id){
+	$('#SongId' +id).remove();
+	$.ajax({
+		type : "POST",
+		data : {
+			songId : id
+		},
+		url : deleteSongUrl,
+	});
+};
+
 $(document).ready(function() {
 	$('#AddSong').submit(function() {
 		$.ajax({
@@ -26,7 +38,8 @@ $(document).ready(function() {
 			data : {
 				userId : getSelectedId(),
 				artist : $('#Artist').val(),
-				song : $('#Song').val()
+				song : $('#Song').val(),
+				hasHighlight : $('div.UserId' + getSelectedId()).length % 2 == 0
 			},
 			url : addSongUrl,
 			success : addSongSuccess,

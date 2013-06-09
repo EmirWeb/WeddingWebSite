@@ -51,7 +51,7 @@
 	<div class="WeddingPartyContent VerticalCenterParent" id="WeddingPartyContent">
 		<!-- Armin -->
 		<div id="Biography0" class="Biography VerticalCenter">
-			<span class="Name">Arming Hasanbegovic</span> <br><span class="Role">Best Man</span> <br><span class="Story">Emir first met me when he was a little bit less than 5 years old. For the next 13 or so years we were inseparable. Mainly because we shared a bedroom. He was always taller than me but that changed not too long ago. I take much pride in
+			<span class="Name">Armin Hasanbegovic</span> <br><span class="Role">Best Man</span> <br><span class="Story">Emir first met me when he was a little bit less than 5 years old. For the next 13 or so years we were inseparable. Mainly because we shared a bedroom. He was always taller than me but that changed not too long ago. I take much pride in
 				that now. Growing up, playing basketball and video games was fun. He would always get the good controller, the good side of the keyboard, the car in Monopoly, and godamn Mario (leaving me with Luigi). He would bulldoze me in basketball and then have the audacity to call a defensive foul. It was
 				pretty much a very regular younger brother older brother dynamic. But he did teach me to program, and he also bought me my first non-plastic rollerblades. I also remember him sprinting after a few kids that were picking on me when we first moved to Toronto. I didn't forgot those things Emir. I'm
 				not a man of many words, sooooooo Love you. XOXOXOX</span>
@@ -78,7 +78,7 @@
 		</div>
 		<!-- April -->
 		<div id="Biography4" class="Biography VerticalCenter Hidden">
-			<span class="Name">April</span><br> <span class="Role">Bridsemaid</span><br> <span class="Story">I met Laura in Grade 8 at the Mayfield highschool orientation. I knew then that we would be friends with our nerdy sweatshirts, me in my Northern Reflections and Laura in her... Mickey Mouse possibly. I remember the first time I had to remind Laura
+			<span class="Name">April McConkey</span><br> <span class="Role">Bridsemaid</span><br> <span class="Story">I met Laura in Grade 8 at the Mayfield highschool orientation. I knew then that we would be friends with our nerdy sweatshirts, me in my Northern Reflections and Laura in her... Mickey Mouse possibly. I remember the first time I had to remind Laura
 				to swallow her fries because if you got Laura laughing while she was eating fries and coke it was unpredictable, to say the least. Unpredictable was also our Thursday girls night outs, which were mostly spent in Toronto "hitting the clubs", jumping the turnstiles at the subway to make the last
 				train or hopping into a random limo. Life was always unpredictable with Laura Plant. I am so glad that Emir is taking care of my precious Laura, but don't forget Emir, if you ever need me I will be there. PS, Emir if you hurt my Laura....you know....</span>
 		</div>
@@ -97,7 +97,7 @@
 
 		<!-- Deana -->
 		<div id="Biography7" class="Biography VerticalCenter Hidden">
-			<span class="Name">Deanna</span><br> <span class="Role">Bridesmaid</span><br> <span class="Story">A wonderful mutual friend, April, and I had grade 10 history class together. We both loved Jewel - that was pretty much all you needed to find a bosom friend in those days, or in the very least, be invited to her cool Hallowe'en party. Riding in
+			<span class="Name">Deanna Hergert</span><br> <span class="Role">Bridesmaid</span><br> <span class="Story">A wonderful mutual friend, April, and I had grade 10 history class together. We both loved Jewel - that was pretty much all you needed to find a bosom friend in those days, or in the very least, be invited to her cool Hallowe'en party. Riding in
 				the back of my father's pick-up truck, I nervously approached my first high school party. I was a country girl, and this was a city party - the kind of thing I needed my grade-school best pal, Mel Hanisch to walk beside me through, just in case everyone there was too cool to even consider
 				talking to me. The most dreaded moment by far was walking through the door, where potentially everyone in the room was going to look up from what they were doing to see who the latest arrival to the party was...and of course I was beyond fashionably late. Thankfully we entered almost completely
 				unnoticed, except of course by our gracious host. But what was that chaos happening in the corner?! Some poor, awkward, girl curled up in a ball with legs and arms flailing as she is being attacked by a crowd of silly-string projectiles; I remember it like it were yesterday. What a sight! She
@@ -111,7 +111,7 @@
 		</div>
 		<!-- Gurpreet -->
 		<div id="Biography9" class="Biography VerticalCenter Hidden">
-			<span class="Name">Gurpreet</span><br> <span class="Role">Bridesmaid</span><br> <span class="Story">I met Laura in 1995 on the playground at our middle school. We were enrolled in different classrooms, yet somehow, perhaps through our common love of Leonardo DiCaprio in Baz Luhrmann’s production of Romeo and Juliet or our unconventional style
+			<span class="Name">Gurpreet Lakhanpal</span><br> <span class="Role">Bridesmaid</span><br> <span class="Story">I met Laura in 1995 on the playground at our middle school. We were enrolled in different classrooms, yet somehow, perhaps through our common love of Leonardo DiCaprio in Baz Luhrmann’s production of Romeo and Juliet or our unconventional style
 				of wearing overalls, plaid shirts and platform Converse-esque shoes we became fast friends. Fortunately our styles have since matured and I am so blessed to have remained great friends with Laura over the years. She is a true gem of a friend! I am honored to be part of your special day with
 				Emir!</span>
 		</div>

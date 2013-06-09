@@ -36,7 +36,7 @@
 		<div class="Description">For a more quaint stay, explore the vast array of Bed and Breakfasts that are situated in Orangeville and Caledon.</div>
 	</div>
 	<div class="Clear"></div>
-	<div class="Notes">Alternativeley, we encourage our guests to explore the vast array of Bed and Breakfasts that are situated in the Orangeville/Caledon area.</div>
+	<div class="Notes">Alternatively, we encourage our guests to explore the vast array of Bed and Breakfasts that are situated in the Orangeville/Caledon area.</div>
 	<div class="Clear"></div>
 </div>
 

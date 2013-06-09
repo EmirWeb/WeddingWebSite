@@ -42,3 +42,7 @@ div.WhereToStay div.Notes {
 	width: 600px;
 	text-align: center;
 }
+
+div.Hotel a {
+	color: #E36D6E;
+}

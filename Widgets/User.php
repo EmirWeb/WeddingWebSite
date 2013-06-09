@@ -91,6 +91,8 @@ class User {
 		$rsvp = $userData[self::$USER_RSVP_JSON_KEY];
 		$hasSubmitted = Rsvp::hasSubmitted($rsvp);
 	
+		
+		
 		$html  = "<div class='Users'>";
 		if ($hasSubmitted)
 			$html .= self::getRsvpDetailsHtml($userData);
@@ -109,7 +111,7 @@ class User {
 	
 	public static function getNoRsvpHtml(){
 		return "
-			<div class='Begin RsvpButton Button Center'>Click Here to RSVP</div>
+			<div class='Begin RsvpButton Button Center RsvpSectionButton'>Click Here to RSVP</div>
 			";
 	}
 	
@@ -127,22 +129,26 @@ class User {
 			
 			if ($user[self::$USER_IS_COMING_JSON_KEY])
 				$html .= "
-					<span class='IsComing'>is coming</span>
-					<span class='FoodRestrictions'>Food Restrictions: {$user[self::$USER_FOOD_RESTRICTIONS_JSON_KEY]}</span>
+					<span class='IsComing'>is coming</span><br><br>
+					<span class='FoodRestrictions'><b>Food Restrictions:</b> {$user[self::$USER_FOOD_RESTRICTIONS_JSON_KEY]}</span>
+					<br>
+					<br>
 				</div>
 					";
 			else
 				$html .= "
-					<span class='IsNotComing' >is not coming</span>
+					<span class='IsNotComing' >is <b>NOT</b> coming</span>
 				</div>
 			";
 		}
 		if (isset($rsvp[Rsvp::$RSVP_MESSAGE_JSON_KEY]))
 			$html .= "
+					<div class='MessageDetails'>
 				<br><span class='MessageLabel'>Your message to the bride and groom:</span><br>
-				<br><span class='Message'>{$rsvp[Rsvp::$RSVP_MESSAGE_JSON_KEY]}</span>";
+				<br><span class='Message'>{$rsvp[Rsvp::$RSVP_MESSAGE_JSON_KEY]}</span></div>";
+				
 		$html .= "
-				<div class='Edit RsvpButton Button Center'>Click here to change RSVP details</div>
+				<div class='Edit RsvpButton Button Center'>CHANGE RSVP DETAILS</div>
 			</div>
 			";
 			return $html;
@@ -179,8 +185,8 @@ class User {
 			$html .= "
 				<div class='UserForm' id='$id'>
 					<span class='UsernameLabel'>$name</span>
-					<input class='IsComingInput' type='radio' value='true' name='group$id' $isComingChecked>Yes, I will attend 
-					<input class='IsNotComingInput' type='radio' value='false' name='group$id' $isNotComingChecked>No, I will not attend
+					<input class='IsComingInput' type='radio' value='true' name='group$id' $isComingChecked><b>Yes</b>, I will attend 
+					<input class='IsNotComingInput' type='radio' value='false' name='group$id' $isNotComingChecked><b>No</b>, I will not attend
 					<div class='IsComingDetails $isComingHidden'>
 						<span 'IsComingLabel'>Yay! Let us know about any food restrictions you have.</span><br>
 						<textarea class='FoodRestrictionsInput' name='FoodRestrictions' rows='2' cols='30'>$foodRestrictions</textarea>
