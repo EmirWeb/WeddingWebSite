@@ -1,11 +1,11 @@
 
 <div class="WeddingParty">
 	<div class="MainWeddingPartyCell WeddingPartyCell" id="WeddingPartyCell0">
-		<img src="Files/Images/Widgets/WeddingParty/WeddingPartyCell0.jpg">
+		<img class="Chosen" src="Files/Images/Widgets/WeddingParty/WeddingPartyCell0.jpg">
 		<div class="CellHover"></div>
 	</div>
 	<div class="WeddingPartyCell" id="WeddingPartyCell1">
-		<img class="Chosen" src="Files/Images/Widgets/WeddingParty/WeddingPartyCell1.jpg">
+		<img src="Files/Images/Widgets/WeddingParty/WeddingPartyCell1.jpg">
 		<div class="CellHover"></div>
 	</div>
 	<div class="WeddingPartyCell" id="WeddingPartyCell2">
@@ -73,7 +73,8 @@
 		</div>
 		<!--Johnny -->
 		<div id="Biography3" class="Biography VerticalCenter Hidden">
-			<span class="Name">John Poetker</span><br> <spanclass="Role">Groomsman</span> <br><span class="Story">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</span>
+			<span class="Name">John Poetker</span><br> <span class="Role">Groomsman</span> <br>
+			<span class="Story">I first met Emir at what used to be the A & P warehouse, we were lifting boxes while Emir was making his long journey through school, and happen to have a conversation about music. Since, we have been to more concerts than I can remember, and some we can't. Through the years I've had a chance to meet Emir's wonderful friends and family. When I met Laura, I knew Emir had found someone special. Although she has not yet joined us for a concert I look forward to many years of wonderful friendship with the both of them.</span>
 		
 		</div>
 		<!-- April -->

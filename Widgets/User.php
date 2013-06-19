@@ -149,7 +149,7 @@ class User {
 // 		<div class='Edit RsvpButton Button Center'>CHANGE RSVP DETAILS</div>
 		$html .= "
  				
-				We have received your RSVP, thank you! We can be reached at emir@emirweb.com or at (416) 822-8694 if you need assistance.
+				<b>We have received your RSVP, thank you!</b><br /> <br /> We can be reached at emir@emirweb.com or at (416) 822-8694 if you need assistance.
 			</div>
 			";
 			return $html;
