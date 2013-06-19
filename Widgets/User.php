@@ -121,34 +121,35 @@ class User {
 		$html = "
 			<div class='RsvpDetails'>
 			";
-		foreach ($users as $id => $user){
-			$html .= "
-				<div class='User id_$id'>
-					<span class='Username'>{$user[self::$USER_NAME_JSON_KEY]}</span>
-			";
+// 		foreach ($users as $id => $user){
+// 			$html .= "
+// 				<div class='User id_$id'>
+// 					<span class='Username'>{$user[self::$USER_NAME_JSON_KEY]}</span>
+// 			";
 			
-			if ($user[self::$USER_IS_COMING_JSON_KEY])
-				$html .= "
-					<span class='IsComing'>is coming</span><br><br>
-					<span class='FoodRestrictions'><b>Food Restrictions:</b> {$user[self::$USER_FOOD_RESTRICTIONS_JSON_KEY]}</span>
-					<br>
-					<br>
-				</div>
-					";
-			else
-				$html .= "
-					<span class='IsNotComing' >is <b>NOT</b> coming</span>
-				</div>
-			";
-		}
-		if (isset($rsvp[Rsvp::$RSVP_MESSAGE_JSON_KEY]))
-			$html .= "
-					<div class='MessageDetails'>
-				<br><span class='MessageLabel'>Your message to the bride and groom:</span><br>
-				<br><span class='Message'>{$rsvp[Rsvp::$RSVP_MESSAGE_JSON_KEY]}</span></div>";
-				
+// 			if ($user[self::$USER_IS_COMING_JSON_KEY])
+// 				$html .= "
+// 					<span class='IsComing'>is coming</span><br><br>
+// 					<span class='FoodRestrictions'><b>Food Restrictions:</b> {$user[self::$USER_FOOD_RESTRICTIONS_JSON_KEY]}</span>
+// 					<br>
+// 					<br>
+// 				</div>
+// 					";
+// 			else
+// 				$html .= "
+// 					<span class='IsNotComing' >is <b>NOT</b> coming</span>
+// 				</div>
+// 			";
+// 		}
+// 		if (isset($rsvp[Rsvp::$RSVP_MESSAGE_JSON_KEY]))
+// 			$html .= "
+// 					<div class='MessageDetails'>
+// 				<br><span class='MessageLabel'>Your message to the bride and groom:</span><br>
+// 				<br><span class='Message'>{$rsvp[Rsvp::$RSVP_MESSAGE_JSON_KEY]}</span></div>";
+// 		<div class='Edit RsvpButton Button Center'>CHANGE RSVP DETAILS</div>
 		$html .= "
-				<div class='Edit RsvpButton Button Center'>CHANGE RSVP DETAILS</div>
+ 				
+				We have received your RSVP, thank you! We can be reached at emir@emirweb.com or at (416) 822-8694 if you need assistance.
 			</div>
 			";
 			return $html;

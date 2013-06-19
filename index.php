@@ -75,7 +75,7 @@
  			<img class="BannerImage" src="Files/Images/rsvp.png" /> 
 <!-- 			<div class="Banner">Rsvp</div> -->
 			<div class="Header3">
-				Please reply by July 5th, 2013, with your reply code that can be found on your mailed invitation. WE HOPE YOU CAN SHARE IN OUR SPECIAL DAY
+				Please reply by July 5th, 2013, with your reply code that can be found on your mailed invitation. We hope that you can share in our special day.
 			</div>
 			<?php if (!SessionManager::isLoggedIn()) :	?>
 			<div class="Header3 ReplyCodeForm" class="ReplyCodeForm">
@@ -97,7 +97,7 @@
  			<img class="BannerImage" src="Files/Images/songrequests.png" /> 
 <!-- 			<div class="Banner">Song Requests</div> -->
 			<div class="Header3">
-				HELP US BY SUGGESTING YOUR FAVOURITE TUNES
+				Help us by suggesting your favorite tunes.
 			</div>
 			<?php if (!SessionManager::isLoggedIn()) :	?>
 			<div class="Header3 ReplyCodeForm">
