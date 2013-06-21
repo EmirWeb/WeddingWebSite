@@ -9,7 +9,7 @@
 				<img class="Picture" width="280px" src="Files/Images/Widgets/Slider/slide0.jpg">
 			</div>
 			<div class="Story">
-				<span class="Date">May, 2007</span><br> <span class="Title">Laura and Emir meet</span><br> <span class="Content">Laura and Emir met in May of 2007 while working together at Alice Fazooli's. Although we were just friends, Laura remembers the first time she saw Emir, weaving through the booths
+				<span class="Date">May, 2007</span><br> <span class="Title">Laura and Emir meet</span><br> <span class="Content">Laura and Emir met in May of 2007 while working together at Alice Fazooli's. Although they were just friends, Laura remembers the first time she saw Emir, weaving through the booths
 					with his head cocked to the side and arms full of dishes. Emir remembers noticing Laura’s red lips and long hair. They worked side by side, on and off for years, without realizing they were meant to be together.</span>
 			</div>
 		</div>
