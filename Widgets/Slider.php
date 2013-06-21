@@ -140,6 +140,13 @@
 			</div>
 		</div>
 		<div class="Slide Hidden" id="Slide15">
+			<div class="Picture">
+			<audio controls height="100" width="100">
+		  		<source src="Files/Music/lauras_song.mp3" type="audio/mpeg">
+		  		<source src="Files/Music/lauras_song.ogg" type="audio/ogg">
+		  		<embed height="50" width="100" src="Files/Music/lauras_song.mp3">
+			</audio>
+			</div>
 			<div class="Story">
 				<span class="Date">August 24th, 2011</span><br> <span class="Title">Laura’s Bday Song</span><br> <span class="Content">For Laura’s 29th Birthday, Emir wrote her a song. After crafting the melody, he had Laura’s dear friend Deanna write the lyrics and sing them. But instead of writing them from
 					scratch, she rejigged a poem Laura had written years earlier about her need to explore the world and all it’s possibilities. They recorded it with their good friend Peter Iskandar, who also mastered it. It was one of the most beautiful gifts Laura has received and brought on more than a few
