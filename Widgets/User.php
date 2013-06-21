@@ -149,7 +149,7 @@ class User {
 // 		<div class='Edit RsvpButton Button Center'>CHANGE RSVP DETAILS</div>
 		$html .= "
  				
-				<b>We have received your RSVP, thank you!</b><br /> <br /> To get in touch, please email us at lauraandemir@gmail.com! Don't forget to request a song or two (or ten) below! Thank you!
+				<b>We have received your RSVP, thank you!</b><br /> <br /> To get in touch, please email us at <a href='mailto:lauraandemir@gmail.com?Subject=Wedding%20website'>lauraandemir@gmail.com</a>! Don't forget to request a song or two (or ten) below! Thank you!
 			</div>
 			";
 			return $html;
