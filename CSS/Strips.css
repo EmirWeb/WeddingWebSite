@@ -7,6 +7,7 @@ div.Strip {
 }
 
 div.Strip_08 {
+	min-width: 1200px;
 	background-color: #F16263;
 }
 
