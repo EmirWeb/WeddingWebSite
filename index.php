@@ -102,7 +102,7 @@
 			<?php if (!SessionManager::isLoggedIn()) :	?>
 			<div class="Header3 ReplyCodeForm">
 				<form id="ReplyCodeSongs" >
-					TO RSVP PLEASE ENTER YOUR REPLY CODE <input class="Input" type="text">
+					TO REQUEST A SONG PLEASE ENTER YOUR REPLY CODE <input class="Input" type="text">
 					<input class="Button ReplyCodeButton" type="submit" value='SUBMIT'>
 				</form>
 			</div>
