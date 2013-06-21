@@ -141,7 +141,7 @@
 		</div>
 		<div class="Slide Hidden" id="Slide15">
 			<div class="Picture">
-				<iframe width="504" height="283" src="http://www.youtube.com/embed/7a-s-YkVCYQ" frameborder="0" allowfullscreen></iframe>
+				<iframe width="560" height="315" src="http://www.youtube.com/embed/7a-s-YkVCYQ" frameborder="0" allowfullscreen></iframe>
 			</div>
 			<div class="Story">
 				<span class="Date">August 24th, 2011</span><br> <span class="Title">Laura’s Bday Song</span><br> <span class="Content">For Laura’s 29th Birthday, Emir wrote her a song. After crafting the melody, he had Laura’s dear friend Deanna write the lyrics and sing them. But instead of writing them from
