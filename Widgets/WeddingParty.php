@@ -65,10 +65,14 @@
 		</div>
 		<!-- Heather-->
 		<div id="Biography2" class="Biography VerticalCenter Hidden">
-			<span class="Name">Heather Payne</span><br> <span class="Role">Bridesmaid</span><br> <span class="Story">Laura and I met when I was 15 at Wal-Mart McDonald's in Brampton. I'd just gotten a job there, and Laura was a manager. I quickly (almost effortlessly) became one of her favourites, but it wasn't until I was promoted to management that the
-				fun really began. From making scripted announcements about "Manager's Specials" over Wal-Mart's PA system, tag-teaming busy Saturdays and taking on special projects to make our store better, we were always on the same wavelength when it came to work. Outside of work, we became friends, with
-				Laura introducing me to a lot of "firsts" throughout my formative teenage years. I went away to school, and then moved to China, but a chance encounter with Laura on Bloor Street upon my return set the rest of my life in motion. We hadn't seen each other in years, but her company was hiring, and
-				I needed a job. We started working together for the second time, and our friendship outside of work flourished. Laura and I work together again, this time as partners. Our relationship has many layers, and is made up of a wonderful and unique blend of professional and personal. There's always so
+			<span class="Name">Heather Payne</span><br> <span class="Role">Bridesmaid</span><br> <span class="Story">Laura and I met when I was 15 at Wal-Mart McDonald's in Brampton. I'd just gotten a 
+			job there, and Laura was a manager. I quickly (almost effortlessly) became one of her favourites, but it wasn't until I was promoted to management that the
+				fun really began. From making scripted announcements about "Manager's Specials" over Wal-Mart's PA system, tag-teaming busy Saturdays and taking on special projects to make our store 
+				better, we were always on the same wavelength when it came to work. Outside of work, we became friends, with
+				Laura introducing me to a lot of "firsts" throughout my formative teenage years. I went away to school, and then moved to China, but a chance encounter with Laura 
+				upon my return set the rest of my life in motion. We hadn't seen each other in years, but her company was hiring, and
+				I needed a job. We started working together for the second time, and our friendship outside of work flourished. Laura and I work together again, 
+				this time as partners. Our relationship has many layers, and is made up of a wonderful and unique blend of professional and personal. There's always so
 				much to talk about. I couldn't be more excited to be part of Laura and Emir's special day. They're wonderful together, and perfect for each other.</span>
 		</div>
 		<!--Johnny -->
@@ -89,7 +93,7 @@
 
 It was Canada day and we had the pleasure, Rachel and I, to spend the weekend with the couple, as well as Deanna, Wayne, and Shirley.  It was like we never missed a beat, as it always was between Emir and I ever since his family had moved to Toronto. It felt the same with Laura the first time we met her, as if she already belonged to the family.<br /><br />
 
-We were team Lauremir from then on.</span>
+We were team LauraEmir from then on.</span>
 		</div>
 		<!-- Katie -->
 		<div id="Biography6" class="Biography VerticalCenter Hidden">
@@ -102,11 +106,16 @@ We were team Lauremir from then on.</span>
 
 		<!-- Deana -->
 		<div id="Biography7" class="Biography VerticalCenter Hidden">
-			<span class="Name">Deanna Hergert</span><br> <span class="Role">Bridesmaid</span><br> <span class="Story">A wonderful mutual friend, April, and I had grade 10 history class together. We both loved Jewel - that was pretty much all you needed to find a bosom friend in those days, or in the very least, be invited to her cool Hallowe'en party. Riding in
-				the back of my father's pick-up truck, I nervously approached my first high school party. I was a country girl, and this was a city party - the kind of thing I needed my grade-school best pal, Mel Hanisch to walk beside me through, just in case everyone there was too cool to even consider
-				talking to me. The most dreaded moment by far was walking through the door, where potentially everyone in the room was going to look up from what they were doing to see who the latest arrival to the party was...and of course I was beyond fashionably late. Thankfully we entered almost completely
-				unnoticed, except of course by our gracious host. But what was that chaos happening in the corner?! Some poor, awkward, girl curled up in a ball with legs and arms flailing as she is being attacked by a crowd of silly-string projectiles; I remember it like it were yesterday. What a sight! She
-				had to be the dorkiest, most awkward person at the party....and I knew immediately that she and I would get along juuuuust fine. The rest of that evening sealed the deal, with good ole' fashion clapping games and a session of voice-straining Jewel sing-a-long. It was destiny. </span>
+			<span class="Name">Deanna Hergert</span><br> <span class="Role">Bridesmaid</span><br> <span class="Story">April and I had grade 10 history class together. We both loved Jewel and that was 
+			pretty much all you needed to find a bosom friend in those days, or in the very least, be invited to her cool Hallowe'en party. Riding in
+				the back of my father's pick-up truck, I nervously approached my first high school party. I was a country girl, and this was a city party - the kind of thing I needed my grade-school 
+				best pal, Mel Hanisch, to walk beside me through, just in case everyone there was too cool to even consider
+				talking to me. The most dreaded moment by far was walking through the door, where potentially everyone in the room was going to look up from what they were doing to see who the 
+				latest arrival to the party was. Thankfully we entered almost completely
+				unnoticed, except of course by our gracious host. But what was that chaos happening in the corner?! Some poor, awkward, girl curled up in a ball with legs and arms flailing as 
+				she is being attacked by a crowd of silly-string projectiles; I remember it like it were yesterday. What a sight! She
+				had to be the dorkiest, most awkward person at the party....and I knew immediately that she and I would get along juuuuust fine. 
+				The rest of that evening sealed the deal, with good ole' fashion clapping games and a session of voice-straining Jewel sing-a-long. It was destiny. </span>
 		</div>
 		<!-- Rob -->
 		<div id="Biography8" class="Biography VerticalCenter Hidden">

@@ -1,7 +1,7 @@
 @CHARSET "UTF-8";
 
 div.WeddingParty {
-	font-size: 13px;
+	font-size: 15px;
 	line-height: 18px;
 	position: relative;
 	width: 1000px;
@@ -85,5 +85,5 @@ div.WeddingPartyContent div.Biography span.Name {
 div.WeddingPartyContent div.Biography span.Role {
 	font-weight: bold;
 	line-height: 05px;
-	font-size: 15px;
+	font-size: 18px;
 }
