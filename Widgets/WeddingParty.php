@@ -87,7 +87,7 @@
 		<div id="Biography5" class="Biography VerticalCenter Hidden">
 			<span class="Name">Dzemal Trtak</span><br> <span class="Role">Groomsman</span><br> <span class="Story">Well for me this story began in 1994, on the first day of school, 4th grade . We were all going down a staircase for lunch and I heard a boy ask me, "Hey whats your name?" and I answered, "Dzemal, you?". So he replied, "Emir. Since we're both Bosnian we should be friends." And so it was. So now, you guys must be wondering where this is all going. Well, it brings us to 2011 when my wife and I were first introduced to Laura.<br /><br /> 
 
-It was Canada day and we had the pleasure, Rachel and I, to spend the weekend with the couple, as well as Deana, Wayne, and Shirley.  It was like we never missed a beat, as it always was between Emir and I ever since his family had moved to Toronto. It felt the same with Laura the first time we met her, as if she already belonged to the family.<br /><br />
+It was Canada day and we had the pleasure, Rachel and I, to spend the weekend with the couple, as well as Deanna, Wayne, and Shirley.  It was like we never missed a beat, as it always was between Emir and I ever since his family had moved to Toronto. It felt the same with Laura the first time we met her, as if she already belonged to the family.<br /><br />
 
 We were team Lauremir from then on.</span>
 		</div>
