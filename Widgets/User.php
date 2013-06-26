@@ -23,15 +23,15 @@ class User {
 	}
 
 	public static function getIsComingQuery() {
-		return "SELECT * FROM " . self::$USER_TABLE_NAME . " where " . self::$USER_TABLE_IS_COMING_COLUMN_NAME . "='1';";
+		return "SELECT * FROM " . self::$USER_TABLE_NAME . " where " . self::$USER_TABLE_IS_COMING_COLUMN_NAME . "='1' ORDER BY " . self::$USER_TABLE_NAME_COLUMN_NAME. ";";
 	}
 
 	public static function getIsNotComingQuery() {
-		return "SELECT * FROM " . self::$USER_TABLE_NAME . " where " . self::$USER_TABLE_IS_COMING_COLUMN_NAME . "='0';";
+		return "SELECT * FROM " . self::$USER_TABLE_NAME . " where " . self::$USER_TABLE_IS_COMING_COLUMN_NAME . "='0' ORDER BY " . self::$USER_TABLE_NAME_COLUMN_NAME. ";";
 	}
 
 	public static function getNotRespondedQuery() {
-		return "SELECT * FROM " . self::$USER_TABLE_NAME . " where " . self::$USER_TABLE_IS_COMING_COLUMN_NAME . " is NULL;";
+		return "SELECT * FROM " . self::$USER_TABLE_NAME . " where " . self::$USER_TABLE_IS_COMING_COLUMN_NAME . " is NULL" . " ORDER BY " . self::$USER_TABLE_NAME_COLUMN_NAME. ";";
 	}
 
 	public static function getInsertQuery($id, $isComing, $foodRestrictions){
@@ -232,31 +232,34 @@ class User {
 
 		$isComingResult = $queryResults[0];
 		$result = "<p><h1>Coming</h1><table><tr><td>Name</td><td>Preferences</td></tr>";
+		$total = 0;
 		while ($userData = $isComingResult->fetch_assoc()){
+			$total++;
 			$result .="<tr><td>";
 			$result .= $userData[self::$USER_TABLE_NAME_COLUMN_NAME] . "</td><td>";
 			$result .= $userData[self::$USER_TABLE_FOOD_RESTRICTIONS_COLUMN_NAME] . "</td></tr>";
 		}
-		$result .="</table></p>";
+		$result .="</table><h2>TOTAL: $total</h2></p>";
 
 		
 		$isNotComingResult = $queryResults[1];
-		$result .= "<p><h1>Not Coming</h1><table><tr><td>Name</td><td>Preferences</td></tr>";
+		$total = 0;
+		$result .= "<p><h1>Not Coming</h1><table><tr><td>Name</td></tr>";
 		while ($userData = $isNotComingResult->fetch_assoc()){
+			$total++;
 			$result .="<tr><td>";
-			$result .= $userData[self::$USER_TABLE_NAME_COLUMN_NAME] . "</td><td>";
-			$result .= $userData[self::$USER_TABLE_FOOD_RESTRICTIONS_COLUMN_NAME] . "</td></tr>";
+			$result .= $userData[self::$USER_TABLE_NAME_COLUMN_NAME] . "</td></tr>";
 		}
-		$result .="</table></p>";
+		$result .="</table><h2>TOTAL: $total</h2></p>";
 
 		$NotRespondedResult = $queryResults[2];
-		$result .= "<p><h1>Not Responded</h1><table><tr><td>Name</td><td>Preferences</td></tr>";
+		$result .= "<p><h1>Not Responded</h1><table><tr><td>Name</td></tr>";
 		while ($userData = $NotRespondedResult->fetch_assoc()){
+			$total++;
 			$result .="<tr><td>";
-			$result .= $userData[self::$USER_TABLE_NAME_COLUMN_NAME] . "</td><td>";
-			$result .= $userData[self::$USER_TABLE_FOOD_RESTRICTIONS_COLUMN_NAME] . "</td></tr>";
+			$result .= $userData[self::$USER_TABLE_NAME_COLUMN_NAME] . "</td></tr>";
 		}
-		$result .="</table></p>";
+		$result .="</table><h2>TOTAL: $total</h2></p>";
 
 		return $result;
 
