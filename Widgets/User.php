@@ -1,7 +1,7 @@
 <?php
-include_once($_SERVER['DOCUMENT_ROOT'] . "/WeddingWebSite/Utils/MySql.php");
-include_once($_SERVER['DOCUMENT_ROOT'] . "/WeddingWebSite/Utils/SessionManager.php");
-include_once($_SERVER['DOCUMENT_ROOT'] . "/WeddingWebSite/Widgets/Rsvp.php");
+include_once($_SERVER['DOCUMENT_ROOT'] . "/Utils/MySql.php");
+include_once($_SERVER['DOCUMENT_ROOT'] . "/Utils/SessionManager.php");
+include_once($_SERVER['DOCUMENT_ROOT'] . "/Widgets/Rsvp.php");
 
 class User {
 	public static $USER_TABLE_NAME = "user";
