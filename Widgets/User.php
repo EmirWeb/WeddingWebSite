@@ -23,15 +23,15 @@ class User {
 	}
 
 	public static function getIsComingQuery() {
-		return "SELECT * FROM " . self::$USER_TABLE_NAME . " where " . self::$USER_TABLE_IS_COMING_COLUMN_NAME . "='1';";
+		return "SELECT * FROM " . self::$USER_TABLE_NAME . " natural join " . Rsvp::$$RSVP_TABLE_NAME . " where " . self::$USER_TABLE_IS_COMING_COLUMN_NAME . "='1';";
 	}
 
 	public static function getIsNotComingQuery() {
-		return "SELECT * FROM " . self::$USER_TABLE_NAME . " where " . self::$USER_TABLE_IS_COMING_COLUMN_NAME . "='0';";
+		return "SELECT * FROM " . self::$USER_TABLE_NAME . " natural join " . Rsvp::$$RSVP_TABLE_NAME . " where " . self::$USER_TABLE_IS_COMING_COLUMN_NAME . "='0';";
 	}
 
 	public static function getNotRespondedQuery() {
-		return "SELECT * FROM " . self::$USER_TABLE_NAME . " where " . self::$USER_TABLE_IS_COMING_COLUMN_NAME . " is NULL;";
+		return "SELECT * FROM " . self::$USER_TABLE_NAME . " natural join " . Rsvp::$$RSVP_TABLE_NAME . " where " . self::$USER_TABLE_IS_COMING_COLUMN_NAME . " is NULL;";
 	}
 
 	public static function getInsertQuery($id, $isComing, $foodRestrictions){
@@ -235,6 +235,8 @@ class User {
 		while ($userData = $isComingResult->fetch_assoc()){
 			$result .="<tr><td>";
 			$result .= $userData[self::$USER_TABLE_NAME_COLUMN_NAME] . "</td><td>";
+			$result .= $userData[Rsvp::$RSVP_TABLE_MESSAGE_COLUMN_NAME] . "</td><td>";
+			
 			$result .= $userData[self::$USER_TABLE_FOOD_RESTRICTIONS_COLUMN_NAME] . "</td></tr>";
 		}
 		$result .="</table></p>";
