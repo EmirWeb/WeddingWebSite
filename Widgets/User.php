@@ -231,7 +231,7 @@ class User {
 			return null;
 
 		$isComingResult = $queryResults[0];
-		$result = "<p><h1>Coming</h1><table><tr><td>Name</td><td>Preferences</td></tr>";
+		$result = "<p><h1>Coming</h1><table><tr><td>Name</td><td>Preferences</td><td>Message</td></tr>";
 		$total = 0;
 		while ($userData = $isComingResult->fetch_assoc()){
 			$total++;
@@ -247,7 +247,7 @@ class User {
 
 		$isNotComingResult = $queryResults[1];
 		$total = 0;
-		$result .= "<p><h1>Not Coming</h1><table><tr><td>Name</td></tr>";
+		$result .= "<p><h1>Not Coming</h1><table><tr><td>Name</td><td>Message</td></tr>";
 		while ($userData = $isNotComingResult->fetch_assoc()){
 			$total++;
 			$result .="<tr><td>";
