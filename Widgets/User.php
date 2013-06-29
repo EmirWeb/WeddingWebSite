@@ -237,7 +237,7 @@ class User {
 			$total++;
 			$result .="<tr><td>";
 			$result .= $userData[self::$USER_TABLE_NAME_COLUMN_NAME] . "</td><td>";
-			$result .= $userData[self::$USER_TABLE_FOOD_RESTRICTIONS_COLUMN_NAME] . "</td></td>";
+			$result .= $userData[self::$USER_TABLE_FOOD_RESTRICTIONS_COLUMN_NAME] . "</td><td>";
 			$result .= $userData[Rsvp::$RSVP_TABLE_MESSAGE_COLUMN_NAME] . "</td></tr>";
 			
 
