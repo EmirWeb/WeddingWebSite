@@ -138,7 +138,50 @@ We were team LauraEmir from then on.</span>
 		</div>
 		<!-- Adam -->
 		<div id="Biography11" class="Biography VerticalCenter Hidden">
-			<span class="Name">Joseph Adam Plant</span> <br><span class="Role">Groomsman</span><br> <span class="Story">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</span>
+			<span class="Name">Joseph Adam Plant</span> <br><span class="Role">Groomsman</span><br> <span class="Story">
+
+
+Once upon a time
+In a place much like this
+There lived a darling princess
+Who had but one wish.
+
+For that of a prince
+For her and no other
+And as fate sometimes twists
+She landed a brother.
+
+But a cruel disappointment
+Is not what she'd felt.
+This princess made due
+with the hand she'd been dealt.
+
+She loved her new friend
+And did from the start. 
+Yet something still missed
+From with'n her heart.
+
+She searched long and hard
+For the fateful ommition,
+And it all soon made sense
+As if it'd been written.
+
+A sonnet inscribed
+On the hallways of time
+Will lead to elation
+and conflation of soul.
+
+And a love that shines brightest
+When it peaks through the clouds
+Leaves a brother inspired
+and a family proud.
+
+For to love is to live;
+A worth while toll,
+'Cause it's only in giving
+that we find ourselves whole.
+
+</span>
 		</div>
 	</div>
 </div>
